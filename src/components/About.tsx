@@ -1,15 +1,48 @@
 
 import { Users, Link } from "lucide-react";
 
+// A suitable subtle Moroccan pattern: 
+// https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=600&q=50
+// This image has a soft color palette and geometric pattern fitting your requirements.
+
 const About = () => {
   return (
-    <section id="about" className="py-24" style={{ backgroundColor: '#FDE1D3' }}>
-      <div className="container mx-auto px-4">
+    <section
+      id="about"
+      className="py-24 relative"
+      style={{
+        backgroundColor: "#fff",
+        // fallback solid color
+      }}
+    >
+      {/* Background Pattern */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 z-0"
+        style={{
+          backgroundImage:
+            "url('https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=600&q=50')",
+          backgroundRepeat: "repeat",
+          backgroundSize: "400px 400px", // scale for subtlety
+          opacity: 0.14, // very faint
+          filter: "brightness(1.25) blur(0.5px)",
+        }}
+      />
+      {/* Overlay for soft beige tint */}
+      <div
+        aria-hidden="true"
+        className="absolute inset-0 z-10"
+        style={{
+          background:
+            "linear-gradient(0deg, rgba(253,225,211,0.28) 0%, rgba(255,255,255,0.44) 100%)",
+          pointerEvents: "none",
+        }}
+      />
+      <div className="container mx-auto px-4 relative z-20">
         <h2 className="text-4xl font-bold text-gray-900 mb-8 text-center">About</h2>
-        
         <div className="prose prose-lg max-w-none mb-16">
           <p className="text-gray-700 text-lg leading-relaxed">
-            "Yet another consulting firm," you might think — but I'm not just another consultant. 
+            {"Yet another consulting firm,"} you might think — but I'm not just another consultant. 
             With over 15 years of embedded Linux experience, I focus on turning complex platforms 
             into secure, production-ready systems that actually work in the real world.
           </p>
@@ -20,7 +53,6 @@ const About = () => {
             strong communication, and a focus on collaboration.
           </p>
         </div>
-
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           <div className="space-y-4">
             <div className="flex items-center gap-3 mb-4">
@@ -35,7 +67,6 @@ const About = () => {
               more effectively.
             </p>
           </div>
-          
           <div className="rounded-lg overflow-hidden">
             <img 
               src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&w=800" 
@@ -44,7 +75,6 @@ const About = () => {
             />
           </div>
         </div>
-
         <div className="grid md:grid-cols-2 gap-8">
           <div className="rounded-lg overflow-hidden">
             <img 
@@ -53,7 +83,6 @@ const About = () => {
               className="w-full h-full object-cover"
             />
           </div>
-
           <div className="space-y-4">
             <div className="flex items-center gap-3 mb-4">
               <Users className="h-6 w-6 text-blue-600" />
@@ -74,3 +103,4 @@ const About = () => {
 };
 
 export default About;
+
