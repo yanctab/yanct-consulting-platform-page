@@ -1,5 +1,6 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Briefcase } from "lucide-react";
 
 const Services = () => {
   const services = [
@@ -18,14 +19,15 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-16 bg-gray-50">
+    <section id="services" className="py-24 bg-emerald-50">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
-          Service Packages
-        </h2>
+        <div className="flex items-center justify-center gap-3 mb-16">
+          <Briefcase className="h-8 w-8 text-emerald-600" />
+          <h2 className="text-4xl font-bold text-gray-900">Service Packages</h2>
+        </div>
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {services.map((service, index) => (
-            <Card key={index} className="border-2 hover:border-blue-500 transition-all duration-300">
+            <Card key={index} className="border-2 hover:border-emerald-500 transition-all duration-300">
               <CardHeader>
                 <CardTitle className="text-xl font-bold">{service.title}</CardTitle>
               </CardHeader>
