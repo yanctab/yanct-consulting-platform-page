@@ -1,12 +1,36 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import { ArrowDown } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import About from "@/components/About";
+import Services from "@/components/Services";
+import Expertise from "@/components/Expertise";
+import Footer from "@/components/Footer";
 
 const Index = () => {
+  const scrollToContent = () => {
+    const aboutSection = document.getElementById('about');
+    aboutSection?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-white">
+      <Navbar />
+      <main>
+        <Hero />
+        <Button
+          variant="ghost"
+          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce"
+          onClick={scrollToContent}
+        >
+          <ArrowDown className="h-6 w-6" />
+        </Button>
+        <About />
+        <Services />
+        <Expertise />
+        <Footer />
+      </main>
     </div>
   );
 };
