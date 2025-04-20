@@ -102,7 +102,11 @@ export default {
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out'
-      }
+      },
+      fontFamily: {
+        // Add a new font family for typewriter style
+        'typewriter': ['Courier New', 'Courier', 'monospace'],
+      },
     }
   },
   plugins: [require("tailwindcss-animate")],
