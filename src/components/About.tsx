@@ -3,7 +3,6 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 
 const About = () => {
-  // We'll set the about background to a slightly darker grey: #e0e0e0 for consistency with your earlier requests.
   return (
     <>
       {/* About Section */}
@@ -134,8 +133,8 @@ const About = () => {
             <div className="h-10 md:h-16" />
             {/* Connect box, centered under the line */}
             <div className="w-full flex justify-center">
-              <div className="bg-white flex flex-col justify-center items-center border border-[#e5e5e5] h-full aspect-[1.8/1] w-full md:w-[72%] min-h-[260px] md:min-h-[280px] rounded-none relative">
-                <h3 className="text-2xl md:text-3xl font-semibold text-[#30586D] font-typewriter">
+              <div className="bg-white flex flex-col justify-center items-center border border-[#e5e5e5] aspect-[1.8/1] md:w-[50%] max-w-[480px] min-h-[240px] md:min-h-[260px] rounded-none relative px-12 text-center">
+                <h3 className="text-2xl md:text-3xl font-semibold text-[#30586D] font-typewriter mb-4">
                   Connect
                 </h3>
                 <p className="text-gray-700 text-lg leading-relaxed">
@@ -151,3 +150,4 @@ const About = () => {
 };
 
 export default About;
+
