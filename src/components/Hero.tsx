@@ -12,10 +12,12 @@ const Hero = () => {
       <div className="container mx-auto px-4 flex items-center justify-between">
         <div className="text-white max-w-xl">
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
-            Hi, I'm Måns.
+            Welcome.
           </h1>
           <p className="text-xl md:text-2xl text-white/80 mb-8">
-            I have been transformed complex platform into secure, production-ready systems for 15 years.
+            With over a decade of hands-on experience, I bring a wealth
+	    of knowledge to the table, poised to elevate your projects
+	    to new heights of success.  
           </p>
           <Button 
             size="lg"
