@@ -1,7 +1,10 @@
 
 import { Button } from "@/components/ui/button";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 const Hero = () => {
+  const isMobile = useIsMobile();
+  
   return (
     <div
       className="min-h-[80vh] relative flex items-center justify-center bg-cover bg-center font-typewriter"
@@ -11,9 +14,15 @@ const Hero = () => {
       }}
     >
       <div className="text-white max-w-3xl text-center px-4">
-        <img src="/yanct.png" alt="Yanct Logo" className="mx-auto mb-8 w-[500px] h-auto" />
-        <h1 className="text-5xl md:text-7xl font-bold mb-8 whitespace-nowrap">Welcome To Yanct.</h1>
-        <p className="text-xl md:text-2xl text-white/80 mb-12 max-w-2xl mx-auto">
+        <img 
+          src="/yanct.png" 
+          alt="Yanct Logo" 
+          className={`mx-auto mb-8 ${isMobile ? 'w-[250px]' : 'w-[500px]'} h-auto`} 
+        />
+        <h1 className={`${isMobile ? 'text-4xl' : 'text-5xl md:text-7xl'} font-bold mb-8`}>
+          Welcome To Yanct.
+        </h1>
+        <p className={`${isMobile ? 'text-lg' : 'text-xl md:text-2xl'} text-white/80 mb-12 max-w-2xl mx-auto`}>
           With over a decade of hands-on experience, I bring a wealth of knowledge to the table, poised to elevate your projects to new heights of success.
         </p>
         <Button
