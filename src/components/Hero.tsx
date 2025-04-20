@@ -4,7 +4,7 @@ import { useIsMobile } from "@/hooks/use-mobile";
 
 const Hero = () => {
   const isMobile = useIsMobile();
-
+  
   return (
     <div
       className="min-h-[80vh] relative flex items-center justify-center bg-cover bg-center font-typewriter"
@@ -13,7 +13,7 @@ const Hero = () => {
           'linear-gradient(rgba(48, 88, 109, 0.7), rgba(48, 88, 109, 0.9)), url("https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=2000")',
       }}
     >
-      <div className="text-white max-w-3xl text-center px-4 relative">
+      <div className="text-white max-w-3xl text-center px-4">
         <img 
           src="/yanct.png" 
           alt="Yanct Logo" 
@@ -27,25 +27,15 @@ const Hero = () => {
         </p>
         <Button
           size="lg"
-          className="bg-primary hover:bg-primary/90 text-primary-foreground font-typewriter border-2 border-white px-14 py-6 text-2xl md:text-3xl"
+          className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg font-typewriter border-2 border-white"
           onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
         >
-          Start
+          Learn More
         </Button>
-        {/* Line down from the center of the Start button */}
-        <div
-          className="hidden md:block absolute left-1/2 -translate-x-1/2"
-          style={{
-            top: "calc(100% - 16px)", // position below the button (roughly)
-            height: "56px", // Height until the About starts, adjust if needed
-            width: "0px",
-            borderLeft: "3px solid #30586D",
-            zIndex: 20,
-          }}
-        />
       </div>
     </div>
   );
 };
 
 export default Hero;
+
