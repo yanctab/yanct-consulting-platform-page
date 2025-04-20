@@ -10,7 +10,6 @@ const Hero = () => {
       }}
     >
       <div className="text-white max-w-xl text-center px-4">
-      <div className="text-white max-w-xl text-center px-4">
         <img
           src="public/yanct.png"
           alt="YANCT logo"
