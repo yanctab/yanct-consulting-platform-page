@@ -11,7 +11,10 @@ const About = () => {
       }}
     >
       <div className="container mx-auto px-4 relative z-20">
-        <h2 className="text-4xl font-bold text-gray-900 mb-8 text-center">About</h2>
+        {/* Headline with typewriter font and clear section separation */}
+        <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center font-typewriter">
+          About
+        </h2>
         <div className="prose prose-lg max-w-none mb-16">
           <p className="text-gray-700 text-lg leading-relaxed">
             {"Yet another consulting firm,"} you might think — but I'm not just another consultant. 
@@ -25,6 +28,8 @@ const About = () => {
             strong communication, and a focus on collaboration.
           </p>
         </div>
+        {/* Divider to reinforce section separation */}
+        <div className="w-full border-t border-gray-300 mb-12"></div>
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           <div className="space-y-4">
             <div className="flex items-center gap-3 mb-4">
