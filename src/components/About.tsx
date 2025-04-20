@@ -1,43 +1,15 @@
 
 import { Users, Link } from "lucide-react";
 
-// A suitable subtle Moroccan pattern: 
-// https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=600&q=50
-// This image has a soft color palette and geometric pattern fitting your requirements.
-
 const About = () => {
   return (
     <section
       id="about"
-      className="py-24 relative"
+      className="py-24"
       style={{
-        backgroundColor: "#fff",
-        // fallback solid color
+        backgroundColor: "#f3f3f3", // light gray background color
       }}
     >
-      {/* Background Pattern */}
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute inset-0 z-0"
-        style={{
-          backgroundImage:
-            "url('https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=600&q=50')",
-          backgroundRepeat: "repeat",
-          backgroundSize: "400px 400px", // scale for subtlety
-          opacity: 0.14, // very faint
-          filter: "brightness(1.25) blur(0.5px)",
-        }}
-      />
-      {/* Overlay for soft beige tint */}
-      <div
-        aria-hidden="true"
-        className="absolute inset-0 z-10"
-        style={{
-          background:
-            "linear-gradient(0deg, rgba(253,225,211,0.28) 0%, rgba(255,255,255,0.44) 100%)",
-          pointerEvents: "none",
-        }}
-      />
       <div className="container mx-auto px-4 relative z-20">
         <h2 className="text-4xl font-bold text-gray-900 mb-8 text-center">About</h2>
         <div className="prose prose-lg max-w-none mb-16">
