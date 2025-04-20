@@ -88,7 +88,7 @@ const About = () => {
                 <img
                   src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&w=800"
                   alt="People collaborating"
-                  className="w-full h-56 object-cover"
+                  className="w-full h-56 object-cover filter grayscale"
                   style={{ objectPosition: 'center', height: '100%' }}
                 />
               </div>
@@ -122,9 +122,9 @@ const About = () => {
               {/* Image cell 2.2 */}
               <div className="bg-white flex items-center justify-center border border-[#e5e5e5] h-full w-full aspect-[1.8/1] rounded-none">
                 <img
-                  src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=800"
-                  alt="Technology workspace"
-                  className="w-full h-56 object-cover"
+                  src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800"
+                  alt="People in relaxed setting"
+                  className="w-full h-56 object-cover filter grayscale"
                   style={{ objectPosition: 'center', height: '100%' }}
                 />
               </div>
