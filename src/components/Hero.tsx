@@ -17,7 +17,7 @@ const Hero = () => {
         <img 
           src="/yanct.png" 
           alt="Yanct Logo" 
-          className={`mx-auto mb-8 ${isMobile ? 'w-[250px]' : 'w-[500px]'} h-auto`} 
+          className={`mx-auto mb-8 ${isMobile ? 'w-[250px]' : 'w-[500px]'} h-auto drop-shadow-[0_0_10px_rgba(0,0,0,0.7)]`} 
         />
         <h1 className={`${isMobile ? 'text-4xl' : 'text-5xl md:text-7xl'} font-bold mb-8`}>
           Welcome To Yanct.
@@ -38,3 +38,4 @@ const Hero = () => {
 };
 
 export default Hero;
+
