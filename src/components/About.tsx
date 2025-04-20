@@ -3,7 +3,7 @@ import { Users, Link } from "lucide-react";
 
 const About = () => {
   return (
-    <section id="about" className="py-24 bg-gray-50">
+    <section id="about" className="py-24" style={{ backgroundColor: '#FDE1D3' }}>
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-gray-900 mb-8 text-center">About</h2>
         
