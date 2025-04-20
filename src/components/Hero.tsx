@@ -13,7 +13,6 @@ const Hero = () => {
         <img
           src="public/yanct.png"
           alt="YANCT logo"
-          className="mx-auto mb-8 w-1/2 h-auto"
         />
         <h1 className="text-5xl md:text-7xl font-bold mb-6">Welcome To Yanct.</h1>
         <p className="text-xl md:text-2xl text-white/80 mb-8">
