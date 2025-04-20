@@ -48,7 +48,7 @@ const About = () => {
               />
               <Button
                 size="lg"
-                className="bg-primary text-primary-foreground text-xl px-10 py-6 font-typewriter border-2 border-white shadow-lg"
+                className="bg-white rounded-xl text-primary-foreground text-xl px-14 py-7 font-typewriter border-2 border-white shadow-lg"
                 onClick={() => {
                   // Scroll to the highlights (collaborative mindset section)
                   const highlights = document.getElementById('about-highlights');
@@ -133,7 +133,7 @@ const About = () => {
             <div className="h-10 md:h-16" />
             {/* Connect box, centered under the line */}
             <div className="w-full flex justify-center">
-              <div className="bg-white flex flex-col justify-center items-center border border-[#e5e5e5] aspect-[1.8/1] md:w-[50%] max-w-[480px] min-h-[240px] md:min-h-[260px] rounded-none relative px-12 text-center">
+              <div className="bg-white flex flex-col justify-center items-center border border-[#e5e5e5] aspect-[1.8/1] md:w-[50%] max-w-[480px] min-h-[240px] md:min-h-[260px] rounded-none relative px-24 text-center">
                 <h3 className="text-2xl md:text-3xl font-semibold text-[#30586D] font-typewriter mb-4">
                   Connect
                 </h3>
