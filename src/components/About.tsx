@@ -1,14 +1,15 @@
 
 import React from "react";
+import { Button } from "@/components/ui/button";
 
-// "About" stays in its own section. Highlights become a new section below.
 const About = () => {
+  // We'll set the about background to a slightly darker grey: #e0e0e0
   return (
     <>
       {/* About Section */}
       <section
         id="about"
-        className="py-24 bg-[#f3f3f3] relative"
+        className="py-24 bg-[#e0e0e0] relative"
       >
         <div className="container mx-auto px-4 relative z-20">
           <div className="relative flex flex-col items-center">
@@ -20,20 +21,8 @@ const About = () => {
             >
               About
             </h2>
-            {/* Vertical line below headline, reaching expertise section */}
-            {/* We'll position the line absolutely, running only down to the end of the highlights rows */}
-            <div
-              className="hidden md:block absolute left-1/2 -translate-x-1/2"
-              style={{
-                top: "100%",
-                height: "144px", // matches height+spacing of new highlights section
-                width: "0px",
-                borderLeft: "3px solid #30586D",
-                zIndex: 1,
-              }}
-            />
           </div>
-          <div className="prose prose-lg max-w-none mx-auto">
+          <div className="prose prose-lg max-w-none mx-auto flex flex-col items-center">
             <p className="text-gray-700 text-lg leading-relaxed mt-2">
               {"Yet another consulting firm,"} you might think — but I'm not just another consultant.
               With over 15 years of embedded Linux experience, I focus on turning complex platforms
@@ -45,15 +34,41 @@ const About = () => {
               But what really sets me apart is how I work — with a service-minded approach,
               strong communication, and a focus on collaboration.
             </p>
+            {/* Add Continue Button */}
+            <div className="relative flex flex-col items-center w-full mt-10">
+              {/* Vertical line starts at the Continue button and continues downward */}
+              <div
+                className="hidden md:block absolute left-1/2 -translate-x-1/2 z-10"
+                style={{
+                  top: '68px', // top edge of the button (approx)
+                  height: 'calc(100% - 68px)',
+                  width: '0px',
+                  borderLeft: '3px solid #30586D',
+                  pointerEvents: "none",
+                }}
+              />
+              <Button
+                size="lg"
+                className="bg-primary text-primary-foreground text-xl px-10 py-6 font-typewriter border-2 border-white shadow-lg"
+                onClick={() => {
+                  // Scroll to the highlights (collaborative mindset section)
+                  const highlights = document.getElementById('about-highlights');
+                  highlights?.scrollIntoView({ behavior: 'smooth' });
+                }}
+              >
+                Continue
+              </Button>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Highlights Section */}
       <section
+        id="about-highlights"
         className="relative py-16 md:py-24 bg-[#30586D] overflow-visible"
       >
-        {/* Vertical line continues from About, stops above grey section */}
+        {/* Vertical line continues from Continue button through both rows */}
         <div
           className="hidden md:block absolute left-1/2 -translate-x-1/2 z-10"
           style={{
@@ -68,14 +83,14 @@ const About = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col gap-16 md:gap-20">
             {/* Row 1: Collaborative Mindset (Image left, text right) */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-0 items-stretch w-full min-h-[260px] md:min-h-[280px]">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-0 items-stretch w-full">
               {/* Image cell 1.1 */}
-              <div className="bg-white flex items-center justify-center border border-[#e5e5e5] md:border-r-0 h-full w-full aspect-[1.8/1]">
+              <div className="bg-white flex items-center justify-center border border-[#e5e5e5] h-full w-full aspect-[1.8/1]">
                 <img
                   src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&w=800"
                   alt="People collaborating"
                   className="w-full h-56 object-cover"
-                  style={{objectPosition:'center', height:'100%'}}
+                  style={{ objectPosition: 'center', height: '100%' }}
                 />
               </div>
               {/* Text cell 1.2 */}
@@ -93,7 +108,7 @@ const About = () => {
             {/* Space between rows, matches section spacing */}
             <div className="h-10 md:h-16" />
             {/* Row 2: Network of Experts (Text left, image right) */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-0 items-stretch w-full min-h-[260px] md:min-h-[280px]">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-0 items-stretch w-full">
               {/* Text cell 2.1 */}
               <div className="bg-white flex flex-col justify-center border border-[#e5e5e5] p-8 h-full w-full aspect-[1.8/1]">
                 <h3 className="text-2xl md:text-3xl font-semibold text-[#30586D] mb-4 font-typewriter">
@@ -106,12 +121,12 @@ const About = () => {
                 </p>
               </div>
               {/* Image cell 2.2 */}
-              <div className="bg-white flex items-center justify-center border border-[#e5e5e5] md:border-l-0 h-full w-full aspect-[1.8/1]">
+              <div className="bg-white flex items-center justify-center border border-[#e5e5e5] h-full w-full aspect-[1.8/1]">
                 <img
                   src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=800"
                   alt="Technology workspace"
                   className="w-full h-56 object-cover"
-                  style={{objectPosition:'center', height:'100%'}}
+                  style={{ objectPosition: 'center', height: '100%' }}
                 />
               </div>
             </div>
@@ -123,4 +138,3 @@ const About = () => {
 };
 
 export default About;
-
