@@ -5,7 +5,7 @@ import TrianglePattern from "./TrianglePattern";
 const Expertise = () => {
   return (
     <section id="expertise" className="py-24 bg-[#35b88f] relative overflow-hidden">
-      <TrianglePattern />
+      <TrianglePattern color="#9c8782"/>
       {/* Reuse the same side fade from About */}
       <div
         className="absolute inset-0 z-10 pointer-events-none"
