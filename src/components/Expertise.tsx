@@ -1,3 +1,4 @@
+
 import { HardDrive, Code, Settings } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import TrianglePattern from "./TrianglePattern";
@@ -37,7 +38,7 @@ const Expertise = () => {
           <div className="relative pl-16">
             {/* Horizontal connecting line */}
             <div className="absolute left-0 top-1/2 w-16 h-[3px] bg-white" />
-            <div className="text-center">
+            <div className="text-center border-2 border-white rounded-lg p-6">
               <HardDrive className="h-12 w-12 mx-auto mb-6 text-white" />
               <h3 className="text-2xl font-bold text-white mb-4">
                 Embedded Linux Development
@@ -54,7 +55,7 @@ const Expertise = () => {
           <div className="relative pr-16">
             {/* Horizontal connecting line */}
             <div className="absolute right-0 top-1/2 w-16 h-[3px] bg-white" />
-            <div className="text-center">
+            <div className="text-center border-2 border-white rounded-lg p-6">
               <Code className="h-12 w-12 mx-auto mb-6 text-white" />
               <h3 className="text-2xl font-bold text-white mb-4">
                 Yocto Project Expertise
@@ -77,7 +78,7 @@ const Expertise = () => {
           <div className="relative pl-16">
             {/* Horizontal connecting line */}
             <div className="absolute left-0 top-1/2 w-16 h-[3px] bg-white" />
-            <div className="text-center">
+            <div className="text-center border-2 border-white rounded-lg p-6">
               <Settings className="h-12 w-12 mx-auto mb-6 text-white" />
               <h3 className="text-2xl font-bold text-white mb-4">
                 Developer Enablement
