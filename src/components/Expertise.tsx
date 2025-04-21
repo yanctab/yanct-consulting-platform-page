@@ -22,12 +22,12 @@ const Expertise = () => {
         
         {/* Parent container for the grid and button with the vertical line */}
         <div className="relative">
-          {/* Vertical line that spans the entire content */}
+          {/* Vertical line that spans downward from grid to button */}
           <div
             className="hidden md:block absolute left-1/2 -translate-x-1/2 z-10"
             style={{
-              top: "0px",
-              height: "100%",
+              top: "calc(100% - 16px)", // start just below the grid (assuming 16px margin or gap)
+              height: "80px", // extend downward length enough to pass through the button container
               width: "0px",
               borderLeft: "3px solid #fff",
               pointerEvents: "none",
@@ -89,3 +89,4 @@ const Expertise = () => {
 };
 
 export default Expertise;
+
