@@ -1,4 +1,3 @@
-
 import { HardDrive, Code, Settings } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import TrianglePattern from "./TrianglePattern";
@@ -31,10 +30,13 @@ const Expertise = () => {
           {/* Vertical line in the middle - hidden on mobile */}
           <div className="absolute left-1/2 top-0 bottom-0 w-[3px] bg-white -translate-x-1/2 hidden md:block" />
 
-          {/* First box - Embedded Linux Development (moved up one row) */}
-          <div className="relative pl-0 md:pl-16 order-1 md:order-1">
+          {/* Empty cell for first position in column 1 */}
+          <div className="hidden md:block md:order-1"></div>
+
+          {/* Embedded Linux Development - Column 2, Row 1 */}
+          <div className="relative pr-0 md:pr-16 order-1 md:order-2">
             {/* Horizontal connecting line - hidden on mobile */}
-            <div className="absolute left-0 top-1/2 w-16 h-[3px] bg-white hidden md:block" />
+            <div className="absolute right-0 top-1/2 w-16 h-[3px] bg-white hidden md:block" />
             <div className="text-center border-2 border-white rounded-lg p-6">
               <HardDrive className="h-12 w-12 mx-auto mb-6 text-white" />
               <h3 className="text-2xl font-bold text-white mb-4">
@@ -48,10 +50,10 @@ const Expertise = () => {
             </div>
           </div>
 
-          {/* Second box - Yocto Project Expertise (moved up one row) */}
-          <div className="relative pr-0 md:pr-16 order-2 md:order-2">
+          {/* Yocto Project Expertise - Column 1, Row 2 */}
+          <div className="relative pl-0 md:pl-16 order-2 md:order-3">
             {/* Horizontal connecting line - hidden on mobile */}
-            <div className="absolute right-0 top-1/2 w-16 h-[3px] bg-white hidden md:block" />
+            <div className="absolute left-0 top-1/2 w-16 h-[3px] bg-white hidden md:block" />
             <div className="text-center border-2 border-white rounded-lg p-6">
               <Code className="h-12 w-12 mx-auto mb-6 text-white" />
               <h3 className="text-2xl font-bold text-white mb-4">
@@ -65,14 +67,16 @@ const Expertise = () => {
             </div>
           </div>
 
-          {/* Empty grid cells for spacing in the middle row (desktop only) */}
-          <div className="hidden md:block md:order-3"></div>
+          {/* Empty cell for second position in column 2 */}
           <div className="hidden md:block md:order-4"></div>
 
-          {/* Third box - Developer Enablement (remains in the same position) */}
-          <div className="relative pl-0 md:pl-16 order-3 md:order-5">
+          {/* Empty cell for third position in column 1 */}
+          <div className="hidden md:block md:order-5"></div>
+
+          {/* Developer Enablement - Column 2, Row 3 */}
+          <div className="relative pr-0 md:pr-16 order-3 md:order-6">
             {/* Horizontal connecting line - hidden on mobile */}
-            <div className="absolute left-0 top-1/2 w-16 h-[3px] bg-white hidden md:block" />
+            <div className="absolute right-0 top-1/2 w-16 h-[3px] bg-white hidden md:block" />
             <div className="text-center border-2 border-white rounded-lg p-6">
               <Settings className="h-12 w-12 mx-auto mb-6 text-white" />
               <h3 className="text-2xl font-bold text-white mb-4">
@@ -84,9 +88,6 @@ const Expertise = () => {
               </p>
             </div>
           </div>
-
-          {/* Empty grid cell for the last position (desktop only) */}
-          <div className="hidden md:block md:order-6"></div>
         </div>
 
         {/* Continue button */}
