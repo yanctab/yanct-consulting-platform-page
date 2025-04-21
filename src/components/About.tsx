@@ -85,9 +85,8 @@ const About = () => {
           </div>
           <div className="prose prose-lg prose-invert max-w-none mx-auto flex flex-col items-center">
             <p className="text-white text-lg leading-relaxed mt-2">
-              {"Yet another consulting firm,"} you might think — but I'm not just another consultant.
-              With over 15 years of embedded Linux experience, I focus on turning complex platforms
-              into secure, production-ready systems that actually work in the real world.
+              Yanct is a one mans show currently but with over 15 years of embedded Linux experience I am confident that I can contribute to your projects, I focus on turning complex platforms
+              into secure, production-ready systems.
             </p>
             <p className="text-white text-lg leading-relaxed mt-6">
               I specialize in bridging the gap between vendor BSPs and reliable products,

@@ -1,9 +1,37 @@
 
 import { HardDrive, Code, Settings } from "lucide-react";
 
+const SquarePattern = ({ className = "", squareCount = 60, color = "#f4eada", size = 6 }) => {
+  const squares = Array.from({ length: squareCount }).map((_, i) => {
+    const x = Math.random() * 100;
+    const y = Math.random() * 100;
+
+    return (
+      <rect
+        key={i}
+        x={`${x}%`}
+        y={`${y}%`}
+        width={size}
+        height={size}
+        fill={color}
+        opacity="0.3"
+      />
+    );
+  });
+
+  return (
+    <div className={`absolute inset-0 z-0 pointer-events-none ${className}`}>
+      <svg width="100%" height="100%">
+        {squares}
+      </svg>
+    </div>
+  );
+};
+
 const Expertise = () => {
   return (
     <section id="expertise" className="py-24 bg-white">
+      <SquarePattern />
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center text-gray-900 mb-16">
           Background & Expertise
