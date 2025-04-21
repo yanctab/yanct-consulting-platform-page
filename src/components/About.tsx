@@ -61,20 +61,21 @@ const About = () => {
 
         <div className="container mx-auto px-4 relative z-20">
           <div className="relative flex flex-col items-center">
-            {/* Profile Picture - increased size and spacing */}
+            {/* Profile Picture - larger and more spacing from headline */}
             <img
               src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?auto=format&fit=crop&w=350&q=80"
               alt="Profile of smiling man"
-              className="mb-10 w-40 h-40 object-cover rounded-full grayscale shadow-xl border-4 border-white"
+              className="mb-6 w-52 h-52 object-cover rounded-full grayscale shadow-xl border-4 border-white"
               style={{
-                marginTop: '-32px',
+                marginTop: '-24px', // Optional: fine-tune to balance spacing
                 backgroundColor: '#fff',
               }}
-              width={160}
-              height={160}
+              width={208}
+              height={208}
             />
+
             <h2
-              className="font-typewriter font-bold text-5xl md:text-7xl text-white mb-10 text-center"
+              className="font-typewriter font-bold text-5xl md:text-7xl text-white mt-6 mb-10 text-center"
               style={{
                 fontFamily: 'Courier New, Courier, monospace',
               }}
