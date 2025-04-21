@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button";
 import { useIsMobile } from "@/hooks/use-mobile";
 import TrianglePattern from "./TrianglePattern";
 import AboutHighlights from "./AboutHighlights";
-import VerticalLine from "./VerticalLine";
 
 const About = () => {
   const isMobile = useIsMobile();
@@ -26,7 +25,7 @@ const About = () => {
           }}
         />
 
-        <div className="container mx-auto px-4 relative z-20" id="about-section-container">
+        <div className="container mx-auto px-4 relative z-20">
           <div className="relative flex flex-col items-center">
             {/* Profile Picture - larger and more spacing from headline */}
             <img
@@ -63,18 +62,18 @@ const About = () => {
               strong communication, and a focus on collaboration.
             </p>
             <div className="relative flex flex-col items-center w-full mt-10">
-              {/* Vertical Line: About → AboutHighlights */}
-              <VerticalLine
-                containerId="about-section-container"
-                startBtnId="about-continue-btn"
-                endBtnId="about-highlights-services-btn"
-                color="#fff"
-                width={3}
-                hideOnMobile={false}
+              <div
+                className="hidden md:block absolute left-1/2 -translate-x-1/2 z-10"
+                style={{
+                  top: '68px',
+                  height: 'calc(100% - 60px)',
+                  width: '0px',
+                  borderLeft: '3px solid #fff',
+                  pointerEvents: "none",
+                }}
               />
               <Button
                 size="lg"
-                id="about-continue-btn"
                 className="bg-white text-[#35b88f] hover:bg-gray-200 rounded-full text-xl px-14 py-7 font-typewriter shadow-lg transition-colors duration-300 border-none"
                 onClick={() => {
                   const highlights = document.getElementById('about-highlights');
@@ -93,3 +92,4 @@ const About = () => {
 };
 
 export default About;
+
