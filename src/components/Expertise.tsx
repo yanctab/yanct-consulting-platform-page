@@ -28,17 +28,17 @@ const Expertise = () => {
 
         {/* Custom 3x2 "table" grid with connecting lines */}
         <div className="grid grid-cols-2 grid-rows-3 gap-12 relative">
-          {/* Vertical line in the middle */}
-          <div className="absolute left-1/2 top-0 bottom-0 w-[3px] bg-white -translate-x-1/2" />
+          {/* Vertical line in the middle - hidden on mobile */}
+          <div className="absolute left-1/2 top-0 bottom-0 w-[3px] bg-white -translate-x-1/2 hidden md:block" />
 
           {/* Row 1, Col 1 — Empty */}
           <div />
 
           {/* Row 1, Col 2 with horizontal line */}
-          <div className="relative pl-16">
-            {/* Horizontal connecting line */}
-            <div className="absolute left-0 top-1/2 w-16 h-[3px] bg-white" />
-            <div className="text-center border-2 border-white rounded-lg p-6">
+          <div className="relative pl-0 md:pl-16">
+            {/* Horizontal connecting line - hidden on mobile */}
+            <div className="absolute left-0 top-1/2 w-16 h-[3px] bg-white hidden md:block" />
+            <div className="text-center border-0 md:border-2 border-white rounded-lg p-6">
               <HardDrive className="h-12 w-12 mx-auto mb-6 text-white" />
               <h3 className="text-2xl font-bold text-white mb-4">
                 Embedded Linux Development
@@ -52,10 +52,10 @@ const Expertise = () => {
           </div>
 
           {/* Row 2, Col 1 with horizontal line */}
-          <div className="relative pr-16">
-            {/* Horizontal connecting line */}
-            <div className="absolute right-0 top-1/2 w-16 h-[3px] bg-white" />
-            <div className="text-center border-2 border-white rounded-lg p-6">
+          <div className="relative pr-0 md:pr-16">
+            {/* Horizontal connecting line - hidden on mobile */}
+            <div className="absolute right-0 top-1/2 w-16 h-[3px] bg-white hidden md:block" />
+            <div className="text-center border-0 md:border-2 border-white rounded-lg p-6">
               <Code className="h-12 w-12 mx-auto mb-6 text-white" />
               <h3 className="text-2xl font-bold text-white mb-4">
                 Yocto Project Expertise
@@ -75,10 +75,10 @@ const Expertise = () => {
           <div />
 
           {/* Row 3, Col 2 with horizontal line */}
-          <div className="relative pl-16">
-            {/* Horizontal connecting line */}
-            <div className="absolute left-0 top-1/2 w-16 h-[3px] bg-white" />
-            <div className="text-center border-2 border-white rounded-lg p-6">
+          <div className="relative pl-0 md:pl-16">
+            {/* Horizontal connecting line - hidden on mobile */}
+            <div className="absolute left-0 top-1/2 w-16 h-[3px] bg-white hidden md:block" />
+            <div className="text-center border-0 md:border-2 border-white rounded-lg p-6">
               <Settings className="h-12 w-12 mx-auto mb-6 text-white" />
               <h3 className="text-2xl font-bold text-white mb-4">
                 Developer Enablement
