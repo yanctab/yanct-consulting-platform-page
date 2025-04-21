@@ -1,6 +1,8 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
+
+const GRADIENT_STYLE =
+  "bg-[linear-gradient(90deg,hsla(22,100%,78%,1)_0%,hsla(2,78%,62%,1)_100%)]";
 
 const About = () => {
   return (
@@ -33,13 +35,11 @@ const About = () => {
               But what really sets me apart is how I work — with a service-minded approach,
               strong communication, and a focus on collaboration.
             </p>
-            {/* Add Continue Button */}
             <div className="relative flex flex-col items-center w-full mt-10">
-              {/* Vertical line starts at the Continue button and continues downward */}
               <div
                 className="hidden md:block absolute left-1/2 -translate-x-1/2 z-10"
                 style={{
-                  top: '68px', // top edge of the button
+                  top: '68px',
                   height: 'calc(100% - 68px)',
                   width: '0px',
                   borderLeft: '3px solid #30586D',
@@ -50,7 +50,6 @@ const About = () => {
                 size="lg"
                 className="bg-white rounded-xl text-primary-foreground text-xl px-14 py-7 font-typewriter border-2 border-white shadow-lg"
                 onClick={() => {
-                  // Scroll to the highlights (collaborative mindset section)
                   const highlights = document.getElementById('about-highlights');
                   highlights?.scrollIntoView({ behavior: 'smooth' });
                 }}
@@ -65,14 +64,16 @@ const About = () => {
       {/* Highlights Section */}
       <section
         id="about-highlights"
-        className="relative py-16 md:py-24 bg-[#30586D] overflow-visible"
+        className={`relative py-16 md:py-24 overflow-visible ${GRADIENT_STYLE} bg-fixed`}
+        style={{
+          backgroundAttachment: "fixed",
+        }}
       >
-        {/* Vertical line continues from Continue button through both rows and the Connect box */}
         <div
           className="hidden md:block absolute left-1/2 -translate-x-1/2 z-10"
           style={{
-            top: "-68px", // aligns the vertical line with the Continue button
-            height: "calc(100% + 68px)",
+            top: "-68px",
+            height: "calc(100% + 140px)",
             width: "0px",
             borderLeft: "3px solid #fff",
             opacity: 0.35,
@@ -81,9 +82,7 @@ const About = () => {
         />
         <div className="container mx-auto px-4 flex flex-col items-center">
           <div className="flex flex-col gap-16 md:gap-20 w-full">
-            {/* Row 1: Collaborative Mindset */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-0 items-stretch w-full">
-              {/* Image cell 1.1 */}
               <div className="bg-white flex items-center justify-center border border-[#e5e5e5] h-full w-full aspect-[1.8/1] rounded-none">
                 <img
                   src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&w=800"
@@ -92,7 +91,6 @@ const About = () => {
                   style={{ objectPosition: 'center', height: '100%' }}
                 />
               </div>
-              {/* Text cell 1.2 */}
               <div className="bg-white flex flex-col justify-center border border-[#e5e5e5] p-8 h-full w-full aspect-[1.8/1] rounded-none">
                 <h3 className="text-2xl md:text-3xl font-semibold text-[#30586D] mb-4 font-typewriter">
                   Collaborative Mindset
@@ -104,11 +102,8 @@ const About = () => {
                 </p>
               </div>
             </div>
-            {/* Space between rows, matches between sections */}
             <div className="h-10 md:h-16" />
-            {/* Row 2: Network of Experts */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-0 items-stretch w-full">
-              {/* Text cell 2.1 */}
               <div className="bg-white flex flex-col justify-center border border-[#e5e5e5] p-8 h-full w-full aspect-[1.8/1] rounded-none">
                 <h3 className="text-2xl md:text-3xl font-semibold text-[#30586D] mb-4 font-typewriter">
                   Network of Experts
@@ -119,7 +114,6 @@ const About = () => {
                   is required, I can connect you with the right expert.
                 </p>
               </div>
-              {/* Image cell 2.2 */}
               <div className="bg-white flex items-center justify-center border border-[#e5e5e5] h-full w-full aspect-[1.8/1] rounded-none">
                 <img
                   src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800"
@@ -129,9 +123,7 @@ const About = () => {
                 />
               </div>
             </div>
-            {/* Space before Connect box: same as between rows */}
             <div className="h-10 md:h-16" />
-            {/* Connect box, centered under the line */}
             <div className="w-full flex justify-center">
               <div className="bg-white flex flex-col justify-center items-center border border-[#e5e5e5] aspect-[1.8/1] md:w-[50%] max-w-[480px] min-h-[240px] md:min-h-[260px] rounded-none relative px-24 text-center">
                 <h3 className="text-2xl md:text-3xl font-semibold text-[#30586D] font-typewriter mb-4">
@@ -142,6 +134,36 @@ const About = () => {
                 </p>
               </div>
             </div>
+            <div className="relative flex flex-col items-center w-full mt-0 md:mt-8 mb-4">
+              <div
+                className="hidden md:block absolute left-1/2 -translate-x-1/2 z-10"
+                style={{
+                  top: 0,
+                  height: '48px',
+                  width: '0px',
+                  borderLeft: '3px solid #fff',
+                  opacity: 0.35,
+                  pointerEvents: "none",
+                }}
+              />
+              <Button
+                size="lg"
+                className="bg-white text-white text-xl px-16 py-9 font-typewriter border-2 border-white shadow-lg rounded-full"
+                style={{
+                  borderRadius: "9999px 9999px 9999px 9999px / 200px 200px 200px 200px",
+                  minWidth: "208px",
+                  minHeight: "104px",
+                  color: "#fff",
+                  backgroundColor: "#fff",
+                  fontSize: "1.3rem",
+                  fontFamily: 'Courier New, Courier, monospace',
+                  boxShadow: "0 8px 24px rgba(48,88,109,0.11)",
+                  disabled
+                }}
+              >
+                Hidden
+              </Button>
+            </div>
           </div>
         </div>
       </section>
@@ -150,4 +172,3 @@ const About = () => {
 };
 
 export default About;
-
