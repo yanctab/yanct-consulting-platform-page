@@ -31,9 +31,9 @@ const Connect = () => {
                 <Github className="w-8 h-8 text-white cursor-pointer hover:text-gray-200 transition-colors" />
               </div>
               <div className="flex flex-col gap-8 text-white text-center md:text-left">
-                <p className="text-lg">Connect with me on LinkedIn</p>
-                <p className="text-lg">Send me an email</p>
-                <p className="text-lg">Check out my GitHub repositories</p>
+                <p className="text-lg">www.linkedin.com/in/måns-zigher-a4656954</p>
+                <p className="text-lg">info @ yanct.com</p>
+                <p className="text-lg">https://github.com/yanctab</p>
               </div>
             </div>
           </div>
