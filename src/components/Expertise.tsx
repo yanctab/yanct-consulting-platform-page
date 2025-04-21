@@ -19,21 +19,8 @@ const Expertise = () => {
         <h2 className="text-4xl font-bold text-center text-white mb-16">
           Background & Expertise
         </h2>
-        
-        {/* Parent container for the grid and button with the vertical line */}
+        {/* Parent container for the grid and button */}
         <div className="relative">
-          {/* Vertical line that starts below the button and goes downward */}
-          <div
-            className="hidden md:block absolute left-1/2 -translate-x-1/2 z-10"
-            style={{
-              top: "calc(100% + 48px)", // start just below the button (button height ~56px + margin, approximated 48px here)
-              height: "400px", // extend downward length enough to reach Services section visually (adjust if needed)
-              width: "0px",
-              borderLeft: "3px solid #fff",
-              pointerEvents: "none",
-            }}
-          />
-          
           <div className="grid md:grid-cols-3 gap-12">
             <div className="text-center">
               <HardDrive className="h-12 w-12 mx-auto mb-6 text-white" />
@@ -68,11 +55,11 @@ const Expertise = () => {
               </p>
             </div>
           </div>
-          
           {/* Button container */}
           <div className="flex flex-col items-center w-full mt-16">
             <Button
               size="lg"
+              id="expertise-continue-btn"
               className="bg-white text-[#35b88f] hover:bg-gray-200 rounded-full text-xl px-14 py-7 font-typewriter shadow-lg transition-colors duration-300 border-none mt-0"
               onClick={() => {
                 const highlights = document.getElementById('about');
@@ -89,4 +76,3 @@ const Expertise = () => {
 };
 
 export default Expertise;
-

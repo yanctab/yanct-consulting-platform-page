@@ -1,4 +1,3 @@
-
 import { ArrowDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Navbar from "@/components/Navbar";
@@ -7,6 +6,7 @@ import About from "@/components/About";
 import Services from "@/components/Services";
 import Expertise from "@/components/Expertise";
 import Footer from "@/components/Footer";
+import VerticalLine from "@/components/VerticalLine";
 
 const Index = () => {
   const scrollToContent = () => {
@@ -26,8 +26,15 @@ const Index = () => {
           <ArrowDown className="h-6 w-6" />
         </Button>
         <About />
-        <Expertise />
-        <Services />
+        <div id="expertise-services-block" className="relative">
+          <VerticalLine
+            containerId="expertise-services-block"
+            startBtnId="expertise-continue-btn"
+            endBtnId="services-main-btn"
+          />
+          <Expertise />
+          <Services />
+        </div>
         <Footer />
       </main>
     </div>
