@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { Linkedin, Mail } from "lucide-react";
 
 const Services = () => {
   return (
