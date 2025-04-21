@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 import TrianglePattern from "./TrianglePattern";
 
 const Connect = () => {
@@ -25,10 +25,20 @@ const Connect = () => {
         <div className="relative flex flex-col items-center w-full mt-10">
           <div 
             id="contact-box"
-            className="bg-transparent border-2 border-white w-3/4 md:w-1/2 aspect-[2/1] flex items-center justify-center gap-8"
+            className="bg-transparent border-2 border-white w-full md:w-3/4 p-8"
           >
-            <Linkedin className="w-8 h-8 text-white cursor-pointer hover:text-gray-200 transition-colors" />
-            <Mail className="w-8 h-8 text-white cursor-pointer hover:text-gray-200 transition-colors" />
+            <div className="flex flex-col md:flex-row gap-8 justify-center items-center md:items-start">
+              <div className="flex flex-col gap-8 items-center">
+                <Linkedin className="w-8 h-8 text-white cursor-pointer hover:text-gray-200 transition-colors" />
+                <Mail className="w-8 h-8 text-white cursor-pointer hover:text-gray-200 transition-colors" />
+                <Github className="w-8 h-8 text-white cursor-pointer hover:text-gray-200 transition-colors" />
+              </div>
+              <div className="flex flex-col gap-8 text-white text-center md:text-left">
+                <p className="text-lg">Connect with me on LinkedIn</p>
+                <p className="text-lg">Send me an email</p>
+                <p className="text-lg">Check out my GitHub repositories</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
