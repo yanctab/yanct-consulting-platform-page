@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Button } from "@/components/ui/button";
 
@@ -157,8 +158,7 @@ const About = () => {
                   backgroundColor: "#fff",
                   fontSize: "1.3rem",
                   fontFamily: 'Courier New, Courier, monospace',
-                  boxShadow: "0 8px 24px rgba(48,88,109,0.11)",
-                  disabled
+                  boxShadow: "0 8px 24px rgba(48,88,109,0.11)"
                 }}
               >
                 Hidden
@@ -172,3 +172,4 @@ const About = () => {
 };
 
 export default About;
+
