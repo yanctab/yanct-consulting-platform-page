@@ -2,9 +2,6 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 
-const GRADIENT_STYLE =
-  "bg-[linear-gradient(180deg,#9f8984_0%,#3d4c4a_50%,#293d3d_100%)]";
-
 const About = () => {
   return (
     <>
@@ -66,9 +63,12 @@ const About = () => {
       {/* Highlights Section */}
       <section
         id="about-highlights"
-        className={`relative py-16 md:py-24 overflow-visible ${GRADIENT_STYLE} bg-fixed`}
+        className="relative py-16 md:py-24 overflow-visible bg-fixed"
         style={{
-          backgroundAttachment: "fixed",
+          backgroundImage: 'linear-gradient(90deg, #9f8984 0%, #3d4c4a 50%, #293d3d 100%)',
+          backgroundAttachment: 'fixed',
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat',
         }}
       >
         <div
