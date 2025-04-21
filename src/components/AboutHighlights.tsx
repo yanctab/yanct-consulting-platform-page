@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Button } from "@/components/ui/button";
 
@@ -33,11 +34,11 @@ const AboutHighlights = () => (
               style={{ objectPosition: 'center', height: '100%' }}
             />
           </div>
-          <div className="bg-white flex flex-col justify-center border border-[#e5e5e5] p-8 h-full w-full aspect-[1.8/1] rounded-none">
-            <h3 className="text-2xl md:text-3xl font-semibold mb-4 font-typewriter">
+          <div className="bg-white flex flex-col justify-center border border-[#e5e5e5] p-4 sm:p-6 md:p-8 h-full w-full aspect-auto md:aspect-[1.8/1] rounded-none">
+            <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-2 md:mb-4 font-typewriter">
               Collaborative Mindset
             </h3>
-            <p className="text-gray-700 text-lg leading-relaxed">
+            <p className="text-gray-700 text-sm sm:text-base md:text-lg leading-tight sm:leading-relaxed">
               Effective communication is key to any successful project. By actively engaging
               with existing team knowledge, I ensure that solutions are found faster and
               more effectively.
@@ -46,17 +47,17 @@ const AboutHighlights = () => (
         </div>
         <div className="h-10 md:h-16" />
         <div className="grid grid-cols-1 md:grid-cols-2 gap-0 items-stretch w-full">
-          <div className="bg-white flex flex-col justify-center border border-[#e5e5e5] p-8 h-full w-full aspect-[1.8/1] rounded-none">
-            <h3 className="text-2xl md:text-3xl font-semibold mb-4 font-typewriter">
+          <div className="bg-white flex flex-col justify-center border border-[#e5e5e5] p-4 sm:p-6 md:p-8 h-full w-full aspect-auto md:aspect-[1.8/1] rounded-none order-2 md:order-1">
+            <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-2 md:mb-4 font-typewriter">
               A Community of Experts
             </h3>
-            <p className="text-gray-700 text-lg leading-relaxed">
+            <p className="text-gray-700 text-sm sm:text-base md:text-lg leading-tight sm:leading-relaxed">
               Over the years, I've cultivated a strong network of talented professionals
               across embedded systems and software development. When specialized knowledge
               is required, I can connect you with the right expert or I can tap into the knowledge base.
             </p>
           </div>
-          <div className="bg-white flex items-center justify-center border border-[#e5e5e5] h-full w-full aspect-[1.8/1] rounded-none">
+          <div className="bg-white flex items-center justify-center border border-[#e5e5e5] h-full w-full aspect-[1.8/1] rounded-none order-1 md:order-2">
             <img
               src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800"
               alt="People in relaxed setting"
