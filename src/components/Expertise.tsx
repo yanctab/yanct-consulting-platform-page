@@ -29,8 +29,8 @@ const Expertise = () => {
 
           <div className="hidden md:block md:order-1"></div>
 
-          <div className="relative pr-0 md:pr-16 order-1 md:order-2">
-            <div className="absolute left-0 top-1/2 w-16 h-[3px] bg-white hidden md:block" />
+          <div className="relative pr-0 md:pl-16 order-1 md:order-2">
+            <div className="absolute right-0 top-1/2 w-16 h-[3px] bg-white hidden md:block" />
             <div className="text-center border-2 border-white rounded-lg p-6">
               <HardDrive className="h-12 w-12 mx-auto mb-6 text-white" />
               <h3 className="text-2xl font-bold text-white mb-4">
@@ -44,8 +44,8 @@ const Expertise = () => {
             </div>
           </div>
 
-          <div className="relative pl-0 md:pl-16 order-2 md:order-3">
-            <div className="absolute right-0 top-1/2 w-16 h-[3px] bg-white hidden md:block" />
+          <div className="relative pl-0 md:pr-16 order-2 md:order-3">
+            <div className="absolute left-0 top-1/2 w-16 h-[3px] bg-white hidden md:block" />
             <div className="text-center border-2 border-white rounded-lg p-6">
               <Code className="h-12 w-12 mx-auto mb-6 text-white" />
               <h3 className="text-2xl font-bold text-white mb-4">
@@ -60,11 +60,10 @@ const Expertise = () => {
           </div>
 
           <div className="hidden md:block md:order-4"></div>
-
           <div className="hidden md:block md:order-5"></div>
 
-          <div className="relative pr-0 md:pr-16 order-3 md:order-6">
-            <div className="absolute left-0 top-1/2 w-16 h-[3px] bg-white hidden md:block" />
+          <div className="relative pr-0 md:pl-16 order-3 md:order-6">
+            <div className="absolute right-0 top-1/2 w-16 h-[3px] bg-white hidden md:block" />
             <div className="text-center border-2 border-white rounded-lg p-6">
               <Settings className="h-12 w-12 mx-auto mb-6 text-white" />
               <h3 className="text-2xl font-bold text-white mb-4">
