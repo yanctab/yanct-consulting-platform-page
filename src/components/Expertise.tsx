@@ -5,7 +5,7 @@ import TrianglePattern from "./TrianglePattern";
 
 const Expertise = () => {
   return (
-    <section id="expertise" className="py-24 bg-[#35b88f] relative overflow-hidden">
+    <section id="expertise" className="py-24 bg-[#35b88f] relative overflow-visible">
       <TrianglePattern />
       {/* Full fade on both sides */}
       <div
@@ -22,12 +22,12 @@ const Expertise = () => {
         
         {/* Parent container for the grid and button with the vertical line */}
         <div className="relative">
-          {/* Vertical line that spans downward from grid to button */}
+          {/* Vertical line that starts below the button and goes downward */}
           <div
             className="hidden md:block absolute left-1/2 -translate-x-1/2 z-10"
             style={{
-              top: "calc(100% - 16px)", // start just below the grid (assuming 16px margin or gap)
-              height: "80px", // extend downward length enough to pass through the button container
+              top: "calc(100% + 48px)", // start just below the button (button height ~56px + margin, approximated 48px here)
+              height: "400px", // extend downward length enough to reach Services section visually (adjust if needed)
               width: "0px",
               borderLeft: "3px solid #fff",
               pointerEvents: "none",
