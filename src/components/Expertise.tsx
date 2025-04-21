@@ -19,62 +19,69 @@ const Expertise = () => {
         <h2 className="text-4xl font-bold text-center text-white mb-16">
           Background & Expertise
         </h2>
-        <div className="grid md:grid-cols-3 gap-12">
-          <div className="text-center">
-            <HardDrive className="h-12 w-12 mx-auto mb-6 text-white" />
-            <h3 className="text-2xl font-bold text-white mb-4">
-              Embedded Linux Development
-            </h3>
-            <p className="text-white opacity-90">
-              Since 2008, I've helped companies implement and optimize embedded Linux systems 
-              across various industries, covering everything from bootloaders and kernels to 
-              middleware layers.
-            </p>
-          </div>
-          <div className="text-center">
-            <Code className="h-12 w-12 mx-auto mb-6 text-white" />
-            <h3 className="text-2xl font-bold text-white mb-4">
-              Yocto Project Expertise
-            </h3>
-            <p className="text-white opacity-90">
-              The Yocto Project can be daunting, but I've worked extensively with its BSP 
-              and platform layers, gaining deep insights into its quirks across different 
-              vendor ecosystems.
-            </p>
-          </div>
-          <div className="text-center">
-            <Settings className="h-12 w-12 mx-auto mb-6 text-white" />
-            <h3 className="text-2xl font-bold text-white mb-4">
-              Developer Enablement
-            </h3>
-            <p className="text-white opacity-90">
-              I simplify workflows and enhance productivity, allowing your team to focus on 
-              their strengths. I also collaborate with DevOps to optimize build pipelines.
-            </p>
-          </div>
-        </div>
-        {/* Vertical Line and Button */}
-        <div className="relative flex flex-col items-center w-full mt-16">
+        
+        {/* Parent container for the grid and button with the vertical line */}
+        <div className="relative">
+          {/* Vertical line that spans the entire content */}
           <div
             className="hidden md:block absolute left-1/2 -translate-x-1/2 z-10"
             style={{
-              top: "60px",
-              height: "calc(100% - 60px)",
+              top: "0px",
+              height: "100%",
               width: "0px",
               borderLeft: "3px solid #fff",
               pointerEvents: "none",
             }}
           />
-          <Button
-            size="lg"
-            className="bg-white text-[#35b88f] hover:bg-gray-200 rounded-full text-xl px-14 py-7 font-typewriter shadow-lg transition-colors duration-300 border-none mt-0"
-            onClick={() => {
-              const highlights = document.getElementById('about');
-              highlights?.scrollIntoView({ behavior: 'smooth' });
-            }}
-          >
-            Continue
-          </Button>
+          
+          <div className="grid md:grid-cols-3 gap-12">
+            <div className="text-center">
+              <HardDrive className="h-12 w-12 mx-auto mb-6 text-white" />
+              <h3 className="text-2xl font-bold text-white mb-4">
+                Embedded Linux Development
+              </h3>
+              <p className="text-white opacity-90">
+                Since 2008, I've helped companies implement and optimize embedded Linux systems 
+                across various industries, covering everything from bootloaders and kernels to 
+                middleware layers.
+              </p>
+            </div>
+            <div className="text-center">
+              <Code className="h-12 w-12 mx-auto mb-6 text-white" />
+              <h3 className="text-2xl font-bold text-white mb-4">
+                Yocto Project Expertise
+              </h3>
+              <p className="text-white opacity-90">
+                The Yocto Project can be daunting, but I've worked extensively with its BSP 
+                and platform layers, gaining deep insights into its quirks across different 
+                vendor ecosystems.
+              </p>
+            </div>
+            <div className="text-center">
+              <Settings className="h-12 w-12 mx-auto mb-6 text-white" />
+              <h3 className="text-2xl font-bold text-white mb-4">
+                Developer Enablement
+              </h3>
+              <p className="text-white opacity-90">
+                I simplify workflows and enhance productivity, allowing your team to focus on 
+                their strengths. I also collaborate with DevOps to optimize build pipelines.
+              </p>
+            </div>
+          </div>
+          
+          {/* Button container */}
+          <div className="flex flex-col items-center w-full mt-16">
+            <Button
+              size="lg"
+              className="bg-white text-[#35b88f] hover:bg-gray-200 rounded-full text-xl px-14 py-7 font-typewriter shadow-lg transition-colors duration-300 border-none mt-0"
+              onClick={() => {
+                const highlights = document.getElementById('about');
+                highlights?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
+              Continue
+            </Button>
+          </div>
         </div>
       </div>
     </section>
@@ -82,4 +89,3 @@ const Expertise = () => {
 };
 
 export default Expertise;
-
