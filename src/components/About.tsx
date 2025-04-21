@@ -150,10 +150,10 @@ const About = () => {
               />
               <Button
                 size="lg"
-                className="bg-white rounded-xl text-primary-foreground text-xl px-14 py-7 font-typewriter border-2 border-white shadow-lg"
-                onClick={()=>{
-                  const servicesSection = document.getElementById('services');
-                  servicesSection?.scrollIntoView({ behavior: 'smooth' });
+                className="bg-white text-[#436576] hover:bg-gray-200 rounded-xl text-xl px-14 py-7 font-typewriter shadow-lg transition-colors duration-300 border-none"
+                onClick={() => {
+                  const highlights = document.getElementById('services');
+                  highlights?.scrollIntoView({ behavior: 'smooth' });
                 }}
               >
                 Services
