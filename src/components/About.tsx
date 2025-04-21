@@ -3,9 +3,9 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 
 const TrianglePattern = () => {
-  const size = 32;
-  const rows = 30; // increase this to cover more height
-  const cols = 20; // increase this to cover more width
+  const size = 64; // increased size
+  const rows = 20; // fewer rows needed because triangles are bigger
+  const cols = 14;
   const height = rows * size * 0.866;
   const width = cols * size;
 
