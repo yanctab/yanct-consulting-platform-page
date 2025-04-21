@@ -100,7 +100,7 @@ const About = () => {
           className="hidden md:block absolute left-1/2 -translate-x-1/2 z-10"
           style={{
             top: "-68px",
-            height: "calc(100% - 130px)",
+            height: "72%",
             width: "0px",
             borderLeft: "3px solid #fff",
             pointerEvents: "none"
