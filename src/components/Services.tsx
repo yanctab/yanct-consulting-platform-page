@@ -26,7 +26,7 @@ const Services = () => {
       </div>
 
       <div className="container mx-auto px-4 flex flex-col items-center mt-64">
-        <div className="flex flex-col gap-16 md:gap-20 w-full">
+        <div className="flex flex-col gap-0 w-full">
           {/* Remote-First Support */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-0 items-stretch w-full">
             <div
@@ -49,7 +49,6 @@ const Services = () => {
               </p>
             </div>
           </div>
-          <div className="h-10 md:h-16" />
           {/* Full-Time Engagement */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-0 items-stretch w-full">
             <div className="bg-white flex flex-col justify-center border border-[#e5e5e5] p-8 h-full w-full aspect-[1.8/1] rounded-none">
@@ -72,7 +71,6 @@ const Services = () => {
               role="img"
             />
           </div>
-          <div className="h-10 md:h-16" />
           {/* Platform Review & Roadmap */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-0 items-stretch w-full">
             <div
@@ -94,7 +92,6 @@ const Services = () => {
               </p>
             </div>
           </div>
-          <div className="h-10 md:h-16" />
           <div className="relative flex flex-col items-center w-full mt-0 md:mt-8 mb-4">
             <Button
               size="lg"
