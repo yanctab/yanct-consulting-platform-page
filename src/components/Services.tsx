@@ -14,7 +14,6 @@ const Services = () => {
         backgroundRepeat: "no-repeat",
       }}
     >
-      {/* Top non-functional button */}
       <div className="relative flex flex-col items-center w-full mt-0">
         <Button
           size="lg"
@@ -27,7 +26,6 @@ const Services = () => {
 
       <div className="container mx-auto px-4 flex flex-col items-center mt-64">
         <div className="flex flex-col gap-0 w-full">
-          {/* Remote-First Support */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-0 items-stretch w-full">
             <div
               className="bg-white flex items-center justify-center border border-[#e5e5e5] h-full w-full aspect-[1.8/1] rounded-none bg-cover bg-center grayscale"
@@ -49,7 +47,6 @@ const Services = () => {
               </p>
             </div>
           </div>
-          {/* Full-Time Engagement */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-0 items-stretch w-full">
             <div className="bg-white flex flex-col justify-center border border-[#e5e5e5] p-8 h-full w-full aspect-[1.8/1] rounded-none">
               <h3 className="text-2xl md:text-3xl font-semibold mb-4 font-typewriter">
@@ -71,7 +68,6 @@ const Services = () => {
               role="img"
             />
           </div>
-          {/* Platform Review & Roadmap */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-0 items-stretch w-full">
             <div
               className="bg-white flex items-center justify-center border border-[#e5e5e5] h-full w-full aspect-[1.8/1] rounded-none bg-cover bg-center grayscale"
@@ -102,14 +98,13 @@ const Services = () => {
             </Button>
           </div>
 
-          {/* Contact box */}
           <div className="relative flex flex-col items-center w-full">
             <div 
               id="contact-box"
-              className="bg-transparent border-2 border-white w-full aspect-[1.8/1] flex items-center justify-center gap-12"
+              className="bg-transparent border-2 border-white w-3/4 md:w-1/2 aspect-[2/1] flex items-center justify-center gap-8"
             >
-              <Linkedin className="w-12 h-12 text-white cursor-pointer hover:text-gray-200 transition-colors" />
-              <Mail className="w-12 h-12 text-white cursor-pointer hover:text-gray-200 transition-colors" />
+              <Linkedin className="w-8 h-8 text-white cursor-pointer hover:text-gray-200 transition-colors" />
+              <Mail className="w-8 h-8 text-white cursor-pointer hover:text-gray-200 transition-colors" />
             </div>
           </div>
         </div>
