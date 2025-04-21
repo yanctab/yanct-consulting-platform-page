@@ -18,7 +18,7 @@ const TrianglePattern = () => {
       preserveAspectRatio="none"
       aria-hidden="true"
       style={{
-        opacity: 0.1,
+        opacity: 0.055,
         mixBlendMode: "overlay",
       }}
     >
