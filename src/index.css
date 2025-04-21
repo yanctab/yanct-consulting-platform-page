@@ -101,3 +101,17 @@
     @apply bg-background text-foreground font-typewriter;
   }
 }
+
+@layer base {
+  @media (max-width: 768px) {
+    body {
+      cursor: default;
+      overscroll-behavior-y: contain;
+    }
+
+    * {
+      -webkit-tap-highlight-color: transparent;
+      touch-action: manipulation;
+    }
+  }
+}
