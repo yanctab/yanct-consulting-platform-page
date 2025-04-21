@@ -111,7 +111,7 @@ const About = () => {
         id="about-highlights"
         className="relative py-16 md:py-24 overflow-visible bg-fixed"
         style={{
-          backgroundImage: 'linear-gradient(180deg, #9f8984 0%, #3d4c4a 50%, #293d3d 100%)',
+          backgroundImage: 'linear-gradient(180deg, #293d3d 0%, #3d4c4a 50%, #9f8984 100%)',
           backgroundAttachment: 'fixed',
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
