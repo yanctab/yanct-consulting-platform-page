@@ -15,9 +15,14 @@ const Expertise = () => {
         }}
       />
       <div className="container mx-auto px-4 relative z-20">
-        <h2 className="text-4xl font-bold text-center text-white mb-16">
-          Background & Expertise
-        </h2>
+        <div className="flex justify-center mb-16">
+          <Button
+            size="lg"
+            className="text-white border-white border-2 rounded-full text-xl px-14 py-7 font-typewriter shadow-none bg-transparent cursor-default pointer-events-none"
+          >
+            Background & Expertise
+          </Button>
+        </div>
 
         {/* Custom 3x2 "table" grid */}
         <div className="grid grid-cols-2 grid-rows-3 gap-12">
@@ -69,7 +74,7 @@ const Expertise = () => {
           </div>
         </div>
 
-        {/* Button container */}
+        {/* Continue button */}
         <div className="flex flex-col items-center w-full mt-16">
           <Button
             size="lg"
