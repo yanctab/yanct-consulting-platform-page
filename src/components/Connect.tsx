@@ -1,16 +1,13 @@
 
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail } from "lucide-react";
-import TrianglePattern from "./TrianglePattern";
 
 const Connect = () => {
   return (
     <section
       id="connect"
-      className="py-24 bg-[#35b88f] relative overflow-hidden"
+      className="py-24 bg-[#35b88f] relative"
     >
-      <TrianglePattern />
-      
       <div className="container mx-auto px-4 relative z-20">
         <div className="relative flex flex-col items-center w-full">
           <Button
@@ -47,3 +44,4 @@ const Connect = () => {
 };
 
 export default Connect;
+
