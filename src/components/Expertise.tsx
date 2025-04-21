@@ -31,11 +31,8 @@ const Expertise = () => {
           {/* Vertical line in the middle - hidden on mobile */}
           <div className="absolute left-1/2 top-0 bottom-0 w-[3px] bg-white -translate-x-1/2 hidden md:block" />
 
-          {/* Empty space on desktop, hidden on mobile */}
-          <div className="hidden md:block" />
-
-          {/* First box */}
-          <div className="relative pl-0 md:pl-16 order-1">
+          {/* First box - Embedded Linux Development (moved up one row) */}
+          <div className="relative pl-0 md:pl-16 order-1 md:order-1">
             {/* Horizontal connecting line - hidden on mobile */}
             <div className="absolute left-0 top-1/2 w-16 h-[3px] bg-white hidden md:block" />
             <div className="text-center border-2 border-white rounded-lg p-6">
@@ -51,8 +48,8 @@ const Expertise = () => {
             </div>
           </div>
 
-          {/* Second box */}
-          <div className="relative pr-0 md:pr-16 order-2">
+          {/* Second box - Yocto Project Expertise (moved up one row) */}
+          <div className="relative pr-0 md:pr-16 order-2 md:order-2">
             {/* Horizontal connecting line - hidden on mobile */}
             <div className="absolute right-0 top-1/2 w-16 h-[3px] bg-white hidden md:block" />
             <div className="text-center border-2 border-white rounded-lg p-6">
@@ -68,14 +65,12 @@ const Expertise = () => {
             </div>
           </div>
 
-          {/* Empty space on desktop, hidden on mobile */}
-          <div className="hidden md:block" />
+          {/* Empty grid cells for spacing in the middle row (desktop only) */}
+          <div className="hidden md:block md:order-3"></div>
+          <div className="hidden md:block md:order-4"></div>
 
-          {/* Empty space on desktop, hidden on mobile */}
-          <div className="hidden md:block" />
-
-          {/* Third box */}
-          <div className="relative pl-0 md:pl-16 order-3">
+          {/* Third box - Developer Enablement (remains in the same position) */}
+          <div className="relative pl-0 md:pl-16 order-3 md:order-5">
             {/* Horizontal connecting line - hidden on mobile */}
             <div className="absolute left-0 top-1/2 w-16 h-[3px] bg-white hidden md:block" />
             <div className="text-center border-2 border-white rounded-lg p-6">
@@ -89,6 +84,9 @@ const Expertise = () => {
               </p>
             </div>
           </div>
+
+          {/* Empty grid cell for the last position (desktop only) */}
+          <div className="hidden md:block md:order-6"></div>
         </div>
 
         {/* Continue button */}
