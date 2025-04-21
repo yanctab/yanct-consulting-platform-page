@@ -28,7 +28,7 @@ const Services = () => {
         <div className="flex flex-col gap-0 w-full">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-0 items-stretch w-full">
             <div
-              className="bg-white flex items-center justify-center border border-[#e5e5e5] h-full w-full aspect-[1.8/1] rounded-none bg-cover bg-center grayscale"
+              className="bg-white flex items-center justify-center border border-[#e5e5e5] h-full w-full aspect-[1.8/1] rounded-none bg-cover bg-center"
               style={{
                 backgroundImage: "url('/Southtech-38_edited1.jpg')",
               }}
@@ -58,7 +58,7 @@ const Services = () => {
               </p>
             </div>
             <div
-              className="bg-white flex items-center justify-center border border-[#e5e5e5] h-full w-full aspect-[1.8/1] rounded-none bg-cover bg-center grayscale"
+              className="bg-white flex items-center justify-center border border-[#e5e5e5] h-full w-full aspect-[1.8/1] rounded-none bg-cover bg-center"
               style={{
                 backgroundImage:
                   "url('/P_AB3418.jpg')",
@@ -69,7 +69,7 @@ const Services = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-0 items-stretch w-full">
             <div
-              className="bg-white flex items-center justify-center border border-[#e5e5e5] h-full w-full aspect-[1.8/1] rounded-none bg-cover bg-center grayscale"
+              className="bg-white flex items-center justify-center border border-[#e5e5e5] h-full w-full aspect-[1.8/1] rounded-none bg-cover bg-center"
               style={{
                 backgroundImage:
                   "url('P_AB3378.jpg')",
