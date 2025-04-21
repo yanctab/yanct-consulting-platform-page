@@ -29,7 +29,7 @@ const Hero = () => {
           size="lg"
           className="bg-white text-[#436576] hover:bg-gray-200 rounded-xl text-xl px-14 py-7 font-typewriter shadow-lg transition-colors duration-300 border-none"
           onClick={() => {
-            const highlights = document.getElementById('about-highlights');
+            const highlights = document.getElementById('about');
             highlights?.scrollIntoView({ behavior: 'smooth' });
           }}
         >
