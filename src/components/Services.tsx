@@ -88,13 +88,9 @@ const Services = () => {
             <Button
               size="lg"
               id="services-main-btn"
-              className="bg-white text-[#436576] hover:bg-gray-200 rounded-full text-xl px-14 py-7 font-typewriter shadow-lg transition-colors duration-300 border-none"
-              onClick={() => {
-                const highlights = document.getElementById("contact");
-                highlights?.scrollIntoView({ behavior: "smooth" });
-              }}
+              className="text-[#436576] border-[#436576] border-2 rounded-full text-xl px-14 py-7 font-typewriter shadow-none bg-transparent cursor-default pointer-events-none"
             >
-              Services
+              Connect
             </Button>
           </div>
         </div>
