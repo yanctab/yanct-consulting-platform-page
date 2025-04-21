@@ -72,11 +72,11 @@ const AboutHighlights = () => (
             size="lg"
             className="bg-white text-[#436576] hover:bg-gray-200 rounded-full text-xl px-14 py-7 font-typewriter shadow-lg transition-colors duration-300 border-none"
             onClick={() => {
-              const highlights = document.getElementById('services');
+              const highlights = document.getElementById('expertise');
               highlights?.scrollIntoView({ behavior: 'smooth' });
             }}
           >
-            Services
+            Continue
           </Button>
         </div>
       </div>
