@@ -21,7 +21,10 @@ const Expertise = () => {
 
         {/* Custom 3x2 "table" grid */}
         <div className="grid grid-cols-2 grid-rows-3 gap-12">
-          {/* Row 1, Col 1 */}
+          {/* Row 1, Col 1 — Empty */}
+          <div />
+
+          {/* Row 1, Col 2 */}
           <div className="text-center">
             <HardDrive className="h-12 w-12 mx-auto mb-6 text-white" />
             <h3 className="text-2xl font-bold text-white mb-4">
@@ -33,9 +36,6 @@ const Expertise = () => {
               middleware layers.
             </p>
           </div>
-
-          {/* Row 1, Col 2 — Empty */}
-          <div />
 
           {/* Row 2, Col 1 */}
           <div className="text-center">
