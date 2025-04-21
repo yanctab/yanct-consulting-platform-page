@@ -1,14 +1,10 @@
+
 import React from "react";
 
 const TrianglePattern = ({
   opacity = 0.055,
   className = "",
-  color = "#F1F0FB", // default color
-}: {
-  opacity?: number;
-  className?: string;
-  color?: string;
-}) => {
+}: { opacity?: number; className?: string }) => {
   const size = 64;
   const rows = 20;
   const cols = 14;
@@ -36,7 +32,7 @@ const TrianglePattern = ({
             <polygon
               key={`${row}-${col}`}
               points={`${x},${y} ${x + size / 2},${y + size * 0.866} ${x - size / 2},${y + size * 0.866}`}
-              fill={color}
+              fill="#F1F0FB"
             />
           );
         })
@@ -46,4 +42,3 @@ const TrianglePattern = ({
 };
 
 export default TrianglePattern;
-
