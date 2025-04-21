@@ -1,4 +1,3 @@
-
 import { ArrowDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Navbar from "@/components/Navbar";
@@ -49,14 +48,19 @@ const Index = () => {
             startBtnId="expertise-continue-btn"
             endBtnId="services-header-btn"
           />
-          <Expertise />
-          <Services />
-          <Connect />
           <VerticalLine
             containerId="expertise-services-block"
             startBtnId="services-main-btn"
+            endBtnId="services-continue-btn"
+          />
+          <VerticalLine
+            containerId="expertise-services-block"
+            startBtnId="services-continue-btn"
             endBtnId="contact-box"
           />
+          <Expertise />
+          <Services />
+          <Connect />
         </div>
         <Footer />
       </main>
