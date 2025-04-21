@@ -1,5 +1,6 @@
 
 import { HardDrive, Code, Settings } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import TrianglePattern from "./TrianglePattern";
 
 const Expertise = () => {
@@ -52,9 +53,33 @@ const Expertise = () => {
             </p>
           </div>
         </div>
+        {/* Vertical Line and Button */}
+        <div className="relative flex flex-col items-center w-full mt-16">
+          <div
+            className="hidden md:block absolute left-1/2 -translate-x-1/2 z-10"
+            style={{
+              top: "60px",
+              height: "calc(100% - 60px)",
+              width: "0px",
+              borderLeft: "3px solid #fff",
+              pointerEvents: "none",
+            }}
+          />
+          <Button
+            size="lg"
+            className="bg-white text-[#35b88f] hover:bg-gray-200 rounded-full text-xl px-14 py-7 font-typewriter shadow-lg transition-colors duration-300 border-none mt-0"
+            onClick={() => {
+              const highlights = document.getElementById('about');
+              highlights?.scrollIntoView({ behavior: 'smooth' });
+            }}
+          >
+            Continue
+          </Button>
+        </div>
       </div>
     </section>
   );
 };
 
 export default Expertise;
+
