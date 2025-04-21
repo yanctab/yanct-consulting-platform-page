@@ -128,7 +128,7 @@ const About = () => {
             <div className="h-10 md:h-16" />
             <div className="w-full flex justify-center">
               <div className="bg-white flex flex-col justify-center items-center border border-[#e5e5e5] aspect-[1.8/1] md:w-[50%] max-w-[480px] min-h-[240px] md:min-h-[260px] rounded-none relative px-24 text-center">
-                <h3 className="text-2xl md:text-3xl font-semibold text-[#30586D] font-typewriter mb-4">
+                <h3 className="text-2xl md:text-3xl font-semibold font-typewriter mb-4">
                   Connect
                 </h3>
                 <p className="text-gray-700 text-lg leading-relaxed">
