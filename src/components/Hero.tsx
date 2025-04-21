@@ -27,8 +27,11 @@ const Hero = () => {
         </p>
         <Button
           size="lg"
-          className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg font-typewriter border-2 border-white"
-          onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
+          className="bg-white text-[#436576] hover:bg-gray-200 rounded-xl text-xl px-14 py-7 font-typewriter shadow-lg transition-colors duration-300 border-none"
+          onClick={() => {
+            const highlights = document.getElementById('about-highlights');
+            highlights?.scrollIntoView({ behavior: 'smooth' });
+          }}
         >
           Learn More
         </Button>
