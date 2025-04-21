@@ -26,8 +26,8 @@ const Expertise = () => {
           </Button>
         </div>
 
-        {/* Modified grid to be a single column on mobile */}
-        <div className="flex flex-col gap-8 md:grid md:grid-cols-2 md:grid-rows-3 md:gap-12 relative">
+        {/* Grid that adjusts based on screen size */}
+        <div className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-3 gap-8 md:gap-12 relative">
           {/* Vertical line in the middle - hidden on mobile */}
           <div className="absolute left-1/2 top-0 bottom-0 w-[3px] bg-white -translate-x-1/2 hidden md:block" />
 
