@@ -133,11 +133,11 @@ const About = () => {
             <div className="h-10 md:h-16" />
             {/* Connect box, centered under the line */}
             <div className="w-full flex justify-center">
-              <div className="bg-white flex flex-col justify-center items-center border border-[#e5e5e5] aspect-[1.8/1] md:w-[50%] max-w-[480px] min-h-[240px] md:min-h-[260px] rounded-full relative px-24 text-center text-white">
-                <h3 className="text-2xl md:text-3xl font-semibold text-white font-typewriter mb-4">
+              <div className="bg-white flex flex-col justify-center items-center border border-[#e5e5e5] aspect-[1.8/1] md:w-[50%] max-w-[480px] min-h-[240px] md:min-h-[260px] rounded-none relative px-24 text-center">
+                <h3 className="text-2xl md:text-3xl font-semibold text-[#30586D] font-typewriter mb-4">
                   Connect
                 </h3>
-                <p className="text-white text-lg leading-relaxed">
+                <p className="text-gray-700 text-lg leading-relaxed">
                   Let's discuss your needs and explore how I can assist you. Whatever your requirements may be, I'm confident that I can provide valuable support and guidance.
                 </p>
               </div>
