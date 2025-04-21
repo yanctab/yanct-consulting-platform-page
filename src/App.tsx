@@ -16,11 +16,6 @@ const AppContent = () => {
     // Log when the app starts to help with debugging
     console.log("App initialized with path:", location.pathname);
     console.log("URL params:", location.search);
-    
-    // Force a repaint to handle any rendering issues
-    document.body.style.display = 'none';
-    document.body.offsetHeight; // Trigger reflow
-    document.body.style.display = '';
   }, [location]);
 
   return (
@@ -32,45 +27,18 @@ const AppContent = () => {
   );
 };
 
-// Create the query client outside of the component to avoid recreation on render
-const queryClient = new QueryClient({
-  defaultOptions: {
-    queries: {
-      retry: 1,
-      refetchOnWindowFocus: false,
-    },
-  },
-});
+const queryClient = new QueryClient();
 
-const App = () => {
-  useEffect(() => {
-    // Enable debugging information
-    console.log("App component mounted");
-    
-    // Check if we're in a new tab by examining the URL
-    const urlParams = new URLSearchParams(window.location.search);
-    const forceHideBadge = urlParams.get('forceHideBadge');
-    
-    if (forceHideBadge) {
-      console.log("Running in forceHideBadge mode, ensuring proper initialization");
-    }
-    
-    return () => {
-      console.log("App component unmounted");
-    };
-  }, []);
-
-  return (
-    <QueryClientProvider client={queryClient}>
-      <TooltipProvider>
-        <Toaster />
-        <Sonner />
-        <BrowserRouter>
-          <AppContent />
-        </BrowserRouter>
-      </TooltipProvider>
-    </QueryClientProvider>
-  );
-};
+const App = () => (
+  <QueryClientProvider client={queryClient}>
+    <TooltipProvider>
+      <Toaster />
+      <Sonner />
+      <BrowserRouter>
+        <AppContent />
+      </BrowserRouter>
+    </TooltipProvider>
+  </QueryClientProvider>
+);
 
 export default App;
