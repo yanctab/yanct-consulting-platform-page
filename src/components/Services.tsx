@@ -1,41 +1,75 @@
-
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Briefcase } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const Services = () => {
-  const services = [
-    {
-      title: "Remote-First Support",
-      description: "Ideal for small to mid-sized companies, offering flexible, ongoing support with expert-level embedded Linux and Yocto expertise."
-    },
-    {
-      title: "Full-Time Engagement",
-      description: "Full-time, on-site or hybrid consulting, providing hands-on support for day-to-day development and real-time issue resolution."
-    },
-    {
-      title: "Platform Review & Roadmap",
-      description: "Tailored review of your platform and processes, with a clear roadmap for improvements and implementation options."
-    }
-  ];
-
   return (
-    <section id="services" className="py-24 bg-emerald-50">
-      <div className="container mx-auto px-4">
-        <div className="flex items-center justify-center gap-3 mb-16">
-          <Briefcase className="h-8 w-8 text-emerald-600" />
-          <h2 className="text-4xl font-bold text-gray-900">Service Packages</h2>
-        </div>
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          {services.map((service, index) => (
-            <Card key={index} className="border-2 hover:border-emerald-500 transition-all duration-300">
-              <CardHeader>
-                <CardTitle className="text-xl font-bold">{service.title}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600">{service.description}</p>
-              </CardContent>
-            </Card>
-          ))}
+    <section id="services" className="relative py-16 md:py-24 overflow-visible bg-fixed"
+      style={{
+        backgroundImage: 'linear-gradient(180deg, #293d3d 0%, #3d4c4a 60%, #9f8984 100%)',
+        backgroundAttachment: 'fixed',
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+      }}
+    >
+      <div className="container mx-auto px-4 flex flex-col items-center">
+        <div className="flex flex-col gap-16 md:gap-20 w-full">
+          {/* Remote-First Support */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-0 items-stretch w-full">
+            <div className="bg-white flex items-center justify-center border border-[#e5e5e5] h-full w-full aspect-[1.8/1] rounded-none">
+              {/* Optional illustrative image or icon could go here */}
+            </div>
+            <div className="bg-white flex flex-col justify-center border border-[#e5e5e5] p-8 h-full w-full aspect-[1.8/1] rounded-none">
+              <h3 className="text-2xl md:text-3xl font-semibold mb-4 font-typewriter">
+                Remote-First Support
+              </h3>
+              <p className="text-gray-700 text-lg leading-relaxed">
+                Ideal for small to mid-sized companies, offering flexible, ongoing support with expert-level embedded Linux and Yocto expertise.
+              </p>
+            </div>
+          </div>
+          <div className="h-10 md:h-16" />
+          {/* Full-Time Engagement */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-0 items-stretch w-full">
+            <div className="bg-white flex flex-col justify-center border border-[#e5e5e5] p-8 h-full w-full aspect-[1.8/1] rounded-none">
+              <h3 className="text-2xl md:text-3xl font-semibold mb-4 font-typewriter">
+                Full-Time Engagement
+              </h3>
+              <p className="text-gray-700 text-lg leading-relaxed">
+                Full-time, on-site or hybrid consulting, providing hands-on support for day-to-day development and real-time issue resolution.
+              </p>
+            </div>
+            <div className="bg-white flex items-center justify-center border border-[#e5e5e5] h-full w-full aspect-[1.8/1] rounded-none">
+              {/* Optional illustrative image or icon could go here */}
+            </div>
+          </div>
+          <div className="h-10 md:h-16" />
+          {/* Platform Review & Roadmap */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-0 items-stretch w-full">
+            <div className="bg-white flex items-center justify-center border border-[#e5e5e5] h-full w-full aspect-[1.8/1] rounded-none">
+              {/* Optional illustrative image or icon could go here */}
+            </div>
+            <div className="bg-white flex flex-col justify-center border border-[#e5e5e5] p-8 h-full w-full aspect-[1.8/1] rounded-none">
+              <h3 className="text-2xl md:text-3xl font-semibold mb-4 font-typewriter">
+                Platform Review & Roadmap
+              </h3>
+              <p className="text-gray-700 text-lg leading-relaxed">
+                Tailored review of your platform and processes, with a clear roadmap for improvements and implementation options.
+              </p>
+            </div>
+          </div>
+          <div className="h-10 md:h-16" />
+          <div className="relative flex flex-col items-center w-full mt-0 md:mt-8 mb-4">
+            <Button
+              size="lg"
+              className="bg-white text-[#436576] hover:bg-gray-200 rounded-full text-xl px-14 py-7 font-typewriter shadow-lg transition-colors duration-300 border-none"
+              onClick={() => {
+                // This could navigate or scroll elsewhere -- keep as in About Highlights
+                const highlights = document.getElementById('contact');
+                highlights?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
+              Services
+            </Button>
+          </div>
         </div>
       </div>
     </section>
