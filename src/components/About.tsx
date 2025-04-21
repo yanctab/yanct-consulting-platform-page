@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 
@@ -127,12 +126,14 @@ const About = () => {
             </div>
             <div className="h-10 md:h-16" />
             <div className="w-full flex justify-center">
-              <div className="bg-white flex flex-col justify-center items-center border border-[#e5e5e5] aspect-[1.8/1] md:w-[50%] max-w-[480px] min-h-[240px] md:min-h-[260px] rounded-none relative px-24 text-center">
+              <div className="bg-white flex flex-col justify-center items-center border border-[#e5e5e5] aspect-[1.8/1] md:w-[50%] max-w-[480px] min-h-[240px] md:min-h-[260px] rounded-none relative text-center">
                 <h3 className="text-2xl md:text-3xl font-semibold mb-4 font-typewriter">
                   Connect
                 </h3>
-                <p className="text-gray-700 text-lg leading-relaxed">
-                  Let's discuss your needs and explore how I can assist you. Whatever your requirements may be, I'm confident that I can provide valuable support and guidance.
+                <p className="text-gray-700 text-lg leading-relaxed px-2 md:px-8 py-2">
+                  Let's discuss your needs and explore how I can assist you.
+                  Whatever your requirements may be, I'm confident that I can provide
+                  valuable support and guidance.
                 </p>
               </div>
             </div>
@@ -167,4 +168,3 @@ const About = () => {
 };
 
 export default About;
-
