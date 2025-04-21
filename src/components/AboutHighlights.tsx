@@ -48,12 +48,12 @@ const AboutHighlights = () => (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-0 items-stretch w-full">
           <div className="bg-white flex flex-col justify-center border border-[#e5e5e5] p-8 h-full w-full aspect-[1.8/1] rounded-none">
             <h3 className="text-2xl md:text-3xl font-semibold mb-4 font-typewriter">
-              Network of Experts
+              A Community of Experts
             </h3>
             <p className="text-gray-700 text-lg leading-relaxed">
               Over the years, I've cultivated a strong network of talented professionals
               across embedded systems and software development. When specialized knowledge
-              is required, I can connect you with the right expert.
+              is required, I can connect you with the right expert or I can tap into the knowledge base.
             </p>
           </div>
           <div className="bg-white flex items-center justify-center border border-[#e5e5e5] h-full w-full aspect-[1.8/1] rounded-none">
