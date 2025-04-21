@@ -88,7 +88,7 @@ const Services = () => {
             <Button
               size="lg"
               id="services-main-btn"
-              className="text-[#436576] border-[#436576] border-2 rounded-full text-xl px-14 py-7 font-typewriter shadow-none bg-transparent cursor-default pointer-events-none"
+              className="text-[#436576] border-[#436576] border-2 rounded-full text-xl px-14 py-7 font-typewriter shadow-none bg-white cursor-default pointer-events-none"
             >
               Connect
             </Button>
