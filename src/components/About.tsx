@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 const TrianglePattern = () => {
   const size = 64; // increased size
@@ -39,6 +40,8 @@ const TrianglePattern = () => {
 };
 
 const About = () => {
+  const isMobile = useIsMobile();
+  
   return (
     <>
       {/* About Section */}
@@ -172,28 +175,20 @@ const About = () => {
             <div className="h-10 md:h-16" />
             <div className="w-full flex justify-center">
               <div
-                className="
+                className={`
                   bg-white flex flex-col justify-center items-center border border-[#e5e5e5]
-                  aspect-[1.8/1] md:w-[50%] max-w-[480px] min-h-[240px] md:min-h-[260px] rounded-2xl
+                  aspect-[1.8/1] md:w-[50%] max-w-[480px] min-h-[240px] md:min-h-[260px] rounded-none
                   relative text-center
-                  shadow-md
-                  px-4 py-8
-                  transition-all
-                  duration-300
-                  mx-2
-                  sm:px-4
-                  sm:py-8
-                  sm:rounded-2xl
-                  sm:max-w-[95vw]
-                "
+                  ${isMobile ? 'shadow-md px-4 py-8 mx-2 sm:px-4 sm:py-8 sm:rounded-2xl sm:max-w-[95vw]' : ''}
+                `}
                 style={{
-                  width: "100%",
+                  width: isMobile ? "100%" : "auto",
                 }}
               >
-                <h3 className="text-2xl md:text-3xl font-semibold mb-2 md:mb-4 font-typewriter">
+                <h3 className="text-2xl md:text-3xl font-semibold mb-4 font-typewriter">
                   Connect
                 </h3>
-                <p className="text-gray-700 text-base md:text-lg leading-relaxed px-1 xs:px-4 md:px-8 py-2">
+                <p className="text-gray-700 text-lg leading-relaxed px-2 md:px-8 py-2">
                   Let's discuss your needs and explore how I can assist you.
                   Whatever your requirements may be, I'm confident that I can provide
                   valuable support and guidance.
