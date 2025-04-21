@@ -85,7 +85,7 @@ const About = () => {
                 className="hidden md:block absolute left-1/2 -translate-x-1/2 z-10"
                 style={{
                   top: '68px',
-                  height: 'calc(100% - 68px)',
+                  height: 'calc(100% - 60px)',
                   width: '0px',
                   borderLeft: '3px solid #fff',
                   pointerEvents: "none",
@@ -121,7 +121,7 @@ const About = () => {
           className="hidden md:block absolute left-1/2 -translate-x-1/2 z-10"
           style={{
             top: "-68px",
-            height: "calc(100% - 150px)",
+            height: "calc(100% - 140px)",
             width: "0px",
             borderLeft: "3px solid #fff",
             opacity: 0.35,
