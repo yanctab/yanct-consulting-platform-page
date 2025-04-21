@@ -124,7 +124,6 @@ const About = () => {
             height: "calc(100% - 130px)",
             width: "0px",
             borderLeft: "3px solid #fff",
-            opacity: 0.35,
             pointerEvents: "none"
           }}
         />
@@ -185,17 +184,6 @@ const About = () => {
               </div>
             </div>
             <div className="relative flex flex-col items-center w-full mt-0 md:mt-8 mb-4">
-              <div
-                className="hidden md:block absolute left-1/2 -translate-x-1/2 z-10"
-                style={{
-                  top: 0,
-                  height: '48px', // Adjusted to make line stop just above Services button
-                  width: '0px',
-                  borderLeft: '3px solid #fff',
-                  opacity: 0.35,
-                  pointerEvents: "none",
-                }}
-              />
               <Button
                 size="lg"
                 className="bg-white text-[#436576] hover:bg-gray-200 rounded-full text-xl px-14 py-7 font-typewriter shadow-lg transition-colors duration-300 border-none"
