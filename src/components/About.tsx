@@ -189,7 +189,7 @@ const About = () => {
                 className="hidden md:block absolute left-1/2 -translate-x-1/2 z-10"
                 style={{
                   top: 0,
-                  height: '48px',
+                  height: '48px', // Adjusted to make line stop just above Services button
                   width: '0px',
                   borderLeft: '3px solid #fff',
                   opacity: 0.35,
@@ -215,4 +215,3 @@ const About = () => {
 };
 
 export default About;
-
