@@ -25,35 +25,46 @@ const Expertise = () => {
           </Button>
         </div>
 
-        {/* Custom 3x2 "table" grid */}
-        <div className="grid grid-cols-2 grid-rows-3 gap-12">
+        {/* Custom 3x2 "table" grid with connecting lines */}
+        <div className="grid grid-cols-2 grid-rows-3 gap-12 relative">
+          {/* Vertical line in the middle */}
+          <div className="absolute left-1/2 top-0 bottom-0 w-[3px] bg-white -translate-x-1/2" />
+
           {/* Row 1, Col 1 — Empty */}
           <div />
 
-          {/* Row 1, Col 2 */}
-          <div className="text-center">
-            <HardDrive className="h-12 w-12 mx-auto mb-6 text-white" />
-            <h3 className="text-2xl font-bold text-white mb-4">
-              Embedded Linux Development
-            </h3>
-            <p className="text-white opacity-90">
-              Since 2008, I've helped companies implement and optimize embedded Linux systems 
-              across various industries, covering everything from bootloaders and kernels to 
-              middleware layers.
-            </p>
+          {/* Row 1, Col 2 with horizontal line */}
+          <div className="relative pl-16">
+            {/* Horizontal connecting line */}
+            <div className="absolute left-0 top-1/2 w-16 h-[3px] bg-white" />
+            <div className="text-center">
+              <HardDrive className="h-12 w-12 mx-auto mb-6 text-white" />
+              <h3 className="text-2xl font-bold text-white mb-4">
+                Embedded Linux Development
+              </h3>
+              <p className="text-white opacity-90">
+                Since 2008, I've helped companies implement and optimize embedded Linux systems 
+                across various industries, covering everything from bootloaders and kernels to 
+                middleware layers.
+              </p>
+            </div>
           </div>
 
-          {/* Row 2, Col 1 */}
-          <div className="text-center">
-            <Code className="h-12 w-12 mx-auto mb-6 text-white" />
-            <h3 className="text-2xl font-bold text-white mb-4">
-              Yocto Project Expertise
-            </h3>
-            <p className="text-white opacity-90">
-              The Yocto Project can be daunting, but I've worked extensively with its BSP 
-              and platform layers, gaining deep insights into its quirks across different 
-              vendor ecosystems.
-            </p>
+          {/* Row 2, Col 1 with horizontal line */}
+          <div className="relative pr-16">
+            {/* Horizontal connecting line */}
+            <div className="absolute right-0 top-1/2 w-16 h-[3px] bg-white" />
+            <div className="text-center">
+              <Code className="h-12 w-12 mx-auto mb-6 text-white" />
+              <h3 className="text-2xl font-bold text-white mb-4">
+                Yocto Project Expertise
+              </h3>
+              <p className="text-white opacity-90">
+                The Yocto Project can be daunting, but I've worked extensively with its BSP 
+                and platform layers, gaining deep insights into its quirks across different 
+                vendor ecosystems.
+              </p>
+            </div>
           </div>
 
           {/* Row 2, Col 2 — Empty */}
@@ -62,16 +73,20 @@ const Expertise = () => {
           {/* Row 3, Col 1 — Empty */}
           <div />
 
-          {/* Row 3, Col 2 */}
-          <div className="text-center">
-            <Settings className="h-12 w-12 mx-auto mb-6 text-white" />
-            <h3 className="text-2xl font-bold text-white mb-4">
-              Developer Enablement
-            </h3>
-            <p className="text-white opacity-90">
-              I simplify workflows and enhance productivity, allowing your team to focus on 
-              their strengths. I also collaborate with DevOps to optimize build pipelines.
-            </p>
+          {/* Row 3, Col 2 with horizontal line */}
+          <div className="relative pl-16">
+            {/* Horizontal connecting line */}
+            <div className="absolute left-0 top-1/2 w-16 h-[3px] bg-white" />
+            <div className="text-center">
+              <Settings className="h-12 w-12 mx-auto mb-6 text-white" />
+              <h3 className="text-2xl font-bold text-white mb-4">
+                Developer Enablement
+              </h3>
+              <p className="text-white opacity-90">
+                I simplify workflows and enhance productivity, allowing your team to focus on 
+                their strengths. I also collaborate with DevOps to optimize build pipelines.
+              </p>
+            </div>
           </div>
         </div>
 
