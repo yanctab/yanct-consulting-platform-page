@@ -41,7 +41,7 @@ const TrianglePattern = () => {
 
 const About = () => {
   const isMobile = useIsMobile();
-  
+
   return (
     <>
       {/* About Section */}
@@ -61,6 +61,18 @@ const About = () => {
 
         <div className="container mx-auto px-4 relative z-20">
           <div className="relative flex flex-col items-center">
+            {/* Profile Picture */}
+            <img
+              src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?auto=format&fit=crop&w=350&q=80"
+              alt="Profile of smiling man"
+              className="mb-7 w-32 h-32 object-cover rounded-full grayscale shadow-xl border-4 border-white"
+              style={{
+                marginTop: '-32px',
+                backgroundColor: '#fff',
+              }}
+              width={128}
+              height={128}
+            />
             <h2
               className="font-typewriter font-bold text-5xl md:text-7xl text-white mb-10 text-center"
               style={{
