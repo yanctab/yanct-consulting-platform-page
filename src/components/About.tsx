@@ -149,19 +149,13 @@ const About = () => {
               />
               <Button
                 size="lg"
-                className="bg-white text-white text-xl px-16 py-9 font-typewriter border-2 border-white shadow-lg rounded-full"
-                style={{
-                  borderRadius: "9999px 9999px 9999px 9999px / 200px 200px 200px 200px",
-                  minWidth: "208px",
-                  minHeight: "104px",
-                  color: "#fff",
-                  backgroundColor: "#fff",
-                  fontSize: "1.3rem",
-                  fontFamily: 'Courier New, Courier, monospace',
-                  boxShadow: "0 8px 24px rgba(48,88,109,0.11)"
+                className="bg-white rounded-xl text-primary-foreground text-xl px-14 py-7 font-typewriter border-2 border-white shadow-lg"
+                onClick={()=>{
+                  const servicesSection = document.getElementById('services');
+                  servicesSection?.scrollIntoView({ behavior: 'smooth' });
                 }}
               >
-                Hidden
+                Services
               </Button>
             </div>
           </div>
