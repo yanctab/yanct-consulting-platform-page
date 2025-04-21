@@ -11,7 +11,7 @@ const About = () => {
       {/* About Section */}
       <section
         id="about"
-        className="py-24 bg-[#e0e0e0] relative"
+        className="py-24 bg-[#80d3b9] relative"
       >
         <div className="container mx-auto px-4 relative z-20">
           <div className="relative flex flex-col items-center">
