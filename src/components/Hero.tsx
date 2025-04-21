@@ -1,6 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { useIsMobile } from "@/hooks/use-mobile";
+import { Mouse } from "lucide-react";
 
 const Hero = () => {
   const isMobile = useIsMobile();
@@ -35,10 +36,12 @@ const Hero = () => {
         >
           Learn More
         </Button>
+        <div className="flex flex-col items-center mt-8 animate-bounce">
+          <Mouse className="w-8 h-8 text-white opacity-75" aria-label="Scroll for more" />
+        </div>
       </div>
     </div>
   );
 };
 
 export default Hero;
-
