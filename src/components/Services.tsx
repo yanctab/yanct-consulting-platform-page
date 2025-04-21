@@ -14,7 +14,7 @@ const Services = () => {
       }}
     >
       {/* Top non-functional button */}
-      <div className="relative flex flex-col items-center w-full mt-0 mb-8">
+      <div className="relative flex flex-col items-center w-full mt-0 mb-12">
         <Button
           size="lg"
           id="services-header-btn"
