@@ -51,7 +51,7 @@ const About = () => {
           </div>
           <div className="prose prose-lg prose-invert max-w-none mx-auto flex flex-col items-center">
             <p className="text-white text-lg leading-relaxed mt-2">
-              Yanct is a one man show at the moment but with over 15 years of embedded Linux experience, I focus on turning complex platforms
+              Yanct is an one man show at the moment but with over 15 years of embedded Linux experience, I focus on turning complex platforms
               into secure, production-ready systems.
             </p>
             <p className="text-white text-lg leading-relaxed mt-6">
