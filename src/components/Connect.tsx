@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail } from "lucide-react";
 
@@ -19,7 +18,7 @@ const Connect = () => {
           </Button>
         </div>
 
-        <div className="relative flex flex-col items-center w-full mt-10">
+        <div className="relative flex flex-col items-center w-full mt-20">
           <div 
             id="contact-box"
             className="bg-transparent border-2 border-white w-full md:w-3/4 p-8"
@@ -44,4 +43,3 @@ const Connect = () => {
 };
 
 export default Connect;
-
