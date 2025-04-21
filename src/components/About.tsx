@@ -48,6 +48,9 @@ const About = () => {
         className="py-24 bg-[#35b88f] relative overflow-hidden"
       >
         <TrianglePattern />
+        <div className="absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-black/20 to-transparent z-10 pointer-events-none" />
+        <div className="absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-black/20 to-transparent z-10 pointer-events-none" />
+
         <div className="container mx-auto px-4 relative z-20">
           <div className="relative flex flex-col items-center">
             <h2
