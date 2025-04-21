@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 
@@ -26,7 +25,7 @@ const AboutHighlights = () => (
     <div className="container mx-auto px-4 flex flex-col items-center">
       <div className="flex flex-col gap-16 md:gap-20 w-full">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-0 items-stretch w-full">
-          <div className="bg-white flex items-center justify-center border border-[#e5e5e5] h-full w-full aspect-[1.8/1] rounded-none">
+          <div className="bg-white flex items-center justify-center border border-[#e5e5e5] h-full w-full aspect-[1.8/1] rounded-lg">
             <img
               src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&w=800"
               alt="People collaborating"
@@ -34,7 +33,7 @@ const AboutHighlights = () => (
               style={{ objectPosition: 'center', height: '100%' }}
             />
           </div>
-          <div className="bg-white flex flex-col justify-center border border-[#e5e5e5] p-4 sm:p-6 md:p-8 h-full w-full aspect-auto md:aspect-[1.8/1] rounded-none">
+          <div className="bg-white flex flex-col justify-center border border-[#e5e5e5] p-4 sm:p-6 md:p-8 h-full w-full aspect-auto md:aspect-[1.8/1] rounded-lg">
             <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-2 md:mb-4 font-typewriter">
               Collaborative Mindset
             </h3>
@@ -47,7 +46,7 @@ const AboutHighlights = () => (
         </div>
         <div className="h-10 md:h-16" />
         <div className="grid grid-cols-1 md:grid-cols-2 gap-0 items-stretch w-full">
-          <div className="bg-white flex flex-col justify-center border border-[#e5e5e5] p-4 sm:p-6 md:p-8 h-full w-full aspect-auto md:aspect-[1.8/1] rounded-none order-2 md:order-1">
+          <div className="bg-white flex flex-col justify-center border border-[#e5e5e5] p-4 sm:p-6 md:p-8 h-full w-full aspect-auto md:aspect-[1.8/1] rounded-lg order-2 md:order-1">
             <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-2 md:mb-4 font-typewriter">
               A Community of Experts
             </h3>
@@ -57,7 +56,7 @@ const AboutHighlights = () => (
               is required, I can connect you with the right expert or I can tap into the knowledge base.
             </p>
           </div>
-          <div className="bg-white flex items-center justify-center border border-[#e5e5e5] h-full w-full aspect-[1.8/1] rounded-none order-1 md:order-2">
+          <div className="bg-white flex items-center justify-center border border-[#e5e5e5] h-full w-full aspect-[1.8/1] rounded-lg order-1 md:order-2">
             <img
               src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800"
               alt="People in relaxed setting"
