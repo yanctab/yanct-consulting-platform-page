@@ -1,3 +1,4 @@
+
 import { ArrowDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Navbar from "@/components/Navbar";
@@ -50,15 +51,14 @@ const Index = () => {
           />
           <Expertise />
           <Services />
+          <Connect />
           <VerticalLine
             containerId="expertise-services-block"
-            startBtnId="contact-box"
-            endBtnId="footer-logo"
-            hideOnMobile={false}
+            startBtnId="services-main-btn"
+            endBtnId="contact-box"
           />
-          <Connect />
-          <Footer />
         </div>
+        <Footer />
       </main>
     </div>
   );
