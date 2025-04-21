@@ -1,6 +1,10 @@
+
 import { Button } from "@/components/ui/button";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 const Services = () => {
+  const isMobile = useIsMobile();
+
   return (
     <section
       id="services"
@@ -34,11 +38,11 @@ const Services = () => {
               aria-label="Black and white photo of building"
               role="img"
             />
-            <div className="bg-white flex flex-col justify-center border border-[#e5e5e5] p-8 h-full w-full aspect-[1.8/1] rounded-none">
-              <h3 className="text-2xl md:text-3xl font-semibold mb-4 font-typewriter">
+            <div className="bg-white flex flex-col justify-center border border-[#e5e5e5] p-4 md:p-8 h-full w-full aspect-[1.8/1] rounded-none">
+              <h3 className="text-xl md:text-2xl lg:text-3xl font-semibold mb-2 md:mb-4 font-typewriter">
                 Remote-First Support
               </h3>
-              <p className="text-gray-700 text-lg leading-relaxed">
+              <p className="text-gray-700 text-sm md:text-lg leading-tight md:leading-relaxed">
                 Ideal for small to mid-sized companies, offering flexible,
                 ongoing support with expert-level embedded Linux and Yocto
                 expertise.
@@ -46,11 +50,11 @@ const Services = () => {
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-0 items-stretch w-full">
-            <div className="bg-white flex flex-col justify-center border border-[#e5e5e5] p-8 h-full w-full aspect-[1.8/1] rounded-none">
-              <h3 className="text-2xl md:text-3xl font-semibold mb-4 font-typewriter">
+            <div className="bg-white flex flex-col justify-center border border-[#e5e5e5] p-4 md:p-8 h-full w-full aspect-[1.8/1] rounded-none">
+              <h3 className="text-xl md:text-2xl lg:text-3xl font-semibold mb-2 md:mb-4 font-typewriter">
                 Full-Time Engagement
               </h3>
-              <p className="text-gray-700 text-lg leading-relaxed">
+              <p className="text-gray-700 text-sm md:text-lg leading-tight md:leading-relaxed">
                 Full-time, on-site or hybrid consulting, providing hands-on
                 support for day-to-day development and real-time issue
                 resolution.
@@ -76,11 +80,11 @@ const Services = () => {
               aria-label="Black and white photo of herd of sheep"
               role="img"
             />
-            <div className="bg-white flex flex-col justify-center border border-[#e5e5e5] p-8 h-full w-full aspect-[1.8/1] rounded-none">
-              <h3 className="text-2xl md:text-3xl font-semibold mb-4 font-typewriter">
+            <div className="bg-white flex flex-col justify-center border border-[#e5e5e5] p-4 md:p-8 h-full w-full aspect-[1.8/1] rounded-none">
+              <h3 className="text-xl md:text-2xl lg:text-3xl font-semibold mb-2 md:mb-4 font-typewriter">
                 Platform Review & Roadmap
               </h3>
-              <p className="text-gray-700 text-lg leading-relaxed">
+              <p className="text-gray-700 text-sm md:text-lg leading-tight md:leading-relaxed">
                 Tailored review of your platform and processes, with a clear
                 roadmap for improvements and implementation options.
               </p>
