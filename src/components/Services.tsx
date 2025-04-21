@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 
 const Services = () => {
@@ -14,6 +13,17 @@ const Services = () => {
         backgroundRepeat: "no-repeat",
       }}
     >
+      {/* Top non-functional button */}
+      <div className="relative flex flex-col items-center w-full mt-0 mb-8">
+        <Button
+          size="lg"
+          id="services-header-btn"
+          className="text-white border-white border-2 rounded-full text-xl px-14 py-7 font-typewriter shadow-none bg-transparent hover:bg-transparent cursor-pointer"
+        >
+          Services
+        </Button>
+      </div>
+
       <div className="container mx-auto px-4 flex flex-col items-center">
         <div className="flex flex-col gap-16 md:gap-20 w-full">
           {/* Remote-First Support */}
@@ -100,4 +110,3 @@ const Services = () => {
 };
 
 export default Services;
-
