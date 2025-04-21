@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Linkedin, Mail } from "lucide-react";
 
 const Services = () => {
   return (
@@ -99,6 +100,17 @@ const Services = () => {
             >
               Connect
             </Button>
+          </div>
+
+          {/* Contact box */}
+          <div className="relative flex flex-col items-center w-full">
+            <div 
+              id="contact-box"
+              className="bg-transparent border-2 border-white w-full aspect-[1.8/1] flex items-center justify-center gap-12"
+            >
+              <Linkedin className="w-12 h-12 text-white cursor-pointer hover:text-gray-200 transition-colors" />
+              <Mail className="w-12 h-12 text-white cursor-pointer hover:text-gray-200 transition-colors" />
+            </div>
           </div>
         </div>
       </div>

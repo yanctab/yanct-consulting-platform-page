@@ -49,6 +49,11 @@ const Index = () => {
           />
           <Expertise />
           <Services />
+          <VerticalLine
+            containerId="expertise-services-block"
+            startBtnId="services-main-btn"
+            endBtnId="contact-box"
+          />
         </div>
         <Footer />
       </main>
