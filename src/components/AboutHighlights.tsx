@@ -13,16 +13,7 @@ const AboutHighlights = () => (
       backgroundRepeat: 'no-repeat',
     }}
   >
-    <div
-      className="hidden md:block absolute left-1/2 -translate-x-1/2 z-10"
-      style={{
-        top: "-68px",
-        height: "calc(100% - 130px)",
-        width: "0px",
-        borderLeft: "3px solid #fff",
-        pointerEvents: "none"
-      }}
-    />
+    {/* The vertical line above will cover this, since it's rendered in About */}
     <div className="container mx-auto px-4 flex flex-col items-center">
       <div className="flex flex-col gap-16 md:gap-20 w-full">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-0 items-stretch w-full">
@@ -70,6 +61,7 @@ const AboutHighlights = () => (
         <div className="relative flex flex-col items-center w-full mt-0 md:mt-8 mb-4">
           <Button
             size="lg"
+            id="about-highlights-services-btn"
             className="bg-white text-[#436576] hover:bg-gray-200 rounded-full text-xl px-14 py-7 font-typewriter shadow-lg transition-colors duration-300 border-none"
             onClick={() => {
               const highlights = document.getElementById('services');

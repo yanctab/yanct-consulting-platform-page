@@ -2,6 +2,7 @@
 import { HardDrive, Code, Settings } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import TrianglePattern from "./TrianglePattern";
+import VerticalLine from "./VerticalLine";
 
 const Expertise = () => {
   return (
@@ -15,7 +16,7 @@ const Expertise = () => {
             "linear-gradient(to right, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0.50) 100%)",
         }}
       />
-      <div className="container mx-auto px-4 relative z-20">
+      <div className="container mx-auto px-4 relative z-20" id="expertise-section-container">
         <h2 className="text-4xl font-bold text-center text-white mb-16">
           Background & Expertise
         </h2>
@@ -56,7 +57,16 @@ const Expertise = () => {
             </div>
           </div>
           {/* Button container */}
-          <div className="flex flex-col items-center w-full mt-16">
+          <div className="flex flex-col items-center w-full mt-16 relative">
+            {/* Vertical Line: Expertise → Services */}
+            <VerticalLine
+              containerId="expertise-services-block"
+              startBtnId="expertise-continue-btn"
+              endBtnId="services-main-btn"
+              color="#fff"
+              width={3}
+              hideOnMobile={false}
+            />
             <Button
               size="lg"
               id="expertise-continue-btn"
