@@ -50,14 +50,15 @@ const Index = () => {
           />
           <Expertise />
           <Services />
-          <Connect />
           <VerticalLine
             containerId="expertise-services-block"
-            startBtnId="services-main-btn"
-            endBtnId="contact-box"
+            startBtnId="contact-box"
+            endBtnId="footer-logo"
+            hideOnMobile={false}
           />
+          <Connect />
+          <Footer />
         </div>
-        <Footer />
       </main>
     </div>
   );
