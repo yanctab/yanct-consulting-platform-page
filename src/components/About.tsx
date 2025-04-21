@@ -150,28 +150,6 @@ const About = () => {
               </div>
             </div>
             <div className="h-10 md:h-16" />
-            <div className="w-full flex justify-center">
-              <div
-                className={`
-                  bg-white flex flex-col justify-center items-center border border-[#e5e5e5]
-                  aspect-[1.8/1] md:w-[50%] max-w-[480px] min-h-[240px] md:min-h-[260px] rounded-none
-                  relative text-center
-                  ${isMobile ? 'shadow-md px-4 py-8 mx-2 sm:px-4 sm:py-8 sm:rounded-2xl sm:max-w-[95vw]' : ''}
-                `}
-                style={{
-                  width: isMobile ? "100%" : "auto",
-                }}
-              >
-                <h3 className="text-2xl md:text-3xl font-semibold mb-4 font-typewriter">
-                  Connect
-                </h3>
-                <p className="text-gray-700 text-lg leading-relaxed px-2 md:px-8 py-2">
-                  Let's discuss your needs and explore how I can assist you.
-                  Whatever your requirements may be, I'm confident that I can provide
-                  valuable support and guidance.
-                </p>
-              </div>
-            </div>
             <div className="relative flex flex-col items-center w-full mt-0 md:mt-8 mb-4">
               <Button
                 size="lg"
