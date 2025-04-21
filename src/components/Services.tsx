@@ -24,7 +24,7 @@ const Services = () => {
         </Button>
       </div>
 
-      <div className="container mx-auto px-4 flex flex-col items-center mt-16"> {/* Added margin-top here */}
+      <div className="container mx-auto px-4 flex flex-col items-center mt-64"> {/* Added margin-top here */}
         <div className="flex flex-col gap-16 md:gap-20 w-full">
           {/* Remote-First Support */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-0 items-stretch w-full">
