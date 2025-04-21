@@ -30,8 +30,7 @@ const Services = () => {
             <div
               className="bg-white flex items-center justify-center border border-[#e5e5e5] h-full w-full aspect-[1.8/1] rounded-none bg-cover bg-center grayscale"
               style={{
-                backgroundImage:
-                  "url('https://images.unsplash.com/photo-1527576539890-dfa815648363?auto=format&fit=crop&w=800&q=80')",
+                backgroundImage: "url('/Southtech-38_edited1.jpg')",
               }}
               aria-label="Black and white photo of building"
               role="img"
@@ -62,7 +61,7 @@ const Services = () => {
               className="bg-white flex items-center justify-center border border-[#e5e5e5] h-full w-full aspect-[1.8/1] rounded-none bg-cover bg-center grayscale"
               style={{
                 backgroundImage:
-                  "url('https://images.unsplash.com/photo-1488972685288-c3fd157d7c7a?auto=format&fit=crop&w=800&q=80')",
+                  "url('/P_AB3418.jpg')",
               }}
               aria-label="Black and white photo of gray building"
               role="img"
@@ -73,7 +72,7 @@ const Services = () => {
               className="bg-white flex items-center justify-center border border-[#e5e5e5] h-full w-full aspect-[1.8/1] rounded-none bg-cover bg-center grayscale"
               style={{
                 backgroundImage:
-                  "url('https://images.unsplash.com/photo-1452960962994-acf4fd70b632?auto=format&fit=crop&w=800&q=80')",
+                  "url('P_AB3378.jpg')",
               }}
               aria-label="Black and white photo of herd of sheep"
               role="img"
