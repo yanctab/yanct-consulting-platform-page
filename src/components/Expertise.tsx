@@ -22,7 +22,7 @@ const Expertise = () => {
             id="expertise-header-btn"
             className="text-white border-white border-2 rounded-full text-xl px-14 py-7 font-typewriter shadow-none bg-transparent cursor-default pointer-events-none"
           >
-            Expertise
+            Background & Expertise
           </Button>
         </div>
 
