@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { useIsMobile } from "@/hooks/use-mobile";
@@ -15,6 +14,7 @@ const About = () => {
         className="py-24 bg-[#35b88f] relative overflow-hidden"
       >
         <TrianglePattern />
+        {/* Full fade on both sides */}
         <div
           className="absolute inset-0 z-10 pointer-events-none"
           style={{
@@ -22,19 +22,22 @@ const About = () => {
               "linear-gradient(to right, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0.50) 100%)",
           }}
         />
+
         <div className="container mx-auto px-4 relative z-20">
           <div className="relative flex flex-col items-center">
+            {/* Profile Picture - larger and more spacing from headline */}
             <img
               src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?auto=format&fit=crop&w=350&q=80"
               alt="Profile of smiling man"
               className="mb-6 w-52 h-52 object-cover rounded-full grayscale shadow-xl border-4 border-white"
               style={{
-                marginTop: '-24px',
+                marginTop: '-24px', // Optional: fine-tune to balance spacing
                 backgroundColor: '#fff',
               }}
               width={208}
               height={208}
             />
+
             <h2
               className="font-typewriter font-bold text-5xl md:text-7xl text-white mt-6 mb-10 text-center"
               style={{
@@ -93,108 +96,93 @@ const About = () => {
           backgroundRepeat: 'no-repeat',
         }}
       >
-        {/* Split vertical line: one above the Connect box, one below */}
-        <div className="relative w-full">
-          {/* Line above Connect box */}
-          <div
-            className="hidden md:block absolute left-1/2 -translate-x-1/2 z-10"
-            style={{
-              top: "-68px",
-              height: "calc(38% - 32px)", // Tweak for a natural stop above Connect
-              width: "0px",
-              borderLeft: "3px solid #fff",
-              pointerEvents: "none"
-            }}
-          />
-          {/* Line below Connect box */}
-          <div
-            className="hidden md:block absolute left-1/2 -translate-x-1/2 z-10"
-            style={{
-              top: "calc(62% + 165px)", // Start line after Connect card, adjust 165px to match card height and spacing
-              height: "calc(38% - 32px)", // Tweak for desired length
-              width: "0px",
-              borderLeft: "3px solid #fff",
-              pointerEvents: "none"
-            }}
-          />
-          <div className="container mx-auto px-4 flex flex-col items-center">
-            <div className="flex flex-col gap-16 md:gap-20 w-full">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-0 items-stretch w-full">
-                <div className="bg-white flex items-center justify-center border border-[#e5e5e5] h-full w-full aspect-[1.8/1] rounded-none">
-                  <img
-                    src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&w=800"
-                    alt="People collaborating"
-                    className="w-full h-56 object-cover filter grayscale"
-                    style={{ objectPosition: 'center', height: '100%' }}
-                  />
-                </div>
-                <div className="bg-white flex flex-col justify-center border border-[#e5e5e5] p-8 h-full w-full aspect-[1.8/1] rounded-none">
-                  <h3 className="text-2xl md:text-3xl font-semibold mb-4 font-typewriter">
-                    Collaborative Mindset
-                  </h3>
-                  <p className="text-gray-700 text-lg leading-relaxed">
-                    Effective communication is key to any successful project. By actively engaging
-                    with existing team knowledge, I ensure that solutions are found faster and
-                    more effectively.
-                  </p>
-                </div>
+        <div
+          className="hidden md:block absolute left-1/2 -translate-x-1/2 z-10"
+          style={{
+            top: "-68px",
+            height: "72%",
+            width: "0px",
+            borderLeft: "3px solid #fff",
+            pointerEvents: "none"
+          }}
+        />
+        <div className="container mx-auto px-4 flex flex-col items-center">
+          <div className="flex flex-col gap-16 md:gap-20 w-full">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-0 items-stretch w-full">
+              <div className="bg-white flex items-center justify-center border border-[#e5e5e5] h-full w-full aspect-[1.8/1] rounded-none">
+                <img
+                  src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&w=800"
+                  alt="People collaborating"
+                  className="w-full h-56 object-cover filter grayscale"
+                  style={{ objectPosition: 'center', height: '100%' }}
+                />
               </div>
-              <div className="h-10 md:h-16" />
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-0 items-stretch w-full">
-                <div className="bg-white flex flex-col justify-center border border-[#e5e5e5] p-8 h-full w-full aspect-[1.8/1] rounded-none">
-                  <h3 className="text-2xl md:text-3xl font-semibold mb-4 font-typewriter">
-                    Network of Experts
-                  </h3>
-                  <p className="text-gray-700 text-lg leading-relaxed">
-                    Over the years, I've cultivated a strong network of talented professionals
-                    across embedded systems and software development. When specialized knowledge
-                    is required, I can connect you with the right expert.
-                  </p>
-                </div>
-                <div className="bg-white flex items-center justify-center border border-[#e5e5e5] h-full w-full aspect-[1.8/1] rounded-none">
-                  <img
-                    src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800"
-                    alt="People in relaxed setting"
-                    className="w-full h-56 object-cover filter grayscale"
-                    style={{ objectPosition: 'center', height: '100%' }}
-                  />
-                </div>
+              <div className="bg-white flex flex-col justify-center border border-[#e5e5e5] p-8 h-full w-full aspect-[1.8/1] rounded-none">
+                <h3 className="text-2xl md:text-3xl font-semibold mb-4 font-typewriter">
+                  Collaborative Mindset
+                </h3>
+                <p className="text-gray-700 text-lg leading-relaxed">
+                  Effective communication is key to any successful project. By actively engaging
+                  with existing team knowledge, I ensure that solutions are found faster and
+                  more effectively.
+                </p>
               </div>
-              <div className="h-10 md:h-16" />
-              <div className="w-full flex justify-center">
-                <div
-                  className={`
-                    bg-white flex flex-col justify-center items-center border border-[#e5e5e5]
-                    aspect-[1.8/1] md:w-[50%] max-w-[480px] min-h-[240px] md:min-h-[260px] rounded-none
-                    relative text-center
-                    ${isMobile ? 'shadow-md px-4 py-8 mx-2 sm:px-4 sm:py-8 sm:rounded-2xl sm:max-w-[95vw]' : ''}
-                  `}
-                  style={{
-                    width: isMobile ? "100%" : "auto",
-                  }}
-                >
-                  <h3 className="text-2xl md:text-3xl font-semibold mb-4 font-typewriter">
-                    Connect
-                  </h3>
-                  <p className="text-gray-700 text-lg leading-relaxed px-2 md:px-8 py-2">
-                    Let's discuss your needs and explore how I can assist you.
-                    Whatever your requirements may be, I'm confident that I can provide
-                    valuable support and guidance.
-                  </p>
-                </div>
+            </div>
+            <div className="h-10 md:h-16" />
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-0 items-stretch w-full">
+              <div className="bg-white flex flex-col justify-center border border-[#e5e5e5] p-8 h-full w-full aspect-[1.8/1] rounded-none">
+                <h3 className="text-2xl md:text-3xl font-semibold mb-4 font-typewriter">
+                  Network of Experts
+                </h3>
+                <p className="text-gray-700 text-lg leading-relaxed">
+                  Over the years, I've cultivated a strong network of talented professionals
+                  across embedded systems and software development. When specialized knowledge
+                  is required, I can connect you with the right expert.
+                </p>
               </div>
-              <div className="relative flex flex-col items-center w-full mt-0 md:mt-8 mb-4">
-                <Button
-                  size="lg"
-                  className="bg-white text-[#436576] hover:bg-gray-200 rounded-full text-xl px-14 py-7 font-typewriter shadow-lg transition-colors duration-300 border-none"
-                  onClick={() => {
-                    const highlights = document.getElementById('services');
-                    highlights?.scrollIntoView({ behavior: 'smooth' });
-                  }}
-                >
-                  Services
-                </Button>
+              <div className="bg-white flex items-center justify-center border border-[#e5e5e5] h-full w-full aspect-[1.8/1] rounded-none">
+                <img
+                  src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800"
+                  alt="People in relaxed setting"
+                  className="w-full h-56 object-cover filter grayscale"
+                  style={{ objectPosition: 'center', height: '100%' }}
+                />
               </div>
+            </div>
+            <div className="h-10 md:h-16" />
+            <div className="w-full flex justify-center">
+              <div
+                className={`
+                  bg-white flex flex-col justify-center items-center border border-[#e5e5e5]
+                  aspect-[1.8/1] md:w-[50%] max-w-[480px] min-h-[240px] md:min-h-[260px] rounded-none
+                  relative text-center
+                  ${isMobile ? 'shadow-md px-4 py-8 mx-2 sm:px-4 sm:py-8 sm:rounded-2xl sm:max-w-[95vw]' : ''}
+                `}
+                style={{
+                  width: isMobile ? "100%" : "auto",
+                }}
+              >
+                <h3 className="text-2xl md:text-3xl font-semibold mb-4 font-typewriter">
+                  Connect
+                </h3>
+                <p className="text-gray-700 text-lg leading-relaxed px-2 md:px-8 py-2">
+                  Let's discuss your needs and explore how I can assist you.
+                  Whatever your requirements may be, I'm confident that I can provide
+                  valuable support and guidance.
+                </p>
+              </div>
+            </div>
+            <div className="relative flex flex-col items-center w-full mt-0 md:mt-8 mb-4">
+              <Button
+                size="lg"
+                className="bg-white text-[#436576] hover:bg-gray-200 rounded-full text-xl px-14 py-7 font-typewriter shadow-lg transition-colors duration-300 border-none"
+                onClick={() => {
+                  const highlights = document.getElementById('services');
+                  highlights?.scrollIntoView({ behavior: 'smooth' });
+                }}
+              >
+                Services
+              </Button>
             </div>
           </div>
         </div>
@@ -204,4 +192,3 @@ const About = () => {
 };
 
 export default About;
-
