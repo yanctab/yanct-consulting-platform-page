@@ -65,10 +65,10 @@ const About = () => {
               <div
                 className="hidden md:block absolute left-1/2 -translate-x-1/2 z-10"
                 style={{
-                  top: 0,
-                  height: "calc(100% - 3.5rem)", // Adjust this to match button height (py-7 = ~3.5rem)
-                  width: "0px",
-                  borderLeft: "3px solid #fff",
+                  top: '68px',
+                  height: 'calc(100% - 0px)',
+                  width: '0px',
+                  borderLeft: '3px solid #fff',
                   pointerEvents: "none",
                 }}
               />
