@@ -16,7 +16,7 @@ const About = () => {
         <div className="container mx-auto px-4 relative z-20">
           <div className="relative flex flex-col items-center">
             <h2
-              className="font-typewriter font-bold text-5xl md:text-7xl text-gray-900 mb-10 text-center"
+              className="font-typewriter font-bold text-5xl md:text-7xl text-white mb-10 text-center"
               style={{
                 fontFamily: 'Courier New, Courier, monospace',
               }}
@@ -24,13 +24,13 @@ const About = () => {
               About
             </h2>
           </div>
-          <div className="prose prose-lg max-w-none mx-auto flex flex-col items-center">
-            <p className="text-gray-700 text-lg leading-relaxed mt-2">
+          <div className="prose prose-lg prose-invert max-w-none mx-auto flex flex-col items-center">
+            <p className="text-white text-lg leading-relaxed mt-2">
               {"Yet another consulting firm,"} you might think — but I'm not just another consultant.
               With over 15 years of embedded Linux experience, I focus on turning complex platforms
               into secure, production-ready systems that actually work in the real world.
             </p>
-            <p className="text-gray-700 text-lg leading-relaxed mt-6">
+            <p className="text-white text-lg leading-relaxed mt-6">
               I specialize in bridging the gap between vendor BSPs and reliable products,
               with deep experience across multiple hardware suppliers and ecosystems.
               But what really sets me apart is how I work — with a service-minded approach,
@@ -43,7 +43,7 @@ const About = () => {
                   top: '68px',
                   height: 'calc(100% - 68px)',
                   width: '0px',
-                  borderLeft: '3px solid #30586D',
+                  borderLeft: '3px solid #fff',
                   pointerEvents: "none",
                 }}
               />
@@ -60,6 +60,7 @@ const About = () => {
             </div>
           </div>
         </div>
+
       </section>
 
       {/* Highlights Section */}
