@@ -94,7 +94,7 @@ const About = () => {
                 />
               </div>
               <div className="bg-white flex flex-col justify-center border border-[#e5e5e5] p-8 h-full w-full aspect-[1.8/1] rounded-none">
-                <h3 className="text-2xl md:text-3xl font-semibold text-[#30586D] mb-4 font-typewriter">
+                <h3 className="text-2xl md:text-3xl font-semibold mb-4 font-typewriter">
                   Collaborative Mindset
                 </h3>
                 <p className="text-gray-700 text-lg leading-relaxed">
@@ -107,7 +107,7 @@ const About = () => {
             <div className="h-10 md:h-16" />
             <div className="grid grid-cols-1 md:grid-cols-2 gap-0 items-stretch w-full">
               <div className="bg-white flex flex-col justify-center border border-[#e5e5e5] p-8 h-full w-full aspect-[1.8/1] rounded-none">
-                <h3 className="text-2xl md:text-3xl font-semibold text-[#30586D] mb-4 font-typewriter">
+                <h3 className="text-2xl md:text-3xl font-semibold mb-4 font-typewriter">
                   Network of Experts
                 </h3>
                 <p className="text-gray-700 text-lg leading-relaxed">
