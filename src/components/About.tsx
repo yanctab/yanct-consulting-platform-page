@@ -2,36 +2,42 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 
-const TrianglePattern = () => (
-  <svg
-    className="absolute inset-0 w-full h-full z-0 pointer-events-none"
-    viewBox="0 0 640 480"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    aria-hidden="true"
-    style={{
-      opacity: 0.1, // About 5% visible
-      mixBlendMode: "overlay"
-    }}
-  >
-    {/* Repeat triangles in a subtle grid */}
-    {Array.from({ length: 10 }).map((_, row) =>
-      Array.from({ length: 14 }).map((__, col) => {
-        const size = 32;
-        // Offset every other row for a pattern effect
-        const x = col * size + (row % 2 === 0 ? 0 : size / 2);
-        const y = row * size * 0.866; // vertical step for equilateral triangles
-        return (
-          <polygon
-            key={`${row}-${col}`}
-            points={`${x},${y} ${x + size / 2},${y + size * 0.866} ${x - size / 2},${y + size * 0.866}`}
-            fill="#F1F0FB"
-          />
-        );
-      })
-    )}
-  </svg>
-);
+const TrianglePattern = () => {
+  const size = 32;
+  const rows = 30; // increase this to cover more height
+  const cols = 20; // increase this to cover more width
+  const height = rows * size * 0.866;
+  const width = cols * size;
+
+  return (
+    <svg
+      className="absolute inset-0 w-full h-full z-0 pointer-events-none"
+      viewBox={`0 0 ${width} ${height}`}
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      preserveAspectRatio="none"
+      aria-hidden="true"
+      style={{
+        opacity: 0.1,
+        mixBlendMode: "overlay",
+      }}
+    >
+      {Array.from({ length: rows }).map((_, row) =>
+        Array.from({ length: cols }).map((__, col) => {
+          const x = col * size + (row % 2 === 0 ? 0 : size / 2);
+          const y = row * size * 0.866;
+          return (
+            <polygon
+              key={`${row}-${col}`}
+              points={`${x},${y} ${x + size / 2},${y + size * 0.866} ${x - size / 2},${y + size * 0.866}`}
+              fill="#F1F0FB"
+            />
+          );
+        })
+      )}
+    </svg>
+  );
+};
 
 const About = () => {
   return (
