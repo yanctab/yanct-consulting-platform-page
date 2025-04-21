@@ -6,12 +6,12 @@ const Expertise = () => {
   return (
     <section id="expertise" className="py-24 bg-[#35b88f] relative overflow-hidden">
       <TrianglePattern />
-      {/* Reuse the same side fade from About */}
+      {/* Full fade on both sides */}
       <div
         className="absolute inset-0 z-10 pointer-events-none"
         style={{
           background:
-            "linear-gradient(to right, rgba(0,0,0,0.50), transparent 20%, transparent 80%, rgba(0,0,0,0.25))",
+            "linear-gradient(to right, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0.50) 100%)",
         }}
       />
       <div className="container mx-auto px-4 relative z-20">
