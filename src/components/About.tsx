@@ -19,7 +19,7 @@ const About = () => {
           className="absolute inset-0 z-10 pointer-events-none"
           style={{
             background:
-              "linear-gradient(to right, rgba(0, 0, 0, 0.40), transparent 20%, transparent 80%, rgba(0, 0, 0, 0.25))",
+              "linear-gradient(to right, rgba(0, 0, 0, 0.50), transparent 20%, transparent 80%, rgba(0, 0, 0, 0.25))",
           }}
         />
 
