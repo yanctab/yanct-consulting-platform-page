@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="text-center">
           <div className="mb-4 flex justify-center">
-            <img src="/yanct.png" alt="Yanct Logo" className="h-32 w-auto" />
+            <img src="/yanct.png" alt="Yanct Logo" className="h-20 w-auto" />
           </div>
         </div>
       </div>
