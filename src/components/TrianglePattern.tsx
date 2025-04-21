@@ -3,7 +3,7 @@ import React from "react";
 const TrianglePattern = ({
   opacity = 0.055,
   className = "",
-  color = "#F1F0FB", // default color
+  color = "#F1F0FB",
 }: {
   opacity?: number;
   className?: string;
@@ -19,13 +19,12 @@ const TrianglePattern = ({
     <svg
       className={`absolute inset-0 w-full h-full z-0 pointer-events-none ${className}`}
       viewBox={`0 0 ${width} ${height}`}
-      fill="none"
       xmlns="http://www.w3.org/2000/svg"
       preserveAspectRatio="none"
       aria-hidden="true"
       style={{
         opacity,
-        mixBlendMode: "overlay",
+        mixBlendMode: "overlay", // optional, you can remove this if it interferes
       }}
     >
       {Array.from({ length: rows }).map((_, row) =>
@@ -36,7 +35,7 @@ const TrianglePattern = ({
             <polygon
               key={`${row}-${col}`}
               points={`${x},${y} ${x + size / 2},${y + size * 0.866} ${x - size / 2},${y + size * 0.866}`}
-              fill={color}
+              style={{ fill: color }}
             />
           );
         })
@@ -46,4 +45,3 @@ const TrianglePattern = ({
 };
 
 export default TrianglePattern;
-
