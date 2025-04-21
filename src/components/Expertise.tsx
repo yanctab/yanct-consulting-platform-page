@@ -6,7 +6,6 @@ const Expertise = () => {
   return (
     <section id="expertise" className="py-24 bg-[#35b88f] relative overflow-visible">
       <TrianglePattern />
-      {/* Full fade on both sides */}
       <div
         className="absolute inset-0 z-10 pointer-events-none"
         style={{
@@ -25,18 +24,13 @@ const Expertise = () => {
           </Button>
         </div>
 
-        {/* Grid that adjusts based on screen size */}
         <div className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-3 gap-8 md:gap-12 relative">
-          {/* Vertical line in the middle - hidden on mobile */}
           <div className="absolute left-1/2 top-0 bottom-0 w-[3px] bg-white -translate-x-1/2 hidden md:block" />
 
-          {/* Empty cell for first position in column 1 */}
           <div className="hidden md:block md:order-1"></div>
 
-          {/* Embedded Linux Development - Column 2, Row 1 */}
           <div className="relative pr-0 md:pr-16 order-1 md:order-2">
-            {/* Horizontal connecting line - hidden on mobile */}
-            <div className="absolute right-0 top-1/2 w-16 h-[3px] bg-white hidden md:block" />
+            <div className="absolute left-0 top-1/2 w-16 h-[3px] bg-white hidden md:block" />
             <div className="text-center border-2 border-white rounded-lg p-6">
               <HardDrive className="h-12 w-12 mx-auto mb-6 text-white" />
               <h3 className="text-2xl font-bold text-white mb-4">
@@ -50,10 +44,8 @@ const Expertise = () => {
             </div>
           </div>
 
-          {/* Yocto Project Expertise - Column 1, Row 2 */}
           <div className="relative pl-0 md:pl-16 order-2 md:order-3">
-            {/* Horizontal connecting line - hidden on mobile */}
-            <div className="absolute left-0 top-1/2 w-16 h-[3px] bg-white hidden md:block" />
+            <div className="absolute right-0 top-1/2 w-16 h-[3px] bg-white hidden md:block" />
             <div className="text-center border-2 border-white rounded-lg p-6">
               <Code className="h-12 w-12 mx-auto mb-6 text-white" />
               <h3 className="text-2xl font-bold text-white mb-4">
@@ -67,16 +59,12 @@ const Expertise = () => {
             </div>
           </div>
 
-          {/* Empty cell for second position in column 2 */}
           <div className="hidden md:block md:order-4"></div>
 
-          {/* Empty cell for third position in column 1 */}
           <div className="hidden md:block md:order-5"></div>
 
-          {/* Developer Enablement - Column 2, Row 3 */}
           <div className="relative pr-0 md:pr-16 order-3 md:order-6">
-            {/* Horizontal connecting line - hidden on mobile */}
-            <div className="absolute right-0 top-1/2 w-16 h-[3px] bg-white hidden md:block" />
+            <div className="absolute left-0 top-1/2 w-16 h-[3px] bg-white hidden md:block" />
             <div className="text-center border-2 border-white rounded-lg p-6">
               <Settings className="h-12 w-12 mx-auto mb-6 text-white" />
               <h3 className="text-2xl font-bold text-white mb-4">
@@ -90,7 +78,6 @@ const Expertise = () => {
           </div>
         </div>
 
-        {/* Continue button */}
         <div className="flex flex-col items-center w-full mt-16">
           <Button
             size="lg"
