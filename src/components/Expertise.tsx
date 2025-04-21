@@ -11,7 +11,7 @@ const Expertise = () => {
         className="absolute inset-0 z-10 pointer-events-none"
         style={{
           background:
-            "linear-gradient(to right, rgba(0,0,0,0.30), transparent 20%, transparent 80%, rgba(0,0,0,0.25))",
+            "linear-gradient(to right, rgba(0,0,0,0.40), transparent 20%, transparent 80%, rgba(0,0,0,0.25))",
         }}
       />
       <div className="container mx-auto px-4 relative z-20">
