@@ -1,4 +1,3 @@
-
 import { HardDrive, Code, Settings } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import TrianglePattern from "./TrianglePattern";
@@ -19,7 +18,6 @@ const Expertise = () => {
         <div className="flex justify-center mb-16">
           <Button
             size="lg"
-            id="expertise-background-btn"
             className="text-white border-white border-2 rounded-full text-xl px-14 py-7 font-typewriter shadow-none bg-transparent cursor-default pointer-events-none"
           >
             Background & Expertise

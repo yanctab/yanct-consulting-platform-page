@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
-import AboutHighlights from "@/components/AboutHighlights";
 import Services from "@/components/Services";
 import Expertise from "@/components/Expertise";
 import Footer from "@/components/Footer";
@@ -26,21 +25,8 @@ const Index = () => {
         >
           <ArrowDown className="h-6 w-6" />
         </Button>
-
         <About />
-        <VerticalLine
-          containerId="vertical-line-about-to-expertise"
-          startBtnId="about-highlights-services-btn"
-          endBtnId="expertise-background-btn"
-        />
-        <AboutHighlights />
-        
         <div id="expertise-services-block" className="relative">
-          <VerticalLine
-            containerId="expertise-services-block"
-            startBtnId="expertise-background-btn"
-            endBtnId="expertise-continue-btn"
-          />
           <VerticalLine
             containerId="expertise-services-block"
             startBtnId="expertise-continue-btn"
