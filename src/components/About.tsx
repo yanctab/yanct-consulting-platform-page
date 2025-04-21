@@ -10,7 +10,7 @@ const TrianglePattern = () => (
     xmlns="http://www.w3.org/2000/svg"
     aria-hidden="true"
     style={{
-      opacity: 0.055, // About 5% visible
+      opacity: 0.1, // About 5% visible
       mixBlendMode: "overlay"
     }}
   >
