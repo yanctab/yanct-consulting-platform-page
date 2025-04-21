@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { useIsMobile } from "@/hooks/use-mobile";
 
@@ -90,20 +91,6 @@ const Services = () => {
             </div>
           </div>
         </div>
-      </div>
-
-      <div className="relative flex flex-col items-center w-full mt-16">
-        <Button
-          size="lg"
-          id="services-continue-btn"
-          className="bg-white text-[#436576] hover:bg-gray-200 rounded-full text-xl px-14 py-7 font-typewriter shadow-lg transition-colors duration-300 border-none"
-          onClick={() => {
-            const connectSection = document.getElementById('connect');
-            connectSection?.scrollIntoView({ behavior: 'smooth' });
-          }}
-        >
-          Continue
-        </Button>
       </div>
     </section>
   );
