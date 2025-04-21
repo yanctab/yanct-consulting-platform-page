@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 
 const Services = () => {
@@ -92,7 +91,7 @@ const Services = () => {
               </p>
             </div>
           </div>
-          <div className="relative flex flex-col items-center w-full mt-0 md:mt-8 mb-4">
+          <div className="relative flex flex-col items-center w-full mt-16 md:mt-24 mb-8">
             <Button
               size="lg"
               id="services-main-btn"
