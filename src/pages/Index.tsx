@@ -26,8 +26,8 @@ const Index = () => {
           <ArrowDown className="h-6 w-6" />
         </Button>
         <About />
-        <Services />
         <Expertise />
+        <Services />
         <Footer />
       </main>
     </div>
