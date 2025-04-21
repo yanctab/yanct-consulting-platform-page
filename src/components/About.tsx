@@ -3,7 +3,7 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 
 const GRADIENT_STYLE =
-  "bg-[linear-gradient(90deg,hsla(22,100%,78%,1)_0%,hsla(2,78%,62%,1)_100%)]";
+  "bg-[linear-gradient(180deg,#9f8984_0%,#3d4c4a_50%,#293d3d_100%)]";
 
 const About = () => {
   return (
