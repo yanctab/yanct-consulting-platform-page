@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { useIsMobile } from "@/hooks/use-mobile";
 
@@ -28,10 +29,7 @@ const Services = () => {
 
       <div className="container mx-auto px-4 flex flex-col items-center mt-16 md:mt-32">
         <div className="flex flex-col gap-0 w-full">
-          <div
-            id="services-main-box"
-            className="grid grid-cols-1 md:grid-cols-2 gap-0 items-stretch w-full"
-          >
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-0 items-stretch w-full">
             <div
               className="bg-white flex items-center justify-center border border-[#e5e5e5] h-full w-full aspect-[1.8/1] rounded-2xl bg-cover bg-center grayscale"
               style={{
