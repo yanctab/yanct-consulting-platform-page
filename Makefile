@@ -1,0 +1,50 @@
+## help               - Show this help.
+.PHONY: help
+help:
+	@fgrep -h "##" $(MAKEFILE_LIST) | fgrep -v fgrep | sed -e 's/\\$$//' | sed -e 's/##//'
+
+## VARIABLES
+DOMAIN = yanct.com
+EMAIL = contact@yanct.com
+WEBROOT = /var/www/$(DOMAIN)
+
+## build              - Build web page
+.PHONY: build
+build: 
+	npm install
+	npm run build
+
+## preview            - Install, build and start up preview on http://localhost:4173/
+.PHONY: preview
+preview: build
+	npm run preview
+
+## setup              - Install npm, nginx, and certbot on Ubuntu/Debian
+.PHONY: setup
+setup:
+	sudo apt update
+	sudo apt install -y npm nginx certbot python3-certbot-nginx
+
+## configure-nginx    - Configure Nginx for $(DOMAIN) and serve the website
+.PHONY: configure-nginx
+configure-nginx:
+	# Call the script to configure Nginx
+	./configure-nginx.sh $(DOMAIN) $(WEBROOT)
+
+## obtain-ssl         - Obtain an SSL certificate for $(DOMAIN) using Let's Encrypt
+.PHONY: obtain-ssl
+obtain-ssl:
+	sudo certbot --nginx -d $(DOMAIN) -d www.$(DOMAIN) --agree-tos --no-eff-email --email $(EMAIL)
+
+## renew-ssl          - Renew the SSL certificate for $(DOMAIN)
+.PHONY: renew-ssl
+renew-ssl:
+	sudo certbot renew
+
+## deploy             - Build and deploy the website, set up Nginx
+.PHONY: deploy
+deploy: build setup configure-nginx
+
+## all                - Run everything (build, deploy, configure)
+.PHONY: all
+all: deploy
