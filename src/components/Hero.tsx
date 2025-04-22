@@ -35,7 +35,7 @@ const Hero = () => {
         <div className="flex flex-col md:flex-row justify-center items-center gap-4">
           <Button
             size="lg"
-            className="bg-white text-[#436576] hover:bg-gray-200 rounded-full text-xl px-14 py-7 font-typewriter shadow-lg transition-colors duration-300 border-none"
+            className="min-w-[220px] bg-white text-[#436576] hover:bg-gray-200 rounded-full text-xl px-14 py-7 font-typewriter shadow-lg transition-colors duration-300 border-none"
             onClick={() => {
               const about = document.getElementById("about");
               about?.scrollIntoView({ behavior: "smooth" });
@@ -45,7 +45,7 @@ const Hero = () => {
           </Button>
           <Button
             size="lg"
-            className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#436576] rounded-full text-xl px-14 py-7 font-typewriter shadow-lg transition-colors duration-300"
+            className="min-w-[220px] bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#436576] rounded-full text-xl px-14 py-7 font-typewriter shadow-lg transition-colors duration-300"
             onClick={() => {
               const connect = document.getElementById("connect");
               connect?.scrollIntoView({ behavior: "smooth" });
