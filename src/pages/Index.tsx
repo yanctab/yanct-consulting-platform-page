@@ -42,7 +42,7 @@ const Index = () => {
           <VerticalLine
             containerId="expertise-services-block"
             startBtnId="services-header-btn"
-            endBtnId="services-main-btn"
+            endBtnId="services-continue-btn"
           />
           <VerticalLine
             containerId="expertise-services-block"
@@ -65,3 +65,4 @@ const Index = () => {
 };
 
 export default Index;
+
