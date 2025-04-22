@@ -96,7 +96,7 @@ const Services = () => {
             id="services-continue-btn"
             className="bg-white text-[#3c4b49] hover:bg-gray-200 rounded-full text-xl px-14 py-7 font-typewriter shadow-lg transition-colors duration-300 border-none mt-0"
             onClick={() => {
-              const highlights = document.getElementById('connect');
+              const highlights = document.getElementById('testimonials');
               highlights?.scrollIntoView({ behavior: 'smooth' });
             }}
           >

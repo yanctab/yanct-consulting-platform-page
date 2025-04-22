@@ -8,6 +8,7 @@ import Expertise from "@/components/Expertise";
 import Connect from "@/components/Connect";
 import Footer from "@/components/Footer";
 import VerticalLine from "@/components/VerticalLine";
+import Testimonials from "@/components/Testimonials";
 
 const Index = () => {
   const scrollToContent = () => {
@@ -51,6 +52,16 @@ const Index = () => {
           <VerticalLine
             containerId="expertise-services-block"
             startBtnId="services-continue-btn"
+            endBtnId="testimonials-header-btn"
+          />
+          <VerticalLine
+            containerId="expertise-services-block"
+            startBtnId="testimonials-header-btn"
+            endBtnId="testimonials-continue-btn"
+          />
+          <VerticalLine
+            containerId="expertise-services-block"
+            startBtnId="testimonials-continue-btn"
             endBtnId="connect-main-btn"
           />
           <VerticalLine
@@ -60,6 +71,7 @@ const Index = () => {
           />
           <Expertise />
           <Services />
+          <Testimonials />
           <Connect />
         </div>
         <VerticalLine
