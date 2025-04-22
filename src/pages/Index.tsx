@@ -40,8 +40,8 @@ const Index = () => {
           />
           <VerticalLine
             containerId="expertise-services-block"
-            startBtnId="services-header-btn"
-            endBtnId="connect-main-btn"
+            startBtnId="expertise-continue-btn"
+            endBtnId="services-header-btn"
           />
           <VerticalLine
             containerId="expertise-services-block"
