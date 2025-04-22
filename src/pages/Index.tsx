@@ -42,21 +42,21 @@ const Index = () => {
           <VerticalLine
             containerId="expertise-services-block"
             startBtnId="services-header-btn"
-            endBtnId="services-continue-btn"
+            endBtnId="connect-main-btn"
           />
           <VerticalLine
             containerId="expertise-services-block"
             startBtnId="expertise-continue-btn"
             endBtnId="services-header-btn"
           />
+          <VerticalLine
+            containerId="expertise-services-block"
+            startBtnId="connect-main-btn"
+            endBtnId="contact-box"
+          />
           <Expertise />
           <Services />
           <Connect />
-          <VerticalLine
-            containerId="expertise-services-block"
-            startBtnId="services-main-btn"
-            endBtnId="contact-box"
-          />
         </div>
         <Footer />
       </main>

@@ -12,7 +12,7 @@ const Connect = () => {
         <div className="relative flex flex-col items-center w-full">
           <Button
             size="lg"
-            id="services-main-btn"
+            id="connect-main-btn"
             className="text-white border-white border-2 rounded-full text-xl px-14 py-7 font-typewriter shadow-none bg-transparent hover:bg-transparent cursor-pointer"
           >
             Connect
