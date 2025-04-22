@@ -64,9 +64,10 @@ const Testimonials = () => {
           <div className="text-center border-4 border-white rounded-2xl p-6 md:p-8 bg-[#2fae84] shadow-lg">
             <div className="text-6xl text-white mb-4 leading-none">“</div>
             <p className="text-white opacity-90 mb-6">
-              We consulted Måns for guidance on configuring and delivering IoT gateways for cloud control
-              to thousands of end-users in a scalable way. Måns was incredibly service-minded, pedagogical,
-              and highly knowledgeable. He not only put us on the right track but also taught us a great deal.
+            Måns is next level embedded linux expert. Not only does he understand the tools surrounding custom embedded
+            linux system like yocto, but he has very good linux knowledge which is important to have this combo in my opinion.
+            From classical linux stuff, to drivers to device tree setup and board bring ups. I higly recommend Måns.
+            Most of all because he is a cool guy as well :)
             </p>
             <p className="text-white font-bold">Frederik Vibe-Petersen</p>
             <p className="text-white italic text-sm">
