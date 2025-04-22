@@ -17,7 +17,7 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white" id="main-container">
       <main>
         <Hero />
         <Button
@@ -58,6 +58,15 @@ const Index = () => {
           <Services />
           <Connect />
         </div>
+        {/* Add a VerticalLine from contact-box to footer-logo using the main-container as the container */}
+        <VerticalLine
+          containerId="main-container"
+          startBtnId="contact-box"
+          endBtnId="footer-logo"
+          color="#fff"
+          width={3}
+          hideOnMobile={true}
+        />
         <Footer />
       </main>
     </div>
@@ -65,4 +74,3 @@ const Index = () => {
 };
 
 export default Index;
-
