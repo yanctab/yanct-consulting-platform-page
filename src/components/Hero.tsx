@@ -21,7 +21,11 @@ const Hero = () => {
             isMobile ? "w-[250px]" : "w-[500px]"
           } h-auto drop-shadow-[0_0_10px_rgba(0,0,0,0.7)]`}
         />
-        <h1 className={`${isMobile ? "text-4xl" : "text-5xl md:text-7xl"} font-bold mb-8`}>
+        <h1
+          className={`${
+            isMobile ? "text-4xl" : "text-5xl md:text-7xl"
+          } font-bold mb-8`}
+        >
           Welcome To Yanct.
         </h1>
         <p
@@ -29,7 +33,9 @@ const Hero = () => {
             isMobile ? "text-lg" : "text-xl md:text-2xl"
           } text-white/80 mb-12 max-w-2xl mx-auto`}
         >
-          With over a decade of hands-on experience, I bring a wealth of knowledge to the table, poised to elevate your projects to new heights of success.
+          With over a decade of hands-on experience, I bring a wealth of
+          knowledge to the table, poised to elevate your projects to new
+          heights of success.
         </p>
 
         <div className="flex flex-col md:flex-row justify-center items-center gap-4">
@@ -45,7 +51,7 @@ const Hero = () => {
           </Button>
           <Button
             size="lg"
-            className="min-w-[220px] bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#436576] rounded-full text-xl px-14 py-7 font-typewriter shadow-lg transition-colors duration-300"
+            className="min-w-[220px] bg-white text-[#436576] hover:bg-gray-200 rounded-full text-xl px-14 py-7 font-typewriter shadow-lg transition-colors duration-300 border-none"
             onClick={() => {
               const connect = document.getElementById("connect");
               connect?.scrollIntoView({ behavior: "smooth" });
@@ -56,7 +62,10 @@ const Hero = () => {
         </div>
 
         <div className="flex flex-col items-center mt-8 animate-bounce">
-          <Mouse className="w-8 h-8 text-white opacity-75" aria-label="Scroll for more" />
+          <Mouse
+            className="w-8 h-8 text-white opacity-75"
+            aria-label="Scroll for more"
+          />
         </div>
       </div>
     </div>
