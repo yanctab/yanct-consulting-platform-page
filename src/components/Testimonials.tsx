@@ -60,10 +60,21 @@ const Testimonials = () => {
             </p>
           </div>
 
-          {/* Empty left cell on second row */}
-          <div></div>
+          {/* Testimonial 3 - bottom left */}
+          <div className="text-center border-4 border-white rounded-2xl p-6 md:p-8 bg-[#2fae84] shadow-lg">
+            <div className="text-6xl text-white mb-4 leading-none">“</div>
+            <p className="text-white opacity-90 mb-6">
+              We consulted Måns for guidance on configuring and delivering IoT gateways for cloud control
+              to thousands of end-users in a scalable way. Måns was incredibly service-minded, pedagogical,
+              and highly knowledgeable. He not only put us on the right track but also taught us a great deal.
+            </p>
+            <p className="text-white font-bold">Frederik Vibe-Petersen</p>
+            <p className="text-white italic text-sm">
+              Creator of the TopBrewer Experience. Engineering awesome.
+            </p>
+          </div>
 
-          {/* Testimonial 3 - bottom right */}
+          {/* Testimonial 4 - bottom right */}
           <div className="text-center border-4 border-white rounded-2xl p-6 md:p-8 bg-[#2fae84] shadow-lg">
             <div className="text-6xl text-white mb-4 leading-none">“</div>
             <p className="text-white opacity-90 mb-6">
