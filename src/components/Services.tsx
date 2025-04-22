@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { useIsMobile } from "@/hooks/use-mobile";
 
@@ -31,14 +30,14 @@ const Services = () => {
         <div className="flex flex-col gap-0 w-full">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-0 items-stretch w-full">
             <div
-              className="bg-white flex items-center justify-center border border-[#e5e5e5] h-full w-full aspect-[1.8/1] rounded-none bg-cover bg-center"
+              className="bg-white flex items-center justify-center border border-[#e5e5e5] h-full w-full aspect-[1.8/1] rounded-2xl bg-cover bg-center"
               style={{
                 backgroundImage: "url('/Southtech-38_edited1.jpg')",
               }}
               aria-label="Black and white photo of building"
               role="img"
             />
-            <div className="bg-white flex flex-col justify-center border border-[#e5e5e5] p-4 md:p-8 h-full w-full aspect-[1.8/1] rounded-none">
+            <div className="bg-white flex flex-col justify-center border border-[#e5e5e5] p-4 md:p-8 h-full w-full aspect-[1.8/1] rounded-2xl">
               <h3 className="text-xl md:text-2xl lg:text-3xl font-semibold mb-2 md:mb-4 font-typewriter">
                 Remote-First Support
               </h3>
@@ -50,7 +49,7 @@ const Services = () => {
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-0 items-stretch w-full">
-            <div className="bg-white flex flex-col justify-center border border-[#e5e5e5] p-4 md:p-8 h-full w-full aspect-[1.8/1] rounded-none">
+            <div className="bg-white flex flex-col justify-center border border-[#e5e5e5] p-4 md:p-8 h-full w-full aspect-[1.8/1] rounded-2xl">
               <h3 className="text-xl md:text-2xl lg:text-3xl font-semibold mb-2 md:mb-4 font-typewriter">
                 Full-Time Engagement
               </h3>
@@ -61,7 +60,7 @@ const Services = () => {
               </p>
             </div>
             <div
-              className="bg-white flex items-center justify-center border border-[#e5e5e5] h-full w-full aspect-[1.8/1] rounded-none bg-cover bg-center"
+              className="bg-white flex items-center justify-center border border-[#e5e5e5] h-full w-full aspect-[1.8/1] rounded-2xl bg-cover bg-center"
               style={{
                 backgroundImage:
                   "url('/P_AB3418.jpg')",
@@ -72,7 +71,7 @@ const Services = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-0 items-stretch w-full">
             <div
-              className="bg-white flex items-center justify-center border border-[#e5e5e5] h-full w-full aspect-[1.8/1] rounded-none bg-cover bg-center"
+              className="bg-white flex items-center justify-center border border-[#e5e5e5] h-full w-full aspect-[1.8/1] rounded-2xl bg-cover bg-center"
               style={{
                 backgroundImage:
                   "url('P_AB3378.jpg')",
@@ -80,7 +79,7 @@ const Services = () => {
               aria-label="Black and white photo of herd of sheep"
               role="img"
             />
-            <div className="bg-white flex flex-col justify-center border border-[#e5e5e5] p-4 md:p-8 h-full w-full aspect-[1.8/1] rounded-none">
+            <div className="bg-white flex flex-col justify-center border border-[#e5e5e5] p-4 md:p-8 h-full w-full aspect-[1.8/1] rounded-2xl">
               <h3 className="text-xl md:text-2xl lg:text-3xl font-semibold mb-2 md:mb-4 font-typewriter">
                 Platform Review & Roadmap
               </h3>
