@@ -21,7 +21,6 @@ const Footer = () => {
               aria-label="Scroll to top"
             >
               <img
-                id="footer-logo"
                 src="/yanct.png"
                 alt="Yanct Logo"
                 className="h-20 md:h-28 lg:h-32 w-auto"

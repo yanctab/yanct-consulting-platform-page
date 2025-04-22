@@ -56,7 +56,7 @@ const Index = () => {
           />
           <VerticalLine
             containerId="expertise-services-block"
-            startBtnId="footer-logo"
+            startBtnId="footer-btn"
             endBtnId="contact-box"
           />
           <Expertise />
