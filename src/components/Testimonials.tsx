@@ -1,4 +1,3 @@
-import { HardDrive, Code, Settings } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import TrianglePattern from "./TrianglePattern";
 
@@ -31,7 +30,7 @@ const Testimonials = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-2 gap-8 md:gap-12">
           {/* Testimonial 1 - top left */}
           <div className="text-center border-4 border-white rounded-2xl p-6 md:p-8 bg-[#2fae84] shadow-lg">
-            <HardDrive className="h-12 w-12 mx-auto mb-6 text-white" />
+            <div className="text-6xl text-white mb-4 leading-none">“</div>
             <p className="text-white opacity-90 mb-6">
               We consulted Måns for guidance on configuring and delivering IoT gateways for cloud control
               to thousands of end-users in a scalable way. Måns was incredibly service-minded, pedagogical,
@@ -47,7 +46,7 @@ const Testimonials = () => {
 
           {/* Testimonial 2 - top right */}
           <div className="text-center border-4 border-white rounded-2xl p-6 md:p-8 bg-[#2fae84] shadow-lg">
-            <Code className="h-12 w-12 mx-auto mb-6 text-white" />
+            <div className="text-6xl text-white mb-4 leading-none">“</div>
             <p className="text-white opacity-90 mb-6">
               Måns is a skilled and experienced embedded SW programmer. He is also experienced in working closely
               with the HW development and HW production team in problem-solving and test design. He is very driven
@@ -66,7 +65,7 @@ const Testimonials = () => {
 
           {/* Testimonial 3 - bottom right */}
           <div className="text-center border-4 border-white rounded-2xl p-6 md:p-8 bg-[#2fae84] shadow-lg">
-            <Settings className="h-12 w-12 mx-auto mb-6 text-white" />
+            <div className="text-6xl text-white mb-4 leading-none">“</div>
             <p className="text-white opacity-90 mb-6">
               Måns is a hardworking and very skilled developer and expert in embedded Linux development (especially Yocto),
               C/C++ and Python programming. Always ready to help improving the development processes, tools etc. and has a
