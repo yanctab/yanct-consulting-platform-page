@@ -1,4 +1,3 @@
-
 import { ArrowDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Navbar from "@/components/Navbar";
@@ -46,10 +45,9 @@ const Index = () => {
           />
           <VerticalLine
             containerId="expertise-services-block"
-            startBtnId="expertise-continue-btn"
-            endBtnId="services-header-btn"
+            startBtnId="services-header-btn"
+            endBtnId="services-continue-btn"
           />
-          {/* Newly added line connects Services Continue to Connect Main */}
           <VerticalLine
             containerId="expertise-services-block"
             startBtnId="services-continue-btn"
@@ -64,7 +62,6 @@ const Index = () => {
           <Services />
           <Connect />
         </div>
-        {/* Add a VerticalLine from contact-box to footer-logo using the main-container as the container */}
         <VerticalLine
           containerId="main-container"
           startBtnId="contact-box"
@@ -80,4 +77,3 @@ const Index = () => {
 };
 
 export default Index;
-
