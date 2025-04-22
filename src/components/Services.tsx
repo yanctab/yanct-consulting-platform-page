@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { useIsMobile } from "@/hooks/use-mobile";
 
@@ -88,16 +89,6 @@ const Services = () => {
             </div>
           </div>
         </div>
-      </div>
-
-      <div className="container mx-auto px-4 flex flex-col items-center mt-16">
-        <Button
-          size="lg"
-          id="services-continue-btn"
-          className="text-white border-white border-2 rounded-full text-xl px-14 py-7 font-typewriter shadow-none bg-transparent hover:bg-transparent cursor-pointer"
-        >
-          Continue
-        </Button>
       </div>
     </section>
   );
