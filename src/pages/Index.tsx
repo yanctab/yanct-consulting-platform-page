@@ -54,11 +54,16 @@ const Index = () => {
             startBtnId="connect-main-btn"
             endBtnId="contact-box"
           />
+          <VerticalLine
+            containerId="expertise-services-block"
+            startBtnId="footer-btn"
+            endBtnId="contact-box"
+          />
           <Expertise />
           <Services />
           <Connect />
+          <Footer />
         </div>
-        <Footer />
       </main>
     </div>
   );

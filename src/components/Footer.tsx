@@ -16,6 +16,7 @@ const Footer = () => {
           <div className="mb-4 flex justify-center">
             <button 
               onClick={scrollToTop}
+              id="footer-btn"
               className="cursor-pointer hover:opacity-80 transition-opacity duration-300"
               aria-label="Scroll to top"
             >
