@@ -24,74 +24,60 @@ const Testimonials = () => {
           </Button>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-3 gap-8 md:gap-12 relative">
-          {/* Vertical line in the center */}
-          <div className="absolute left-1/2 top-0 bottom-0 w-[3px] bg-white -translate-x-1/2 hidden md:block" />
-
-          <div className="hidden md:block md:order-1"></div>
-
-          {/* Left box with line to the right */}
-          <div className="relative pr-0 md:pl-16 order-1 md:order-2">
-            <div className="absolute left-0 top-1/2 w-12 h-[3px] bg-white hidden md:block transform -translate-y-1/2" />
-            <div className="text-center border-4 border-white rounded-2xl p-6 md:p-8 bg-[#2fae84] shadow-lg">
-              <HardDrive className="h-12 w-12 mx-auto mb-6 text-white" />
-              <h3 className="text-2xl font-bold text-white mb-4">
-                Daria Madjidian
-              </h3>
-              <h4 className="text-2xl font-bold text-white mb-4">
-                Co-Founder and Chief Scientist at Emulate Energy
-              </h4>
-              <p className="text-white opacity-90">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 relative">
+          {/* First testimonial (top left) */}
+          <div className="text-center border-4 border-white rounded-2xl p-6 md:p-8 bg-[#2fae84] shadow-lg">
+            <HardDrive className="h-12 w-12 mx-auto mb-6 text-white" />
+            <h3 className="text-2xl font-bold text-white mb-4">
+              Daria Madjidian
+            </h3>
+            <h4 className="text-2xl font-bold text-white mb-4">
+              Co-Founder and Chief Scientist at Emulate Energy
+            </h4>
+            <p className="text-white opacity-90">
               We consulted Måns for guidance on configuring and delivering IoT gateways for cloud control
               to thousands of end-users in a scalable way. Måns was incredibly service-minded, pedagogical,
               and highly knowledgeable. He not only put us on the right track but also taught us a great deal,
               highlighted things we would have otherwise missed, and suggested several reasonable paths forward.
               We will continue to rely on him as our go-to expert for all IoT-related matters.
-              </p>
-            </div>
+            </p>
           </div>
 
-          {/* Right box with line to the left */}
-          <div className="relative pl-0 md:pr-16 order-2 md:order-3">
-            <div className="absolute right-0 top-1/2 w-12 h-[3px] bg-white hidden md:block transform -translate-y-1/2" />
-            <div className="text-center border-4 border-white rounded-2xl p-6 md:p-8 bg-[#2fae84] shadow-lg">
-              <Code className="h-12 w-12 mx-auto mb-6 text-white" />
-              <h3 className="text-2xl font-bold text-white mb-4">
-                Kent PålssonKent Pålsson
-              </h3>
-              <h4 className="text-2xl font-bold text-white mb-4">
-                Senior Hardware Project Design Lead på SCHNEIDER ELECTRIC
-              </h4>
-              <p className="text-white opacity-90">
+          {/* Second testimonial (top right) */}
+          <div className="text-center border-4 border-white rounded-2xl p-6 md:p-8 bg-[#2fae84] shadow-lg">
+            <Code className="h-12 w-12 mx-auto mb-6 text-white" />
+            <h3 className="text-2xl font-bold text-white mb-4">
+              Kent Pålsson
+            </h3>
+            <h4 className="text-2xl font-bold text-white mb-4">
+              Senior Hardware Project Design Lead på SCHNEIDER ELECTRIC
+            </h4>
+            <p className="text-white opacity-90">
               Måns is a skilled and experienced embedded SW programmer. He is also experienced in working closely
               with the HW development and HW production team in problem-solving and test design. He is very driven
-              in troubleshooting and never give up. Complexity is not a problem.He works proactively and reacts
-              fast on observations made. He has good contacts with other team’s and could handle different cultures easily. 
+              in troubleshooting and never give up. Complexity is not a problem. He works proactively and reacts
+              fast on observations made. He has good contacts with other teams and could handle different cultures easily. 
               I highly recommend him since his contribution is very good and he works on a high energy level!
-              </p>
-            </div>
+            </p>
           </div>
 
-          <div className="hidden md:block md:order-4"></div>
-          <div className="hidden md:block md:order-5"></div>
+          {/* Empty cell (bottom left) */}
+          <div></div>
 
-          {/* Left box with line to the right */}
-          <div className="relative pr-0 md:pl-16 order-3 md:order-6">
-            <div className="absolute left-0 top-1/2 w-12 h-[3px] bg-white hidden md:block transform -translate-y-1/2" />
-            <div className="text-center border-4 border-white rounded-2xl p-6 md:p-8 bg-[#2fae84] shadow-lg">
-              <Settings className="h-12 w-12 mx-auto mb-6 text-white" />
-              <h3 className="text-2xl font-bold text-white mb-4">        
-              Jeppe FrandsenJeppe Frandsen
-              </h3>
-              <h4 className="text-2xl font-bold text-white mb-4">
+          {/* Third testimonial (bottom right) */}
+          <div className="text-center border-4 border-white rounded-2xl p-6 md:p-8 bg-[#2fae84] shadow-lg">
+            <Settings className="h-12 w-12 mx-auto mb-6 text-white" />
+            <h3 className="text-2xl font-bold text-white mb-4">
+              Jeppe Frandsen
+            </h3>
+            <h4 className="text-2xl font-bold text-white mb-4">
               Senior Developer | Architect | Manager | DevOps Guy
-              </h4>
-              <p className="text-white opacity-90">
+            </h4>
+            <p className="text-white opacity-90">
               Måns is a hardworking and very skilled developer and expert in embedded Linux development (especially Yocto),
               C/C++ and Python programming. Always ready to help improving the development processes, tools etc. and has a
               high focus on quality. A true asset for the team.
-              </p>
-            </div>
+            </p>
           </div>
         </div>
 
@@ -101,8 +87,8 @@ const Testimonials = () => {
             id="testimonials-continue-btn"
             className="bg-white text-[#35b88f] hover:bg-gray-200 rounded-full text-xl px-14 py-7 font-typewriter shadow-lg transition-colors duration-300 border-none mt-0"
             onClick={() => {
-              const highlights = document.getElementById('connect');
-              highlights?.scrollIntoView({ behavior: 'smooth' });
+              const highlights = document.getElementById("connect");
+              highlights?.scrollIntoView({ behavior: "smooth" });
             }}
           >
             Continue
