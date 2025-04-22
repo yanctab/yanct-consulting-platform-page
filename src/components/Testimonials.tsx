@@ -4,7 +4,10 @@ import TrianglePattern from "./TrianglePattern";
 
 const Testimonials = () => {
   return (
-    <section id="testimonials" className="py-24 bg-[#35b88f] relative overflow-visible">
+    <section
+      id="testimonials"
+      className="py-24 bg-[#35b88f] relative overflow-visible"
+    >
       <TrianglePattern />
       <div
         className="absolute inset-0 z-10 pointer-events-none"
@@ -24,59 +27,54 @@ const Testimonials = () => {
           </Button>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 relative">
-          {/* First testimonial (top left) */}
+        {/* Testimonial grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-2 gap-8 md:gap-12">
+          {/* Testimonial 1 - top left */}
           <div className="text-center border-4 border-white rounded-2xl p-6 md:p-8 bg-[#2fae84] shadow-lg">
             <HardDrive className="h-12 w-12 mx-auto mb-6 text-white" />
-            <h3 className="text-2xl font-bold text-white mb-4">
-              Daria Madjidian
-            </h3>
-            <h4 className="text-2xl font-bold text-white mb-4">
-              Co-Founder and Chief Scientist at Emulate Energy
-            </h4>
-            <p className="text-white opacity-90">
+            <p className="text-white opacity-90 mb-6">
               We consulted Måns for guidance on configuring and delivering IoT gateways for cloud control
               to thousands of end-users in a scalable way. Måns was incredibly service-minded, pedagogical,
               and highly knowledgeable. He not only put us on the right track but also taught us a great deal,
               highlighted things we would have otherwise missed, and suggested several reasonable paths forward.
               We will continue to rely on him as our go-to expert for all IoT-related matters.
             </p>
+            <p className="text-white font-bold">Daria Madjidian</p>
+            <p className="text-white italic text-sm">
+              Co-Founder and Chief Scientist at Emulate Energy
+            </p>
           </div>
 
-          {/* Second testimonial (top right) */}
+          {/* Testimonial 2 - top right */}
           <div className="text-center border-4 border-white rounded-2xl p-6 md:p-8 bg-[#2fae84] shadow-lg">
             <Code className="h-12 w-12 mx-auto mb-6 text-white" />
-            <h3 className="text-2xl font-bold text-white mb-4">
-              Kent Pålsson
-            </h3>
-            <h4 className="text-2xl font-bold text-white mb-4">
-              Senior Hardware Project Design Lead på SCHNEIDER ELECTRIC
-            </h4>
-            <p className="text-white opacity-90">
+            <p className="text-white opacity-90 mb-6">
               Måns is a skilled and experienced embedded SW programmer. He is also experienced in working closely
               with the HW development and HW production team in problem-solving and test design. He is very driven
               in troubleshooting and never give up. Complexity is not a problem. He works proactively and reacts
               fast on observations made. He has good contacts with other teams and could handle different cultures easily. 
               I highly recommend him since his contribution is very good and he works on a high energy level!
             </p>
+            <p className="text-white font-bold">Kent Pålsson</p>
+            <p className="text-white italic text-sm">
+              Senior Hardware Project Design Lead på SCHNEIDER ELECTRIC
+            </p>
           </div>
 
-          {/* Empty cell (bottom left) */}
+          {/* Empty left cell on second row */}
           <div></div>
 
-          {/* Third testimonial (bottom right) */}
+          {/* Testimonial 3 - bottom right */}
           <div className="text-center border-4 border-white rounded-2xl p-6 md:p-8 bg-[#2fae84] shadow-lg">
             <Settings className="h-12 w-12 mx-auto mb-6 text-white" />
-            <h3 className="text-2xl font-bold text-white mb-4">
-              Jeppe Frandsen
-            </h3>
-            <h4 className="text-2xl font-bold text-white mb-4">
-              Senior Developer | Architect | Manager | DevOps Guy
-            </h4>
-            <p className="text-white opacity-90">
+            <p className="text-white opacity-90 mb-6">
               Måns is a hardworking and very skilled developer and expert in embedded Linux development (especially Yocto),
               C/C++ and Python programming. Always ready to help improving the development processes, tools etc. and has a
               high focus on quality. A true asset for the team.
+            </p>
+            <p className="text-white font-bold">Jeppe Frandsen</p>
+            <p className="text-white italic text-sm">
+              Senior Developer | Architect | Manager | DevOps Guy
             </p>
           </div>
         </div>
