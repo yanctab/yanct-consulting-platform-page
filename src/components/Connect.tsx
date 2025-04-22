@@ -19,7 +19,7 @@ const Connect = () => {
           </Button>
         </div>
 
-        <div className="relative flex flex-col items-center w-full mt-10">
+        <div className="relative flex flex-col items-center w-full mt-16 md:mt-24">
           <div 
             id="contact-box"
             className="bg-transparent border-2 border-white w-full md:w-3/4 p-8"
