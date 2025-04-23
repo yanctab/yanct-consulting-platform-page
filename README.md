@@ -4,7 +4,8 @@
 
 Generated using https://lovable.dev/
 
-**URL**: https://lovable.dev/projects/9b6768fe-b7a2-4f7b-b83d-e5ebaf387dbf
+**URL-dev**: https://lovable.dev/projects/9b6768fe-b7a2-4f7b-b83d-e5ebaf387dbf
+**URL-preview**: https://preview--yanct-consulting-platform-page.lovable.app/
 
 ## How can I edit this code?
 
