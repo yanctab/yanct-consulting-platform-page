@@ -3,10 +3,10 @@
 help:
 	@fgrep -h "##" $(MAKEFILE_LIST) | fgrep -v fgrep | sed -e 's/\\$$//' | sed -e 's/##//'
 
-## VARIABLES
 DOMAIN = yanct.com
 EMAIL = contact@yanct.com
 WEBROOT = /var/www/$(DOMAIN)
+
 
 ## build              - Build web page
 .PHONY: build
@@ -23,7 +23,7 @@ preview: build
 .PHONY: setup
 setup:
 	sudo apt update
-	sudo apt install -y npm nginx certbot python3-certbot-nginx
+	sudo apt install -y npm nginx certbot python3-certbot-nginx make
 
 ## configure-nginx    - Configure Nginx for $(DOMAIN) and serve the website
 .PHONY: configure-nginx
@@ -43,7 +43,7 @@ renew-ssl:
 
 ## deploy             - Build and deploy the website, set up Nginx
 .PHONY: deploy
-deploy: build setup configure-nginx
+deploy: setup configure-nginx
 
 ## all                - Run everything (build, deploy, configure)
 .PHONY: all
