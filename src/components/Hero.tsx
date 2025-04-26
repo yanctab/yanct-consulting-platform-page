@@ -42,8 +42,9 @@ const Hero = () => {
             Learn More
           </Button>
           <Button
+            variant="outline"
             size="lg"
-            className="min-w-[220px] bg-white text-[#0B132B] hover:bg-gray-200 rounded-full text-xl px-14 py-7 font-ubuntu shadow-lg transition-colors duration-300 border-none"
+            className="min-w-[220px] bg-transparent text-white border-white hover:bg-white/10 rounded-full text-xl px-14 py-7 font-ubuntu shadow-lg transition-colors duration-300"
             onClick={() => {
               const connect = document.getElementById("connect");
               connect?.scrollIntoView({ behavior: "smooth" });
