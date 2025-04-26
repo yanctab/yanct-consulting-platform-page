@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import TrianglePattern from "./TrianglePattern";
 
@@ -19,10 +18,8 @@ const Testimonials = () => {
       <div className="container mx-auto px-4 relative z-20">
         <div className="flex justify-center mb-16">
           <h2
-            className="font-typewriter font-bold text-5xl md:text-7xl text-white mt-6 mb-10 text-center"
-            style={{
-              fontFamily: 'Courier New, Courier, monospace',
-            }}
+            id="testimonials-header-btn"
+            className="text-white text-4xl font-typewriter"
           >
             Testimonials
           </h2>

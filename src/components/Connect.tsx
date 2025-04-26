@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail } from "lucide-react";
 
@@ -11,10 +10,8 @@ const Connect = () => {
       <div className="container mx-auto px-4 relative z-20">
         <div className="relative flex flex-col items-center w-full">
           <h2
-            className="font-typewriter font-bold text-5xl md:text-7xl text-white mt-6 mb-10 text-center"
-            style={{
-              fontFamily: 'Courier New, Courier, monospace',
-            }}
+            id="connect-main-btn"
+            className="text-white text-4xl font-typewriter"
           >
             Connect
           </h2>

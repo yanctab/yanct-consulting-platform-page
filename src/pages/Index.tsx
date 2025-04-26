@@ -32,41 +32,41 @@ const Index = () => {
           <VerticalLine
             containerId="expertise-services-block"
             startBtnId="about-highlights-continue-btn"
-            endBtnId="expertise h2"
+            endBtnId="expertise-header-btn"
           />
           <VerticalLine
             containerId="expertise-services-block"
-            startBtnId="expertise h2"
+            startBtnId="expertise-header-btn"
             endBtnId="expertise-continue-btn"
           />
           <VerticalLine
             containerId="expertise-services-block"
             startBtnId="expertise-continue-btn"
-            endBtnId="services h2"
+            endBtnId="services-header-btn"
           />
           <VerticalLine
             containerId="expertise-services-block"
-            startBtnId="services h2"
+            startBtnId="services-header-btn"
             endBtnId="services-continue-btn"
           />
           <VerticalLine
             containerId="expertise-services-block"
             startBtnId="services-continue-btn"
-            endBtnId="testimonials h2"
+            endBtnId="testimonials-header-btn"
           />
           <VerticalLine
             containerId="expertise-services-block"
-            startBtnId="testimonials h2"
+            startBtnId="testimonials-header-btn"
             endBtnId="testimonials-continue-btn"
           />
           <VerticalLine
             containerId="expertise-services-block"
             startBtnId="testimonials-continue-btn"
-            endBtnId="connect h2"
+            endBtnId="connect-main-btn"
           />
           <VerticalLine
             containerId="expertise-services-block"
-            startBtnId="connect h2"
+            startBtnId="connect-main-btn"
             endBtnId="contact-box"
           />
           <Expertise />
