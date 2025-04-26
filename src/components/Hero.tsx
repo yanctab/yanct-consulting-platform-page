@@ -11,7 +11,7 @@ const Hero = () => {
       className="min-h-[80vh] relative flex items-center justify-center bg-cover bg-center font-ubuntu"
       style={{
         backgroundImage:
-          'linear-gradient(rgba(11, 19, 43, 0.7), rgba(11, 19, 43, 0.9)), url("https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=2000")',
+          'linear-gradient(rgba(11, 19, 43, 0.5), rgba(11, 19, 43, 0.7)), url("https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=2000")',
       }}
     >
       <div className="text-white max-w-3xl text-center px-4">
