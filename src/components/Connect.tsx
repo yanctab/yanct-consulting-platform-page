@@ -30,10 +30,27 @@ const Connect = () => {
                 <Github className="w-8 h-8 text-white cursor-pointer hover:text-gray-200 transition-colors" />
               </div>
               <div className="flex flex-col gap-8 text-white text-center md:text-left">
-                <p className="text-lg">www.linkedin.com/in/måns-zigher-a4656954</p>
-                <p className="text-lg">info @ yanct.com</p>
-                <p className="text-lg">https://github.com/yanctab</p>
+                <a
+                  href="https://www.linkedin.com/in/måns-zigher-a4656954"
+                  className="text-lg underline hover:text-gray-300"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  www.linkedin.com/in/måns-zigher-a4656954
+                </a>
+                <p className="text-lg">
+                  info @ yanct.com
+                </p>
+                <a
+                  href="https://github.com/yanctab"
+                  className="text-lg underline hover:text-gray-300"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  github.com/yanctab
+                </a>
               </div>
+
             </div>
           </div>
         </div>

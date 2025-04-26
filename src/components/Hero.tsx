@@ -27,16 +27,14 @@ const Hero = () => {
             isMobile ? "text-4xl" : "text-5xl md:text-7xl"
           } font-bold mb-8`}
         >
-          Welcome To Yanct.
+          Welcome.
         </h1>
         <p
           className={`${
             isMobile ? "text-lg" : "text-xl md:text-2xl"
           } text-white/80 mb-12 max-w-2xl mx-auto`}
         >
-          With over a decade of hands-on experience, I bring a wealth of
-          knowledge to the table, poised to elevate your projects to new
-          heights of success.
+          With over a decade of hands-on experience, I bring a wealth of knowledge to the table, poised to elevate your projects to new heights of success.
         </p>
 
         <div className="flex flex-col md:flex-row justify-center items-center gap-4">
