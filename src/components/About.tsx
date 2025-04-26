@@ -25,31 +25,30 @@ const About = () => {
         <div className="container mx-auto px-4 relative z-20">
           <div className="relative flex flex-col items-center">
             <img
-              src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?auto=format&fit=crop&w=350&q=80"
+              src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?auto=format&fit=crop&w=450&q=80"
               alt="Profile of smiling man"
-              className="mb-6 w-52 h-52 object-cover rounded-full grayscale shadow-xl border-4 border-white"
+              className="mb-10 w-72 h-72 object-cover rounded-full grayscale shadow-xl border-4 border-white"
               style={{
                 marginTop: '-24px',
                 backgroundColor: '#fff',
               }}
-              width={208}
-              height={208}
+              width={288}
+              height={288}
             />
 
             <h2
-              className="text-white text-4xl font-typewriter"
+              className="text-white text-5xl font-typewriter mt-6 text-center"
             >
               About
             </h2>
           </div>
-          <div className="prose prose-lg prose-invert max-w-none mx-auto flex flex-col items-center">
-            <p className="text-white text-lg leading-relaxed mt-2">
-              Yanct is an one man show at the moment but with over 15 years of embedded Linux experience, I focus on turning complex platforms into secure, production-ready systems.
+
+          <div className="max-w-5xl mx-auto flex flex-col items-center text-center mt-8 px-4">
+            <p className="text-white text-lg leading-relaxed">
+              Yanct is an one man show at the moment but with over 15 years of embedded Linux experience, I focus on turning complex platforms into secure, production-ready systems. I specialize in bridging the gap between vendor BSPs and reliable products, with deep experience across multiple hardware suppliers and ecosystems. But what really sets me apart is how I work — with a service-minded approach, strong communication, and a focus on collaboration.
             </p>
-            <p className="text-white text-lg leading-relaxed mt-6">
-              I specialize in bridging the gap between vendor BSPs and reliable products, with deep experience across multiple hardware suppliers and ecosystems. But what really sets me apart is how I work — with a service-minded approach, strong communication, and a focus on collaboration.
-            </p>
-            <div className="relative flex flex-col items-center w-full mt-10">
+
+            <div className="relative flex flex-col items-center w-full mt-16">
               <div
                 className="hidden md:block absolute left-1/2 -translate-x-1/2 z-10"
                 style={{
@@ -62,7 +61,7 @@ const About = () => {
               />
               <Button
                 size="lg"
-                className="bg-white text-[#0B132B] hover:bg-gray-200 rounded-full text-xl px-14 py-7 font-typewriter shadow-lg transition-colors duration-300 border-none"
+                className="bg-white text-[#0B132B] hover:bg-gray-200 rounded-full text-xl px-14 py-7 font-typewriter shadow-lg transition-colors duration-300 border-none mt-8"
                 onClick={() => {
                   const highlights = document.getElementById('about-highlights');
                   highlights?.scrollIntoView({ behavior: 'smooth' });
