@@ -1,3 +1,4 @@
+
 import { HardDrive, Code, Settings } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import TrianglePattern from "./TrianglePattern";
@@ -16,8 +17,10 @@ const Expertise = () => {
       <div className="container mx-auto px-4 relative z-20">
         <div className="flex justify-center mb-16">
           <h2
-            id="expertise-header-btn"
-            className="text-white text-4xl font-typewriter"
+            className="font-typewriter font-bold text-5xl md:text-7xl text-white mt-6 mb-10 text-center"
+            style={{
+              fontFamily: 'Courier New, Courier, monospace',
+            }}
           >
             Expertise
           </h2>

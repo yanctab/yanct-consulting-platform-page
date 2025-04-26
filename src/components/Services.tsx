@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { useIsMobile } from "@/hooks/use-mobile";
 
@@ -18,8 +19,10 @@ const Services = () => {
     >
       <div className="relative flex flex-col items-center w-full mt-0">
         <h2
-          id="services-header-btn"
-          className="text-white text-4xl font-typewriter"
+          className="font-typewriter font-bold text-5xl md:text-7xl text-white mt-6 mb-10 text-center"
+          style={{
+            fontFamily: 'Courier New, Courier, monospace',
+          }}
         >
           Services
         </h2>
