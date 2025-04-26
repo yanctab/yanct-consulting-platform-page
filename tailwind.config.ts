@@ -104,9 +104,9 @@ export default {
         'accordion-up': 'accordion-up 0.2s ease-out'
       },
       fontFamily: {
-        // Add a new font family for typewriter style
         'typewriter': ['Courier New', 'Courier', 'monospace'],
         'ubuntu': ['Ubuntu', 'sans-serif'],
+        'signature': ['Dancing Script', 'cursive'],
       },
     }
   },
