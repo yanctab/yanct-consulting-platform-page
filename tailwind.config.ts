@@ -106,6 +106,7 @@ export default {
       fontFamily: {
         // Add a new font family for typewriter style
         'typewriter': ['Courier New', 'Courier', 'monospace'],
+        'ubuntu': ['Ubuntu', 'sans-serif'],
       },
     }
   },
