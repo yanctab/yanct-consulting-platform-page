@@ -7,7 +7,7 @@ const AboutHighlights = () => (
     id="about-highlights"
     className="relative py-16 md:py-24 overflow-visible bg-fixed"
     style={{
-      backgroundImage: 'linear-gradient(180deg, rgba(11, 19, 43, 0.9), rgba(71, 112, 135, 0.9), rgba(245, 247, 250, 0.9)), url("https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=2000")',
+      backgroundImage: 'url("https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=2000")',
       backgroundAttachment: 'fixed',
       backgroundSize: 'cover',
       backgroundPosition: 'center',
