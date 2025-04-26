@@ -15,7 +15,10 @@ const Expertise = () => {
       />
       <div className="container mx-auto px-4 relative z-20">
         <div className="flex justify-center mb-16">
-          <h2 className="text-white text-4xl font-typewriter">
+          <h2
+            id="expertise-header-btn"
+            className="text-white text-4xl font-typewriter"
+          >
             Expertise
           </h2>
         </div>
