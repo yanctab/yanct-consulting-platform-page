@@ -35,27 +35,35 @@ const Services = () => {
               aria-label="Black and white photo of building"
               role="img"
             />
-            <div className="bg-white flex flex-col justify-center border border-[#e5e5e5] p-4 md:p-8 h-full w-full aspect-[1.8/1] rounded-2xl">
-              <h3 className="text-xl md:text-2xl lg:text-3xl font-semibold mb-2 md:mb-4 font-ubuntu">
-                Remote-First Support
-              </h3>
-              <p className="text-gray-700 text-sm md:text-lg leading-tight md:leading-relaxed">
-                Ideal for small to mid-sized companies, offering flexible,
-                ongoing support with expert-level embedded Linux and Yocto
-                expertise.
-              </p>
+            <div className="bg-white p-1 rounded-2xl border-4 border-[#F5F7FA]">
+              <div className="h-full w-full bg-[#0B132B] p-1 rounded-[calc(1rem-2px)]">
+                <div className="h-full w-full bg-[#F5F7FA] flex flex-col justify-center shadow-md p-4 sm:p-6 md:p-8 rounded-[calc(1rem-4px)]">
+                  <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-2 md:mb-4">
+                    Remote-First Support
+                  </h3>
+                  <p className="text-gray-700 text-sm sm:text-base md:text-lg leading-tight sm:leading-relaxed">
+                    Ideal for small to mid-sized companies, offering flexible,
+                    ongoing support with expert-level embedded Linux and Yocto
+                    expertise.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-0 items-stretch w-full">
-            <div className="bg-white flex flex-col justify-center border border-[#e5e5e5] p-4 md:p-8 h-full w-full aspect-[1.8/1] rounded-2xl">
-              <h3 className="text-xl md:text-2xl lg:text-3xl font-semibold mb-2 md:mb-4 font-ubuntu">
-                Full-Time Engagement
-              </h3>
-              <p className="text-gray-700 text-sm md:text-lg leading-tight md:leading-relaxed">
-                Full-time, on-site or hybrid consulting, providing hands-on
-                support for day-to-day development and real-time issue
-                resolution.
-              </p>
+            <div className="bg-white p-1 rounded-2xl border-4 border-[#F5F7FA]">
+              <div className="h-full w-full bg-[#0B132B] p-1 rounded-[calc(1rem-2px)]">
+                <div className="h-full w-full bg-[#F5F7FA] flex flex-col justify-center shadow-md p-4 sm:p-6 md:p-8 rounded-[calc(1rem-4px)]">
+                  <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-2 md:mb-4">
+                    Full-Time Engagement
+                  </h3>
+                  <p className="text-gray-700 text-sm sm:text-base md:text-lg leading-tight sm:leading-relaxed">
+                    Full-time, on-site or hybrid consulting, providing hands-on
+                    support for day-to-day development and real-time issue
+                    resolution.
+                  </p>
+                </div>
+              </div>
             </div>
             <div
               className="bg-white flex items-center justify-center border border-[#e5e5e5] h-full w-full aspect-[1.8/1] rounded-2xl bg-cover bg-center grayscale"
@@ -75,14 +83,18 @@ const Services = () => {
               aria-label="Black and white photo of herd of sheep"
               role="img"
             />
-            <div className="bg-white flex flex-col justify-center border border-[#e5e5e5] p-4 md:p-8 h-full w-full aspect-[1.8/1] rounded-2xl">
-              <h3 className="text-xl md:text-2xl lg:text-3xl font-semibold mb-2 md:mb-4 font-ubuntu">
-                Platform Review & Roadmap
-              </h3>
-              <p className="text-gray-700 text-sm md:text-lg leading-tight md:leading-relaxed">
-                Tailored review of your platform and processes, with a clear
-                roadmap for improvements and implementation options.
-              </p>
+            <div className="bg-white p-1 rounded-2xl border-4 border-[#F5F7FA]">
+              <div className="h-full w-full bg-[#0B132B] p-1 rounded-[calc(1rem-2px)]">
+                <div className="h-full w-full bg-[#F5F7FA] flex flex-col justify-center shadow-md p-4 sm:p-6 md:p-8 rounded-[calc(1rem-4px)]">
+                  <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-2 md:mb-4">
+                    Platform Review & Roadmap
+                  </h3>
+                  <p className="text-gray-700 text-sm sm:text-base md:text-lg leading-tight sm:leading-relaxed">
+                    Tailored review of your platform and processes, with a clear
+                    roadmap for improvements and implementation options.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
