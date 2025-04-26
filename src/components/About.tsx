@@ -53,19 +53,9 @@ const About = () => {
               I specialize in bridging the gap between vendor BSPs and reliable products, with deep experience across multiple hardware suppliers and ecosystems. But what really sets me apart is how I work — with a service-minded approach, strong communication, and a focus on collaboration.
             </p>
             <div className="relative flex flex-col items-center w-full mt-10">
-              <div
-                className="hidden md:block absolute left-1/2 -translate-x-1/2 z-10"
-                style={{
-                  top: '68px',
-                  height: 'calc(100% - 0px)',
-                  width: '0px',
-                  borderLeft: '3px solid #fff',
-                  pointerEvents: "none",
-                }}
-              />
               <Button
                 size="lg"
-                className="bg-white text-[#35b88f] hover:bg-gray-200 rounded-full text-xl px-14 py-7 font-typewriter shadow-lg transition-colors duration-300 border-none"
+                className="bg-white text-[#0B132B] hover:bg-gray-200 rounded-full text-xl px-14 py-7 font-typewriter shadow-lg transition-colors duration-300 border-none"
                 onClick={() => {
                   const highlights = document.getElementById('about-highlights');
                   highlights?.scrollIntoView({ behavior: 'smooth' });
