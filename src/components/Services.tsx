@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { useIsMobile } from "@/hooks/use-mobile";
 
@@ -7,12 +8,12 @@ const Services = () => {
   return (
     <section
       id="services"
-      className="relative py-16 md:py-24 overflow-visible bg-fixed"
+      className="relative py-16 md:py-24 overflow-visible"
       style={{
-        backgroundImage: 'linear-gradient(180deg, #0B132B 0%, #477087 60%, #F5F7FA 100%)',
+        backgroundImage: 'linear-gradient(180deg, rgba(11, 19, 43, 0.9) 0%, rgba(71, 112, 135, 0.9) 60%, rgba(245, 247, 250, 0.9) 100%), url("https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=2000")',
         backgroundAttachment: 'fixed',
         backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center',
       }}
     >
       <div className="relative flex flex-col items-center w-full mt-0">

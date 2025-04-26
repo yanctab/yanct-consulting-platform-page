@@ -11,7 +11,14 @@ const About = () => {
     <>
       <section
         id="about"
-        className="py-24 bg-[#477087] relative overflow-hidden"
+        className="py-24 relative overflow-hidden bg-[#477087]/80"
+        style={{
+          backgroundImage:
+            'linear-gradient(rgba(71, 112, 135, 0.92), rgba(71, 112, 135, 0.92)), url("https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=2000")',
+          backgroundAttachment: 'fixed',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
       >
         <TrianglePattern />
         <div
