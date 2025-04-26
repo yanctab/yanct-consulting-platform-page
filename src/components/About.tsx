@@ -62,7 +62,7 @@ const About = () => {
               />
               <Button
                 size="lg"
-                className="bg-white text-[#35b88f] hover:bg-gray-200 rounded-full text-xl px-14 py-7 font-typewriter shadow-lg transition-colors duration-300 border-none"
+                className="bg-white text-[#0B132B] hover:bg-gray-200 rounded-full text-xl px-14 py-7 font-typewriter shadow-lg transition-colors duration-300 border-none"
                 onClick={() => {
                   const highlights = document.getElementById('about-highlights');
                   highlights?.scrollIntoView({ behavior: 'smooth' });
