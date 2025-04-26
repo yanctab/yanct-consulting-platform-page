@@ -17,7 +17,7 @@ const Expertise = () => {
         <div className="flex justify-center mb-16">
           <h2
             id="expertise-header-btn"
-            className="text-white text-4xl font-ubuntu"
+            className="text-white text-4xl font-typewriter"
           >
             Expertise
           </h2>
@@ -32,10 +32,10 @@ const Expertise = () => {
             <div className="absolute left-0 top-1/2 w-12 h-[3px] bg-white hidden md:block transform -translate-y-1/2" />
             <div className="text-center border-4 border-white rounded-2xl p-6 md:p-8 bg-[#0B132B] shadow-lg">
               <HardDrive className="h-12 w-12 mx-auto mb-6 text-white" />
-              <h3 className="text-2xl font-bold text-white mb-4 font-ubuntu">
+              <h3 className="text-2xl font-bold text-white mb-4 font-typewriter">
                 Embedded Linux Development
               </h3>
-              <p className="text-white opacity-90 font-ubuntu">
+              <p className="text-white opacity-90 font-typewriter">
                 Since 2008, I've helped companies implement and optimize embedded Linux systems 
                 across various industries, covering everything from bootloaders and kernels to 
                 middleware layers.
@@ -47,10 +47,10 @@ const Expertise = () => {
             <div className="absolute right-0 top-1/2 w-12 h-[3px] bg-white hidden md:block transform -translate-y-1/2" />
             <div className="text-center border-4 border-white rounded-2xl p-6 md:p-8 bg-[#0B132B] shadow-lg">
               <Code className="h-12 w-12 mx-auto mb-6 text-white" />
-              <h3 className="text-2xl font-bold text-white mb-4 font-ubuntu">
+              <h3 className="text-2xl font-bold text-white mb-4 font-typewriter">
                 Yocto Project Expertise
               </h3>
-              <p className="text-white opacity-90 font-ubuntu">
+              <p className="text-white opacity-90 font-typewriter">
                 The Yocto Project can be daunting, but I've worked extensively with its BSP 
                 and platform layers, gaining deep insights into its quirks across different 
                 vendor ecosystems.
@@ -65,10 +65,10 @@ const Expertise = () => {
             <div className="absolute left-0 top-1/2 w-12 h-[3px] bg-white hidden md:block transform -translate-y-1/2" />
             <div className="text-center border-4 border-white rounded-2xl p-6 md:p-8 bg-[#0B132B] shadow-lg">
               <Settings className="h-12 w-12 mx-auto mb-6 text-white" />
-              <h3 className="text-2xl font-bold text-white mb-4 font-ubuntu">
+              <h3 className="text-2xl font-bold text-white mb-4 font-typewriter">
                 Developer Enablement
               </h3>
-              <p className="text-white opacity-90 font-ubuntu">
+              <p className="text-white opacity-90 font-typewriter">
                 I simplify workflows and enhance productivity, allowing your team to focus on 
                 their strengths. I also collaborate with DevOps to optimize build pipelines.
               </p>
@@ -80,7 +80,7 @@ const Expertise = () => {
           <Button
             size="lg"
             id="expertise-continue-btn"
-            className="bg-white text-[#0B132B] hover:bg-gray-200 rounded-full text-xl px-14 py-7 font-ubuntu shadow-lg transition-colors duration-300 border-none mt-0"
+            className="bg-white text-[#0B132B] hover:bg-gray-200 rounded-full text-xl px-14 py-7 font-typewriter shadow-lg transition-colors duration-300 border-none mt-0"
             onClick={() => {
               const highlights = document.getElementById('services');
               highlights?.scrollIntoView({ behavior: 'smooth' });

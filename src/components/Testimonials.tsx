@@ -19,7 +19,7 @@ const Testimonials = () => {
         <div className="flex justify-center mb-16">
           <h2
             id="testimonials-header-btn"
-            className="text-white text-4xl font-ubuntu"
+            className="text-white text-4xl font-typewriter"
           >
             Testimonials
           </h2>
@@ -27,45 +27,45 @@ const Testimonials = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-2 gap-8 md:gap-12">
           <div className="text-center border-4 border-white rounded-2xl p-6 md:p-8 bg-[#0B132B] shadow-lg">
-            <div className="text-6xl text-white mb-4 leading-none">“</div>
-            <p className="text-white opacity-90 mb-6">
+            <div className="text-6xl text-white mb-4 leading-none font-typewriter">"</div>
+            <p className="text-white opacity-90 mb-6 font-typewriter">
               We consulted Måns for guidance on configuring and delivering IoT gateways for cloud control to thousands of end-users in a scalable way. Måns was incredibly service-minded, pedagogical, and highly knowledgeable. We will continue to rely on him as our go-to expert for all IoT-related matters.
             </p>
-            <p className="text-white font-bold">Daria Madjidian</p>
-            <p className="text-white italic text-sm">
+            <p className="text-white font-bold font-typewriter">Daria Madjidian</p>
+            <p className="text-white italic text-sm font-typewriter">
               Co-Founder and Chief Scientist at Emulate Energy
             </p>
           </div>
 
           <div className="text-center border-4 border-white rounded-2xl p-6 md:p-8 bg-[#0B132B] shadow-lg">
-            <div className="text-6xl text-white mb-4 leading-none">“</div>
-            <p className="text-white opacity-90 mb-6">
+            <div className="text-6xl text-white mb-4 leading-none font-typewriter">"</div>
+            <p className="text-white opacity-90 mb-6 font-typewriter">
               Complexity is not a problem. He works proactively and reacts fast on observations made. He has good contacts with other teams and could handle different cultures easily. I highly recommend him since his contribution is very good and he works on a high energy level!
             </p>
-            <p className="text-white font-bold">Kent Pålsson</p>
-            <p className="text-white italic text-sm">
+            <p className="text-white font-bold font-typewriter">Kent Pålsson</p>
+            <p className="text-white italic text-sm font-typewriter">
               Senior Hardware Project Design Lead på SCHNEIDER ELECTRIC
             </p>
           </div>
 
           <div className="text-center border-4 border-white rounded-2xl p-6 md:p-8 bg-[#0B132B] shadow-lg">
-            <div className="text-6xl text-white mb-4 leading-none">“</div>
-            <p className="text-white opacity-90 mb-6">
+            <div className="text-6xl text-white mb-4 leading-none font-typewriter">"</div>
+            <p className="text-white opacity-90 mb-6 font-typewriter">
               Måns is next level embedded linux expert. Not only does he understand the tools surrounding custom embedded linux system like yocto, but he has very good linux knowledge which is important to have this combo in my opinion. From classical linux stuff, to drivers to device tree setup and board bring ups. I higly recommend Måns.
             </p>
-            <p className="text-white font-bold">Frederik Vibe-Petersen</p>
-            <p className="text-white italic text-sm">
+            <p className="text-white font-bold font-typewriter">Frederik Vibe-Petersen</p>
+            <p className="text-white italic text-sm font-typewriter">
               Creator of the TopBrewer Experience. Engineering awesome.
             </p>
           </div>
 
           <div className="text-center border-4 border-white rounded-2xl p-6 md:p-8 bg-[#0B132B] shadow-lg">
-            <div className="text-6xl text-white mb-4 leading-none">“</div>
-            <p className="text-white opacity-90 mb-6">
+            <div className="text-6xl text-white mb-4 leading-none font-typewriter">"</div>
+            <p className="text-white opacity-90 mb-6 font-typewriter">
               Måns is a hardworking and very skilled developer and expert in embedded Linux development (especially Yocto), C/C++ and Python programming. Always ready to help improving the development processes, tools etc. and has a high focus on quality. A true asset for the team.
             </p>
-            <p className="text-white font-bold">Jeppe Frandsen</p>
-            <p className="text-white italic text-sm">
+            <p className="text-white font-bold font-typewriter">Jeppe Frandsen</p>
+            <p className="text-white italic text-sm font-typewriter">
               Senior Developer | Architect | Manager | DevOps Guy
             </p>
           </div>
@@ -75,7 +75,7 @@ const Testimonials = () => {
           <Button
             size="lg"
             id="testimonials-continue-btn"
-            className="bg-white text-[#0B132B] hover:bg-gray-200 rounded-full text-xl px-14 py-7 font-ubuntu shadow-lg transition-colors duration-300 border-none mt-0"
+            className="bg-white text-[#0B132B] hover:bg-gray-200 rounded-full text-xl px-14 py-7 font-typewriter shadow-lg transition-colors duration-300 border-none mt-0"
             onClick={() => {
               const highlights = document.getElementById("connect");
               highlights?.scrollIntoView({ behavior: "smooth" });

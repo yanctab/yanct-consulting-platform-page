@@ -8,7 +8,7 @@ const Hero = () => {
 
   return (
     <div
-      className="min-h-[80vh] relative flex items-center justify-center bg-cover bg-center font-ubuntu"
+      className="min-h-[80vh] relative flex items-center justify-center bg-cover bg-center font-typewriter"
       style={{
         backgroundImage:
           'linear-gradient(rgba(11, 19, 43, 0.5), rgba(11, 19, 43, 0.7)), url("https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=2000")',
@@ -25,7 +25,7 @@ const Hero = () => {
         <p
           className={`${
             isMobile ? "text-lg" : "text-xl md:text-2xl"
-          } text-white/80 mb-12 max-w-2xl mx-auto font-ubuntu`}
+          } text-white/80 mb-12 max-w-2xl mx-auto font-typewriter`}
         >
           With over a decade of hands-on experience, I bring a wealth of knowledge to the table, poised to elevate your projects to new heights of success.
         </p>
@@ -33,7 +33,7 @@ const Hero = () => {
         <div className="flex flex-col md:flex-row justify-center items-center gap-4">
           <Button
             size="lg"
-            className="min-w-[220px] bg-white text-[#0B132B] hover:bg-gray-200 rounded-full text-xl px-14 py-7 font-ubuntu shadow-lg transition-colors duration-300 border-none"
+            className="min-w-[220px] bg-white text-[#0B132B] hover:bg-gray-200 rounded-full text-xl px-14 py-7 font-typewriter shadow-lg transition-colors duration-300 border-none"
             onClick={() => {
               const about = document.getElementById("about");
               about?.scrollIntoView({ behavior: "smooth" });
@@ -44,7 +44,7 @@ const Hero = () => {
           <Button
             variant="outline"
             size="lg"
-            className="min-w-[220px] bg-transparent text-white border-white border-2 hover:bg-white/10 hover:text-white rounded-full text-xl px-14 py-7 font-ubuntu shadow-lg transition-colors duration-300"
+            className="min-w-[220px] bg-transparent text-white border-white border-2 hover:bg-white/10 hover:text-white rounded-full text-xl px-14 py-7 font-typewriter shadow-lg transition-colors duration-300"
             onClick={() => {
               const connect = document.getElementById("connect");
               connect?.scrollIntoView({ behavior: "smooth" });

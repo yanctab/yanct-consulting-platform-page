@@ -18,7 +18,7 @@ const Services = () => {
       <div className="relative flex flex-col items-center w-full mt-0">
         <h2
           id="services-header-btn"
-          className="text-white text-4xl font-ubuntu"
+          className="text-white text-4xl font-typewriter"
         >
           Services
         </h2>
@@ -36,10 +36,10 @@ const Services = () => {
               role="img"
             />
             <div className="bg-white flex flex-col justify-center border border-[#e5e5e5] p-4 md:p-8 h-full w-full aspect-[1.8/1] rounded-2xl">
-              <h3 className="text-xl md:text-2xl lg:text-3xl font-semibold mb-2 md:mb-4 font-ubuntu">
+              <h3 className="text-xl md:text-2xl lg:text-3xl font-semibold mb-2 md:mb-4 font-typewriter">
                 Remote-First Support
               </h3>
-              <p className="text-gray-700 text-sm md:text-lg leading-tight md:leading-relaxed">
+              <p className="text-gray-700 text-sm md:text-lg leading-tight md:leading-relaxed font-typewriter">
                 Ideal for small to mid-sized companies, offering flexible,
                 ongoing support with expert-level embedded Linux and Yocto
                 expertise.
@@ -48,10 +48,10 @@ const Services = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-0 items-stretch w-full">
             <div className="bg-white flex flex-col justify-center border border-[#e5e5e5] p-4 md:p-8 h-full w-full aspect-[1.8/1] rounded-2xl">
-              <h3 className="text-xl md:text-2xl lg:text-3xl font-semibold mb-2 md:mb-4 font-ubuntu">
+              <h3 className="text-xl md:text-2xl lg:text-3xl font-semibold mb-2 md:mb-4 font-typewriter">
                 Full-Time Engagement
               </h3>
-              <p className="text-gray-700 text-sm md:text-lg leading-tight md:leading-relaxed">
+              <p className="text-gray-700 text-sm md:text-lg leading-tight md:leading-relaxed font-typewriter">
                 Full-time, on-site or hybrid consulting, providing hands-on
                 support for day-to-day development and real-time issue
                 resolution.
@@ -76,10 +76,10 @@ const Services = () => {
               role="img"
             />
             <div className="bg-white flex flex-col justify-center border border-[#e5e5e5] p-4 md:p-8 h-full w-full aspect-[1.8/1] rounded-2xl">
-              <h3 className="text-xl md:text-2xl lg:text-3xl font-semibold mb-2 md:mb-4 font-ubuntu">
+              <h3 className="text-xl md:text-2xl lg:text-3xl font-semibold mb-2 md:mb-4 font-typewriter">
                 Platform Review & Roadmap
               </h3>
-              <p className="text-gray-700 text-sm md:text-lg leading-tight md:leading-relaxed">
+              <p className="text-gray-700 text-sm md:text-lg leading-tight md:leading-relaxed font-typewriter">
                 Tailored review of your platform and processes, with a clear
                 roadmap for improvements and implementation options.
               </p>
@@ -91,7 +91,7 @@ const Services = () => {
           <Button
             size="lg"
             id="services-continue-btn"
-            className="bg-white text-[#0B132B] hover:bg-gray-200 rounded-full text-xl px-14 py-7 font-ubuntu shadow-lg transition-colors duration-300 border-none mt-0"
+            className="bg-white text-[#0B132B] hover:bg-gray-200 rounded-full text-xl px-14 py-7 font-typewriter shadow-lg transition-colors duration-300 border-none mt-0"
             onClick={() => {
               const highlights = document.getElementById('testimonials');
               highlights?.scrollIntoView({ behavior: 'smooth' });

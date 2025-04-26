@@ -35,10 +35,10 @@ const AboutHighlights = () => (
             />
           </div>
           <div className="bg-white flex flex-col justify-center border border-[#d1d5db] shadow-md p-4 sm:p-6 md:p-8 h-full w-full aspect-auto md:aspect-[1.8/1] rounded-2xl">
-            <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-2 md:mb-4 font-ubuntu">
+            <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-2 md:mb-4 font-typewriter">
               Collaborative Mindset
             </h3>
-            <p className="text-gray-700 text-sm sm:text-base md:text-lg leading-tight sm:leading-relaxed">
+            <p className="text-gray-700 text-sm sm:text-base md:text-lg leading-tight sm:leading-relaxed font-typewriter">
               Effective communication is key to any successful project. By actively engaging
               with existing team knowledge, I ensure that solutions are found faster and
               more effectively.
@@ -50,10 +50,10 @@ const AboutHighlights = () => (
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-0 items-stretch w-full">
           <div className="bg-white flex flex-col justify-center border border-[#d1d5db] shadow-md p-4 sm:p-6 md:p-8 h-full w-full aspect-auto md:aspect-[1.8/1] rounded-2xl order-2 md:order-1">
-            <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-2 md:mb-4 font-ubuntu">
+            <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-2 md:mb-4 font-typewriter">
               A Community of Experts
             </h3>
-            <p className="text-gray-700 text-sm sm:text-base md:text-lg leading-tight sm:leading-relaxed">
+            <p className="text-gray-700 text-sm sm:text-base md:text-lg leading-tight sm:leading-relaxed font-typewriter">
               Over the years, I've cultivated a strong network of talented professionals
               across embedded systems and software development. When specialized knowledge
               is required, I can connect you with the right expert or I can tap into the knowledge base.
@@ -75,7 +75,7 @@ const AboutHighlights = () => (
           <Button
             size="lg"
             id="about-highlights-continue-btn"
-            className="bg-white text-[#0B132B] hover:bg-gray-200 rounded-full text-xl px-14 py-7 font-ubuntu shadow-lg transition-colors duration-300 border-none"
+            className="bg-white text-[#0B132B] hover:bg-gray-200 rounded-full text-xl px-14 py-7 font-typewriter shadow-lg transition-colors duration-300 border-none"
             onClick={() => {
               const highlights = document.getElementById('expertise');
               highlights?.scrollIntoView({ behavior: 'smooth' });
@@ -90,4 +90,3 @@ const AboutHighlights = () => (
 );
 
 export default AboutHighlights;
-

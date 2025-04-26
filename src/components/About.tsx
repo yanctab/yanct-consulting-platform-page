@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { useIsMobile } from "@/hooks/use-mobile";
@@ -44,7 +45,7 @@ const About = () => {
           </div>
 
           <div className="max-w-5xl mx-auto flex flex-col items-center text-center mt-8 px-4">
-            <p className="text-white text-lg leading-relaxed">
+            <p className="text-white text-lg leading-relaxed font-typewriter">
               Yanct is an one man show at the moment but with over 15 years of embedded Linux experience, I focus on turning complex platforms into secure, production-ready systems. I specialize in bridging the gap between vendor BSPs and reliable products, with deep experience across multiple hardware suppliers and ecosystems. But what really sets me apart is how I work — with a service-minded approach, strong communication, and a focus on collaboration.
             </p>
 
@@ -61,7 +62,7 @@ const About = () => {
               />
               <Button
                 size="lg"
-                className="bg-white text-[#0B132B] hover:bg-gray-200 rounded-full text-xl px-14 py-7 font-ubuntu shadow-lg transition-colors duration-300 border-none mt-8"
+                className="bg-white text-[#0B132B] hover:bg-gray-200 rounded-full text-xl px-14 py-7 font-typewriter shadow-lg transition-colors duration-300 border-none mt-8"
                 onClick={() => {
                   const highlights = document.getElementById('about-highlights');
                   highlights?.scrollIntoView({ behavior: 'smooth' });
