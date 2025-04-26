@@ -53,7 +53,7 @@ const About = () => {
 
           <div className="max-w-5xl mx-auto flex flex-col items-center text-center mt-8 px-4">
             <p className="text-white text-lg leading-relaxed font-typewriter">
-              Måns Zigher is an one man show at the moment but with over 15 years of embedded Linux experience, I focus on turning complex platforms into secure, production-ready systems. I specialize in bridging the gap between vendor BSPs and reliable products, with deep experience across multiple hardware suppliers and ecosystems. But what really sets me apart is how I work — with a service-minded approach, strong communication, and a focus on collaboration.
+              Yanct is an one man show at the moment but with over 15 years of embedded Linux experience, I focus on turning complex platforms into secure, production-ready systems. I specialize in bridging the gap between vendor BSPs and reliable products, with deep experience across multiple hardware suppliers and ecosystems. But what really sets me apart is how I work — with a service-minded approach, strong communication, and a focus on collaboration.
             </p>
 
             <p className="text-white text-4xl mt-8 font-signature">
