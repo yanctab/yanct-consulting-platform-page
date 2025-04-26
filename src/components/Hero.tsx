@@ -8,7 +8,7 @@ const Hero = () => {
 
   return (
     <div
-      className="min-h-[80vh] relative flex items-center justify-center bg-cover bg-center font-typewriter"
+      className="min-h-[80vh] relative flex items-center justify-center bg-cover bg-fixed font-typewriter"
       style={{
         backgroundImage:
           'linear-gradient(rgba(11, 19, 43, 0.5), rgba(11, 19, 43, 0.7)), url("https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=2000")',
