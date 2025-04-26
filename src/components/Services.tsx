@@ -12,7 +12,7 @@ const Services = () => {
       style={{
         backgroundImage: `
           linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0.7) 100%),
-          linear-gradient(rgba(11, 19, 43, 0.85), rgba(11, 19, 43, 0.95)),
+          linear-gradient(rgba(11, 19, 43, 0.7), rgba(11, 19, 43, 0.7)),
           url("https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=2000")
         `,
         backgroundAttachment: 'fixed',
@@ -105,21 +105,26 @@ const Services = () => {
           </div>
         </div>
 
-        <div className="flex flex-col items-center w-full mt-16">
-          <Button
-            size="lg"
-            id="services-continue-btn"
-            className="bg-white text-[#0B132B] hover:bg-gray-200 rounded-full text-xl px-14 py-7 font-typewriter shadow-lg transition-colors duration-300 border-none mt-0"
-            onClick={() => {
-              const highlights = document.getElementById('testimonials');
-              highlights?.scrollIntoView({ behavior: 'smooth' });
-            }}
-          >
-            Continue
-          </Button>
+        {/* Continue Button with White Border and Gap */}
+        <div className="relative flex flex-col items-center w-full mt-0 md:mt-12 mb-4">
+          {/* Outer white border with p-2 gap */}
+          <div className="p-2 rounded-full border-4 border-white inline-block">
+            <Button
+              size="lg"
+              id="services-continue-btn"
+              className="bg-[#F5F7FA] text-[#0B132B] hover:bg-gray-200 rounded-full text-xl px-14 py-7 font-typewriter shadow-xl transition-colors duration-300 border-none"
+              onClick={() => {
+                const highlights = document.getElementById('testimonials');
+                highlights?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
+              Continue
+            </Button>
+          </div>
         </div>
+
       </div>
-    </section>
+  </section>
   );
 };
 
