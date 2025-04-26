@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { Mouse } from "lucide-react";
@@ -44,7 +43,7 @@ const Hero = () => {
           <Button
             variant="outline"
             size="lg"
-            className="min-w-[220px] bg-transparent text-white border-white hover:bg-white/10 rounded-full text-xl px-14 py-7 font-ubuntu shadow-lg transition-colors duration-300"
+            className="min-w-[220px] bg-transparent text-white border-white border-2 hover:bg-white/10 rounded-full text-xl px-14 py-7 font-ubuntu shadow-lg transition-colors duration-300"
             onClick={() => {
               const connect = document.getElementById("connect");
               connect?.scrollIntoView({ behavior: "smooth" });
