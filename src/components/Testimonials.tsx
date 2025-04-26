@@ -19,7 +19,7 @@ const Testimonials = () => {
         <div className="flex justify-center mb-16">
           <h2
             id="testimonials-header-btn"
-            className="text-white text-4xl font-typewriter"
+            className="text-white text-4xl font-ubuntu"
           >
             Testimonials
           </h2>
@@ -75,7 +75,7 @@ const Testimonials = () => {
           <Button
             size="lg"
             id="testimonials-continue-btn"
-            className="bg-white text-[#0B132B] hover:bg-gray-200 rounded-full text-xl px-14 py-7 font-typewriter shadow-lg transition-colors duration-300 border-none mt-0"
+            className="bg-white text-[#0B132B] hover:bg-gray-200 rounded-full text-xl px-14 py-7 font-ubuntu shadow-lg transition-colors duration-300 border-none mt-0"
             onClick={() => {
               const highlights = document.getElementById("connect");
               highlights?.scrollIntoView({ behavior: "smooth" });
