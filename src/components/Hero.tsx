@@ -40,7 +40,7 @@ const Hero = () => {
         <div className="flex flex-col md:flex-row justify-center items-center gap-4">
           <Button
             size="lg"
-            className="min-w-[220px] bg-white text-[#436576] hover:bg-gray-200 rounded-full text-xl px-14 py-7 font-typewriter shadow-lg transition-colors duration-300 border-none"
+            className="min-w-[220px] bg-white text-[#0B132B] hover:bg-gray-200 rounded-full text-xl px-14 py-7 font-typewriter shadow-lg transition-colors duration-300 border-none"
             onClick={() => {
               const about = document.getElementById("about");
               about?.scrollIntoView({ behavior: "smooth" });
@@ -50,7 +50,7 @@ const Hero = () => {
           </Button>
           <Button
             size="lg"
-            className="min-w-[220px] bg-white text-[#436576] hover:bg-gray-200 rounded-full text-xl px-14 py-7 font-typewriter shadow-lg transition-colors duration-300 border-none"
+            className="min-w-[220px] bg-white text-[#0B132B] hover:bg-gray-200 rounded-full text-xl px-14 py-7 font-typewriter shadow-lg transition-colors duration-300 border-none"
             onClick={() => {
               const connect = document.getElementById("connect");
               connect?.scrollIntoView({ behavior: "smooth" });
