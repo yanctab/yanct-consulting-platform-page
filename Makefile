@@ -43,7 +43,7 @@ renew-ssl:
 
 ## deploy             - Build and deploy the website, set up Nginx
 .PHONY: deploy
-deploy: setup configure-nginx
+deploy: setup build configure-nginx
 
 ## all                - Run everything (build, deploy, configure)
 .PHONY: all

@@ -32,11 +32,7 @@ const Testimonials = () => {
           <div className="text-center border-4 border-white rounded-2xl p-6 md:p-8 bg-[#2fae84] shadow-lg">
             <div className="text-6xl text-white mb-4 leading-none">“</div>
             <p className="text-white opacity-90 mb-6">
-              We consulted Måns for guidance on configuring and delivering IoT gateways for cloud control
-              to thousands of end-users in a scalable way. Måns was incredibly service-minded, pedagogical,
-              and highly knowledgeable. He not only put us on the right track but also taught us a great deal,
-              highlighted things we would have otherwise missed, and suggested several reasonable paths forward.
-              We will continue to rely on him as our go-to expert for all IoT-related matters.
+              We consulted Måns for guidance on configuring and delivering IoT gateways for cloud control to thousands of end-users in a scalable way. Måns was incredibly service-minded, pedagogical, and highly knowledgeable. We will continue to rely on him as our go-to expert for all IoT-related matters.
             </p>
             <p className="text-white font-bold">Daria Madjidian</p>
             <p className="text-white italic text-sm">
@@ -48,11 +44,7 @@ const Testimonials = () => {
           <div className="text-center border-4 border-white rounded-2xl p-6 md:p-8 bg-[#2fae84] shadow-lg">
             <div className="text-6xl text-white mb-4 leading-none">“</div>
             <p className="text-white opacity-90 mb-6">
-              Måns is a skilled and experienced embedded SW programmer. He is also experienced in working closely
-              with the HW development and HW production team in problem-solving and test design. He is very driven
-              in troubleshooting and never give up. Complexity is not a problem. He works proactively and reacts
-              fast on observations made. He has good contacts with other teams and could handle different cultures easily. 
-              I highly recommend him since his contribution is very good and he works on a high energy level!
+              Complexity is not a problem. He works proactively and reacts fast on observations made. He has good contacts with other teams and could handle different cultures easily. I highly recommend him since his contribution is very good and he works on a high energy level!
             </p>
             <p className="text-white font-bold">Kent Pålsson</p>
             <p className="text-white italic text-sm">
@@ -64,10 +56,7 @@ const Testimonials = () => {
           <div className="text-center border-4 border-white rounded-2xl p-6 md:p-8 bg-[#2fae84] shadow-lg">
             <div className="text-6xl text-white mb-4 leading-none">“</div>
             <p className="text-white opacity-90 mb-6">
-            Måns is next level embedded linux expert. Not only does he understand the tools surrounding custom embedded
-            linux system like yocto, but he has very good linux knowledge which is important to have this combo in my opinion.
-            From classical linux stuff, to drivers to device tree setup and board bring ups. I higly recommend Måns.
-            Most of all because he is a cool guy as well :)
+            Måns is next level embedded linux expert. Not only does he understand the tools surrounding custom embedded linux system like yocto, but he has very good linux knowledge which is important to have this combo in my opinion. From classical linux stuff, to drivers to device tree setup and board bring ups. I higly recommend Måns.
             </p>
             <p className="text-white font-bold">Frederik Vibe-Petersen</p>
             <p className="text-white italic text-sm">
@@ -79,9 +68,7 @@ const Testimonials = () => {
           <div className="text-center border-4 border-white rounded-2xl p-6 md:p-8 bg-[#2fae84] shadow-lg">
             <div className="text-6xl text-white mb-4 leading-none">“</div>
             <p className="text-white opacity-90 mb-6">
-              Måns is a hardworking and very skilled developer and expert in embedded Linux development (especially Yocto),
-              C/C++ and Python programming. Always ready to help improving the development processes, tools etc. and has a
-              high focus on quality. A true asset for the team.
+              Måns is a hardworking and very skilled developer and expert in embedded Linux development (especially Yocto), C/C++ and Python programming. Always ready to help improving the development processes, tools etc. and has a high focus on quality. A true asset for the team.
             </p>
             <p className="text-white font-bold">Jeppe Frandsen</p>
             <p className="text-white italic text-sm">
