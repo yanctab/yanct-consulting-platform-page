@@ -4,7 +4,7 @@ import TrianglePattern from "./TrianglePattern";
 
 const Expertise = () => {
   return (
-    <section id="expertise" className="py-24 bg-[#35b88f] relative overflow-visible">
+    <section id="expertise" className="py-24 bg-[#477087] relative overflow-visible">
       <TrianglePattern />
       <div
         className="absolute inset-0 z-10 pointer-events-none"

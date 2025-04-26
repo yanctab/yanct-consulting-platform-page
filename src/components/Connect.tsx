@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail } from "lucide-react";
 
@@ -5,7 +6,7 @@ const Connect = () => {
   return (
     <section
       id="connect"
-      className="py-24 bg-gray-900 relative"
+      className="py-24 bg-[#0B132B] relative"
     >
       <div className="container mx-auto px-4 relative z-20">
         <div className="relative flex flex-col items-center w-full">

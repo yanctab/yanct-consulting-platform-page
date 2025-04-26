@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { useIsMobile } from "@/hooks/use-mobile";
@@ -10,13 +9,11 @@ const About = () => {
 
   return (
     <>
-      {/* About Section */}
       <section
         id="about"
-        className="py-24 bg-[#35b88f] relative overflow-hidden"
+        className="py-24 bg-[#477087] relative overflow-hidden"
       >
         <TrianglePattern />
-        {/* Full fade on both sides */}
         <div
           className="absolute inset-0 z-10 pointer-events-none"
           style={{
@@ -27,13 +24,12 @@ const About = () => {
 
         <div className="container mx-auto px-4 relative z-20">
           <div className="relative flex flex-col items-center">
-            {/* Profile Picture - larger and more spacing from headline */}
             <img
               src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?auto=format&fit=crop&w=350&q=80"
               alt="Profile of smiling man"
               className="mb-6 w-52 h-52 object-cover rounded-full grayscale shadow-xl border-4 border-white"
               style={{
-                marginTop: '-24px', // Optional: fine-tune to balance spacing
+                marginTop: '-24px',
                 backgroundColor: '#fff',
               }}
               width={208}
@@ -87,4 +83,3 @@ const About = () => {
 };
 
 export default About;
-
