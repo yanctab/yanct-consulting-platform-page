@@ -50,7 +50,6 @@ const Connect = () => {
                   github.com/yanctab
                 </a>
               </div>
-
             </div>
           </div>
         </div>
