@@ -41,10 +41,7 @@ const About = () => {
             />
 
             <h2
-              className="font-typewriter font-bold text-5xl md:text-7xl text-white mt-6 mb-10 text-center"
-              style={{
-                fontFamily: 'Courier New, Courier, monospace',
-              }}
+              className="text-white text-4xl font-typewriter"
             >
               About
             </h2>
