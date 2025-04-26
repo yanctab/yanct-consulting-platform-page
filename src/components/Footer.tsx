@@ -21,7 +21,7 @@ const Footer = () => {
             >
               <img
                 id="footer-logo"
-                src="/yanct.png"
+                src="/yanct.svg"
                 alt="Yanct Logo"
                 className="h-20 md:h-28 lg:h-32 w-auto"
               />

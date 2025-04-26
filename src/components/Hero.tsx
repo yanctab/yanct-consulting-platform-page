@@ -16,19 +16,12 @@ const Hero = () => {
     >
       <div className="text-white max-w-3xl text-center px-4">
         <img
-          src="/yanct.png"
+          src="/yanct.svg"
           alt="Yanct Logo"
           className={`mx-auto mb-8 ${
             isMobile ? "w-[250px]" : "w-[500px]"
           } h-auto drop-shadow-[0_0_10px_rgba(0,0,0,0.7)]`}
         />
-        <h1
-          className={`${
-            isMobile ? "text-4xl" : "text-5xl md:text-7xl"
-          } font-bold mb-8 font-ubuntu`}
-        >
-          Welcome.
-        </h1>
         <p
           className={`${
             isMobile ? "text-lg" : "text-xl md:text-2xl"
