@@ -56,7 +56,7 @@ const About = () => {
             </p>
 
             <p className="text-white text-4xl mt-8 font-signature">
-              Yanct
+              Måns Zigher
             </p>
 
             <div className="relative flex flex-col items-center w-full mt-16">
