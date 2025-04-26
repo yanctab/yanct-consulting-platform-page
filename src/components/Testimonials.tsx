@@ -17,18 +17,15 @@ const Testimonials = () => {
       />
       <div className="container mx-auto px-4 relative z-20">
         <div className="flex justify-center mb-16">
-          <Button
-            size="lg"
+          <h2
             id="testimonials-header-btn"
-            className="text-white border-white border-2 rounded-full text-xl px-14 py-7 font-typewriter shadow-none bg-transparent cursor-default pointer-events-none"
+            className="text-white text-4xl font-typewriter"
           >
             Testimonials
-          </Button>
+          </h2>
         </div>
 
-        {/* Testimonial grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-2 gap-8 md:gap-12">
-          {/* Testimonial 1 - top left */}
           <div className="text-center border-4 border-white rounded-2xl p-6 md:p-8 bg-[#2fae84] shadow-lg">
             <div className="text-6xl text-white mb-4 leading-none">“</div>
             <p className="text-white opacity-90 mb-6">
@@ -40,7 +37,6 @@ const Testimonials = () => {
             </p>
           </div>
 
-          {/* Testimonial 2 - top right */}
           <div className="text-center border-4 border-white rounded-2xl p-6 md:p-8 bg-[#2fae84] shadow-lg">
             <div className="text-6xl text-white mb-4 leading-none">“</div>
             <p className="text-white opacity-90 mb-6">
@@ -52,11 +48,10 @@ const Testimonials = () => {
             </p>
           </div>
 
-          {/* Testimonial 3 - bottom left */}
           <div className="text-center border-4 border-white rounded-2xl p-6 md:p-8 bg-[#2fae84] shadow-lg">
             <div className="text-6xl text-white mb-4 leading-none">“</div>
             <p className="text-white opacity-90 mb-6">
-            Måns is next level embedded linux expert. Not only does he understand the tools surrounding custom embedded linux system like yocto, but he has very good linux knowledge which is important to have this combo in my opinion. From classical linux stuff, to drivers to device tree setup and board bring ups. I higly recommend Måns.
+              Måns is next level embedded linux expert. Not only does he understand the tools surrounding custom embedded linux system like yocto, but he has very good linux knowledge which is important to have this combo in my opinion. From classical linux stuff, to drivers to device tree setup and board bring ups. I higly recommend Måns.
             </p>
             <p className="text-white font-bold">Frederik Vibe-Petersen</p>
             <p className="text-white italic text-sm">
@@ -64,7 +59,6 @@ const Testimonials = () => {
             </p>
           </div>
 
-          {/* Testimonial 4 - bottom right */}
           <div className="text-center border-4 border-white rounded-2xl p-6 md:p-8 bg-[#2fae84] shadow-lg">
             <div className="text-6xl text-white mb-4 leading-none">“</div>
             <p className="text-white opacity-90 mb-6">

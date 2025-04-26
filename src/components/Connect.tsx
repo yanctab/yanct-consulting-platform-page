@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail } from "lucide-react";
 
@@ -10,13 +9,12 @@ const Connect = () => {
     >
       <div className="container mx-auto px-4 relative z-20">
         <div className="relative flex flex-col items-center w-full">
-          <Button
-            size="lg"
+          <h2
             id="connect-main-btn"
-            className="text-white border-white border-2 rounded-full text-xl px-14 py-7 font-typewriter shadow-none bg-transparent hover:bg-transparent cursor-pointer"
+            className="text-white text-4xl font-typewriter"
           >
             Connect
-          </Button>
+          </h2>
         </div>
 
         <div className="relative flex flex-col items-center w-full mt-16 md:mt-24">
@@ -44,4 +42,3 @@ const Connect = () => {
 };
 
 export default Connect;
-

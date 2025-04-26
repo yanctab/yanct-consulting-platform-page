@@ -15,13 +15,12 @@ const Expertise = () => {
       />
       <div className="container mx-auto px-4 relative z-20">
         <div className="flex justify-center mb-16">
-          <Button
-            size="lg"
+          <h2
             id="expertise-header-btn"
-            className="text-white border-white border-2 rounded-full text-xl px-14 py-7 font-typewriter shadow-none bg-transparent cursor-default pointer-events-none"
+            className="text-white text-4xl font-typewriter"
           >
             Expertise
-          </Button>
+          </h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-3 gap-8 md:gap-12 relative">
