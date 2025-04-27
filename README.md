@@ -4,9 +4,6 @@
 
 Generated using https://lovable.dev/
 
-**URL-dev**: https://lovable.dev/projects/9b6768fe-b7a2-4f7b-b83d-e5ebaf387dbf
-**URL-preview**: https://preview--yanct-consulting-platform-page.lovable.app/
-
 ## How can I edit this code?
 
 There are several ways of editing your application.
@@ -19,14 +16,15 @@ Changes made via Lovable will be committed automatically to this repo.
 
 **Manually Edit**
 
-Edit the code yourself or use chatgpt or any AI to make modification.
+Edit the code yourself or use chatgpt or any AI to make modification. Each section is defined in src/components and
+can easily be paset in an AI chat where you can request changed to the code. Past it and build it.
 
 ## Build ##
 
 The default variables are used
 
 DOMAIN = yanct.com
-EMAIL = contact@yanct.com
+EMAIL = contact @ yanct.com
 WEBROOT = /var/www/$(DOMAIN)
 
 Update them before building if you want a different domain for your web-page
@@ -38,10 +36,11 @@ make all
 Open http://localhost/ and view the page. Make all will do the following
 
  - setup - install all tools e.g npm nginx certbot python3-certbot-nginx
- - build - install all npm dependencies and build
- - configure - configure nginx
+ - build - install and setup everything needed to deploy the one-pager
+ - configure - configure nginx and restart
 
-To generate a cert run
+This has been tested on Ubuntu 24.04. To deploy in production generate
+the cert by running
 
 <pre>
 make obtain-ssl
