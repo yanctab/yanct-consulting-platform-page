@@ -18,7 +18,7 @@ const Connect = () => {
           </h2>
         </div>
 
-        <div className="relative flex flex-col items-center w-full mt-16 md:mt-24">
+        <div className="relative flex flex-col items-center w-full mt-16 md:mt-24 font-typewriter">
           <div 
             id="contact-box"
             className="bg-transparent border-2 border-white w-full md:w-3/4 p-8 rounded-2xl"
@@ -29,7 +29,7 @@ const Connect = () => {
                 <Mail className="w-8 h-8 text-white cursor-pointer hover:text-gray-200 transition-colors" />
                 <Github className="w-8 h-8 text-white cursor-pointer hover:text-gray-200 transition-colors" />
               </div>
-              <div className="flex flex-col gap-8 text-white text-center md:text-left">
+              <div className="flex flex-col gap-8 text-white text-center md:text-left font-typewriter">
                 <a
                   href="https://www.linkedin.com/in/måns-zigher-a4656954"
                   className="text-lg underline hover:text-gray-300"
