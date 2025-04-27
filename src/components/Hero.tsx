@@ -18,9 +18,8 @@ const Hero = () => {
         <img
           src="/yanct.svg"
           alt="Yanct Logo"
-          className={`mx-auto mb-8 ${
-            isMobile ? "w-[250px]" : "w-[500px]"
-          } h-auto drop-shadow-[0_0_10px_rgba(0,0,0,0.7)]`}
+          className={`mx-auto mb-8 ${isMobile ? "w-[150px]" : "w-[300px]"
+            } h-auto drop-shadow-[0_0_10px_rgba(0,0,0,0.7)]`}
         />
         <p
           className={`${
