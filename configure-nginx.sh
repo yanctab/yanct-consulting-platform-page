@@ -21,9 +21,17 @@ sudo cp -r dist/* "$WEBROOT"
 # Create the Nginx configuration file
 CONFIG_FILE="/etc/nginx/sites-available/$DOMAIN"
 sudo tee "$CONFIG_FILE" > /dev/null <<EOL
+# Redirect www to non-www
 server {
     listen 80;
-    server_name $DOMAIN www.$DOMAIN;
+    server_name www.$DOMAIN;
+    return 301 http://$DOMAIN\$request_uri;
+}
+
+# Main server block
+server {
+    listen 80;
+    server_name $DOMAIN;
 
     root $WEBROOT;
     index index.html;
@@ -49,4 +57,4 @@ sudo nginx -t
 # Reload Nginx to apply the new configuration
 sudo systemctl reload nginx
 
-echo "Nginx configured for $DOMAIN and site deployed."
+echo "Nginx configured for $DOMAIN and www.$DOMAIN (with www redirect) and site deployed."

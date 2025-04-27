@@ -35,11 +35,13 @@ configure-nginx:
 .PHONY: obtain-ssl
 obtain-ssl:
 	sudo certbot --nginx -d $(DOMAIN) -d www.$(DOMAIN) --agree-tos --no-eff-email --email $(EMAIL)
+	sudo systemctl reload nginx
 
 ## renew-ssl          - Renew the SSL certificate for $(DOMAIN)
 .PHONY: renew-ssl
 renew-ssl:
 	sudo certbot renew
+	sudo systemctl reload nginx
 
 ## deploy             - Build and deploy the website, set up Nginx
 .PHONY: deploy
