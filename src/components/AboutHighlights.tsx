@@ -99,8 +99,6 @@ const AboutHighlights = () => (
           </div>
         </div>
 
-        <div className="h-10 md:h-16" />
-
         <div className="relative flex flex-col items-center w-full mt-0 md:mt-8 mb-4">
           {/* Outer white border with p-2 gap */}
           <div className="p-2 rounded-full border-4 border-white inline-block">
