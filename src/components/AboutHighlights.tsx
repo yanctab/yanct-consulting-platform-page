@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Button } from "@/components/ui/button";
 
@@ -7,8 +8,16 @@ const AboutHighlights = () => (
     className="relative py-16 md:py-24 overflow-visible bg-fixed"
     style={{
       backgroundImage: `
-        linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0.7) 100%),
-        linear-gradient(rgba(11, 19, 43, 0.7), rgba(11, 19, 43, 0.7)),
+        linear-gradient(to right, 
+          rgba(0, 0, 0, 0.85) 0%, 
+          rgba(0, 0, 0, 0.3) 20%, 
+          rgba(0, 0, 0, 0.3) 80%, 
+          rgba(0, 0, 0, 0.85) 100%
+        ),
+        linear-gradient(
+          rgba(11, 19, 43, 0.5), 
+          rgba(11, 19, 43, 0.7)
+        ),
         url("https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=2000")
       `,
       backgroundAttachment: 'fixed',
