@@ -13,7 +13,7 @@ const About = () => {
         className="py-24 relative overflow-hidden"
         style={{
           backgroundImage:
-            'linear-gradient(rgba(71, 112, 135, 1), rgba(71, 112, 135, 1)), url("https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=2000")',
+            'linear-gradient(rgba(71, 112, 135, 1), rgba(71, 112, 135, 1))',
           backgroundAttachment: 'fixed',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
