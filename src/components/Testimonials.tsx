@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import TrianglePattern from "./TrianglePattern";
 
 const Testimonials = () => {
   return (
@@ -7,7 +6,6 @@ const Testimonials = () => {
       id="testimonials"
       className="py-24 bg-[#477087] relative overflow-visible"
     >
-      <TrianglePattern />
       <div
         className="absolute inset-0 z-10 pointer-events-none"
         style={{

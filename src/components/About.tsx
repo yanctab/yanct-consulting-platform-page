@@ -1,7 +1,6 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { useIsMobile } from "@/hooks/use-mobile";
-import TrianglePattern from "./TrianglePattern";
 import AboutHighlights from "./AboutHighlights";
 
 const About = () => {
@@ -20,7 +19,6 @@ const About = () => {
           backgroundPosition: 'center',
         }}
       >
-        <TrianglePattern />
         <div
           className="absolute inset-0 z-10 pointer-events-none"
           style={{
