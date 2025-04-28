@@ -3,8 +3,8 @@
 help:
 	@fgrep -h "##" $(MAKEFILE_LIST) | fgrep -v fgrep | sed -e 's/\\$$//' | sed -e 's/##//'
 
-DOMAIN = yanct.com
-EMAIL = contact@yanct.com
+DOMAIN = localhost
+EMAIL = contact@localhost
 WEBROOT = /var/www/$(DOMAIN)
 
 
