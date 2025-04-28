@@ -42,7 +42,9 @@ const AboutHighlights = () => (
         {/* First Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-0 items-stretch w-full">
           {/* Image Card */}
-          <div className="bg-[#F5F7FA] flex items-center justify-center border border-[#d1d5db] shadow-xl h-full w-full aspect-[1.8/1] rounded-2xl">
+          <div className="bg-[#F5F7FA] flex items-center justify-center border border-[#d1d5db] h-full w-full aspect-[1.8/1] rounded-2xl"
+            style={{ boxShadow: "0 10px 40px rgba(0, 0, 0, 0.9)" }}
+          >
             <img
               src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&w=800"
               alt="People collaborating"
@@ -52,7 +54,9 @@ const AboutHighlights = () => (
           </div>
 
           {/* Text Card with Double Border */}
-          <div className="bg-[#F5F7FA] p-1 rounded-2xl border-4 border-[#F5F7FA] shadow-2xl">
+          <div className="bg-[#F5F7FA] p-1 rounded-2xl border-4 border-[#F5F7FA]"
+            style={{ boxShadow: "0 10px 40px rgba(0, 0, 0, 0.9)" }}
+          >
             <div className="h-full w-full bg-[#0B132B] p-1 rounded-[calc(1rem-2px)]">
               <div className="h-full w-full bg-[#F5F7FA] flex flex-col justify-center p-4 sm:p-6 md:p-8 rounded-[calc(1rem-4px)]">
                 <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-2 md:mb-4">
@@ -73,7 +77,9 @@ const AboutHighlights = () => (
         {/* Second Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-0 items-stretch w-full">
           {/* Text Card with Double Border */}
-          <div className="bg-[#F5F7FA] p-1 rounded-2xl border-4 border-[#F5F7FA] shadow-2xl order-2 md:order-1">
+          <div className="bg-[#F5F7FA] p-1 rounded-2xl border-4 border-[#F5F7FA] order-2 md:order-1"
+            style={{ boxShadow: "0 10px 40px rgba(0, 0, 0, 0.9)" }}
+          >
             <div className="h-full w-full bg-[#0B132B] p-1 rounded-[calc(1rem-2px)]">
               <div className="h-full w-full bg-[#F5F7FA] flex flex-col justify-center p-4 sm:p-6 md:p-8 rounded-[calc(1rem-4px)]">
                 <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-2 md:mb-4">
@@ -89,7 +95,9 @@ const AboutHighlights = () => (
           </div>
 
           {/* Image Card */}
-          <div className="bg-[#F5F7FA] flex items-center justify-center border border-[#d1d5db] shadow-xl h-full w-full aspect-[1.8/1] rounded-2xl order-1 md:order-2">
+          <div className="bg-[#F5F7FA] flex items-center justify-center border border-[#d1d5db] h-full w-full aspect-[1.8/1] rounded-2xl order-1 md:order-2"
+            style={{ boxShadow: "0 10px 40px rgba(0, 0, 0, 0.9)" }}
+          >
             <img
               src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800"
               alt="People in relaxed setting"

@@ -28,7 +28,7 @@ const Expertise = () => {
 
           <div className="relative pr-0 md:pl-16 order-1 md:order-2">
             <div className="absolute left-0 top-1/2 w-12 h-[3px] bg-white hidden md:block transform -translate-y-1/2" />
-            <div className="text-center border-4 border-white rounded-2xl p-6 md:p-8 bg-[#0B132B] shadow-lg">
+            <div className="text-center border-4 border-white rounded-2xl p-6 md:p-8 bg-[#0B132B] shadow-xl">
               <HardDrive className="h-12 w-12 mx-auto mb-6 text-white" />
               <h3 className="text-2xl font-bold text-white mb-4 font-ubuntu">
                 Embedded Linux Development
@@ -43,7 +43,7 @@ const Expertise = () => {
 
           <div className="relative pl-0 md:pr-16 order-2 md:order-3">
             <div className="absolute right-0 top-1/2 w-12 h-[3px] bg-white hidden md:block transform -translate-y-1/2" />
-            <div className="text-center border-4 border-white rounded-2xl p-6 md:p-8 bg-[#0B132B] shadow-lg">
+            <div className="text-center border-4 border-white rounded-2xl p-6 md:p-8 bg-[#0B132B] shadow-xl">
               <Code className="h-12 w-12 mx-auto mb-6 text-white" />
               <h3 className="text-2xl font-bold text-white mb-4 font-ubuntu">
                 Yocto Project Expertise
@@ -61,7 +61,7 @@ const Expertise = () => {
 
           <div className="relative pr-0 md:pl-16 order-3 md:order-6">
             <div className="absolute left-0 top-1/2 w-12 h-[3px] bg-white hidden md:block transform -translate-y-1/2" />
-            <div className="text-center border-4 border-white rounded-2xl p-6 md:p-8 bg-[#0B132B] shadow-lg">
+            <div className="text-center border-4 border-white rounded-2xl p-6 md:p-8 bg-[#0B132B] shadow-xl">
               <Settings className="h-12 w-12 mx-auto mb-6 text-white" />
               <h3 className="text-2xl font-bold text-white mb-4 font-ubuntu">
                 Developer Enablement
@@ -75,18 +75,16 @@ const Expertise = () => {
         </div>
 
         <div className="relative flex flex-col items-center w-full mt-0 md:mt-8 mb-4">
-          {/* Outer white border with p-2 gap */}
           <div className="p-2 rounded-full border-4 border-white inline-block">
             <Button
               size="lg"
               id="expertise-continue-btn"
-              className="bg-[#F5F7FA] text-[#0B132B] hover:bg-gray-200 rounded-full text-xl p-6 shadow-xl transition-colors duration-300 border-none"
+              className="bg-[#F5F7FA] text-[#0B132B] hover:bg-gray-200 rounded-full text-xl p-6 transition-colors duration-300 border-none shadow-xl"
               onClick={() => {
                 const highlights = document.getElementById('services');
                 highlights?.scrollIntoView({ behavior: 'smooth' });
               }}
             >
-              {/* Downward pointing triangle SVG */}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="w-24 h-24 text-[#0B132B]"
@@ -100,7 +98,7 @@ const Expertise = () => {
             </Button>
           </div>
         </div>
-        
+
       </div>
     </section>
   );
