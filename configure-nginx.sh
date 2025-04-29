@@ -28,10 +28,26 @@ server {
     return 301 http://$DOMAIN\$request_uri;
 }
 
-# Main server block
+# Main server block for HTTP
 server {
     listen 80;
     server_name $DOMAIN;
+
+    root $WEBROOT;
+    index index.html;
+
+    location / {
+        try_files \$uri \$uri/ =404;
+    }
+}
+
+# Main server block for HTTPS
+server {
+    listen 443 ssl;
+    server_name $DOMAIN;
+
+    ssl_certificate /etc/letsencrypt/live/$DOMAIN/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/$DOMAIN/privkey.pem;
 
     root $WEBROOT;
     index index.html;
