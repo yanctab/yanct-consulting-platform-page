@@ -29,7 +29,7 @@ const Testimonials = () => {
           >
             <div className="text-6xl text-white mb-4 leading-none font-typewriter">"</div>
             <p className="text-white opacity-90 mb-6 font-typewriter">
-              We consulted Måns for guidance on configuring and delivering IoT gateways for cloud control to thousands of end-users in a scalable way. Måns was incredibly service-minded, pedagogical, and highly knowledgeable. We will continue to rely on him as our go-to expert for all IoT-related matters.
+              Måns was incredibly service-minded, pedagogical, and highly knowledgeable. We will continue to rely on him as our go-to expert for all IoT-related matters.
             </p>
             <p className="text-white font-bold font-typewriter">Daria Madjidian</p>
             <p className="text-white italic text-sm font-typewriter">
@@ -42,7 +42,7 @@ const Testimonials = () => {
           >
             <div className="text-6xl text-white mb-4 leading-none font-typewriter">"</div>
             <p className="text-white opacity-90 mb-6 font-typewriter">
-              Complexity is not a problem. He works proactively and reacts fast on observations made. He has good contacts with other teams and could handle different cultures easily. I highly recommend him since his contribution is very good and he works on a high energy level!
+              Complexity is not a problem. He works proactively and reacts fast on observations made. He has good contacts with other teams and could handle different cultures easily.
             </p>
             <p className="text-white font-bold font-typewriter">Kent Pålsson</p>
             <p className="text-white italic text-sm font-typewriter">
@@ -55,7 +55,7 @@ const Testimonials = () => {
           >
             <div className="text-6xl text-white mb-4 leading-none font-typewriter">"</div>
             <p className="text-white opacity-90 mb-6 font-typewriter">
-              Måns is next level embedded linux expert. Not only does he understand the tools surrounding custom embedded linux system like yocto, but he has very good linux knowledge which is important to have this combo in my opinion. From classical linux stuff, to drivers to device tree setup and board bring ups. I higly recommend Måns.
+              Måns is next level embedded linux expert. Not only does he understand the tools surrounding custom embedded linux system like yocto, but he has very good linux knowledge which is important to have this combo in my opinion.
             </p>
             <p className="text-white font-bold font-typewriter">Frederik Vibe-Petersen</p>
             <p className="text-white italic text-sm font-typewriter">
@@ -68,7 +68,7 @@ const Testimonials = () => {
           >
             <div className="text-6xl text-white mb-4 leading-none font-typewriter">"</div>
             <p className="text-white opacity-90 mb-6 font-typewriter">
-              Måns is a hardworking and very skilled developer and expert in embedded Linux development (especially Yocto), C/C++ and Python programming. Always ready to help improving the development processes, tools etc. and has a high focus on quality. A true asset for the team.
+              Always ready to help improving the development processes, tools etc. and has a high focus on quality. A true asset for the team.
             </p>
             <p className="text-white font-bold font-typewriter">Jeppe Frandsen</p>
             <p className="text-white italic text-sm font-typewriter">
